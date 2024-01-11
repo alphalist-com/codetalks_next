@@ -3,7 +3,7 @@
     <LandingHero />
     <div class="relative overflow-hidden">
       <div
-        class="absolute top-0 left-0 right-0 h-full max-h-[650vh] -z-20 bg-cota-background"
+        class="absolute top-0 left-0 right-0 h-full max-h-[1250vh] md:max-h-[850vh] -z-20 bg-cota-background"
       >
         <SyntaxHighlighter :code="formattedCode" />
       </div>
@@ -44,6 +44,8 @@ onMounted(async () => {
   const response = await fetch("/background_code.html");
   if (response.ok) {
     codeContent.value = await response.text();
+    // Workaround: On mobile the text might not be long enough to cover the full height off the screen
+    codeContent.value = codeContent.value + '/n' + codeContent.value;
     formattedCode.value = addLineNumbers(codeContent.value);
   } else {
     console.error("Failed to fetch the file");

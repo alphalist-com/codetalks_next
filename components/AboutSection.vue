@@ -1,7 +1,7 @@
 <template>
   <div class="-mr-12">
-    <div class="overflow-hidden">
-      <div class="mx-auto max-w-7xl px-6 pb-32 pt-36 sm:pt-60 lg:px-8 lg:pt-32">
+    <div>
+      <div class="mx-auto max-w-7xl sm:px-6 px-0 pb-32 pt-36 sm:pt-60 lg:px-8 lg:pt-32">
         <div
           class="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center"
         >
@@ -13,7 +13,7 @@
               <span class="text-cota-primary font-thin">HORIZON!</span>
             </h1>
             <p
-              class="relative mt-6 text-lg font-mono leading-8 text-gray-600 sm:max-w-md lg:max-w-none"
+              class="relative mt-6 text-lg font-mono pr-8 sm:pr-0 leading-8 text-gray-600 sm:max-w-md lg:max-w-none"
             >
               code.talks offers a varied program with more than 100 talks from
               14 subject areas. More than 130 national and international
