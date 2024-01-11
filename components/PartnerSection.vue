@@ -13,15 +13,15 @@
             CODE
           </h2>
           <p class="mt-6 text-xl leading-8 text-cota-secondary">
-            Präsentiere Dein Unternehmen auf einer der führenden Entwickler
-            Konferenzen, vernetzte Dich mit Gleichgesinnten und teile Deine
-            Erfahrungen mit der Community.
+            Present your company on one of the leading developers
+            Conferences, network with like-minded people and share yours
+            Experiences with the community.
           </p>
           <div class="mt-10 flex gap-x-6">
             <a
               href="#"
               class="rounded-md px-3.5 py-2 text-sm font-semibold text-cota-on-primary bg-cota-primary"
-              >Speaker</a
+              >Find our more</a
             >
           </div>
         </div>
