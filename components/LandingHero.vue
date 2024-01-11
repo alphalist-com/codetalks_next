@@ -10,7 +10,8 @@
             muted
             playsinline
             src="/cota.webm"
-            alt=""
+            alt="codetalks-loop"
+            poster="/temp_poster.jpg"
             class="h-full w-full object-cover brightness-50 bg-gradient-to-t from-black to-transparent"
           />
         </div>
