@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   pages: true,
-  css: ["~/assets/css/tailwind.css"],
+  css: ["@/assets/css/tailwind.css"],
   modules: [
     "nuxt-swiper",
     "nuxt-headlessui",
