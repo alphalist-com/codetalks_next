@@ -11,7 +11,7 @@
             playsinline
             src="/cota.webm"
             alt="codetalks-loop"
-            poster="/temp_poster.jpg"
+            poster="/cota.gif"
             class="h-full w-full object-cover brightness-50 bg-gradient-to-t from-black to-transparent"
           />
         </div>
