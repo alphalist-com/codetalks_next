@@ -6,9 +6,9 @@
       </h2>
       <p class="mt-4 text-xl leading-8 text-cota-secondary">{{ subtitle }}</p>
     </div>
-    <ul
+      <ul
       role="list"
-      class="mx-auto mt-12 grid max-w-md grid-cols-2 gap-8 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-6 px-20"
+      class="mx-auto max-w-fit mt-12 grid grid-cols-2 gap-6 px-4 sm:grid-cols-3 sm:px-6 md:grid-cols-4 xl:grid-cols-6"
     >
       <li
         v-for="speaker in speakers"
@@ -45,15 +45,17 @@
   </div>
 </template>
 
+
 <script setup lang="ts">
 
+import type { Button } from '@/utils/types/button';
 import { defineProps } from 'vue';
 
 const props = defineProps({
   title: String,
   titleHighlight: String,
   subtitle: String,
-  buttons: Array,
+  buttons: Array<Button>,
 });
 
 const speakers = [
