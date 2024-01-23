@@ -2,7 +2,7 @@
     <header class="sticky top-0 z-20">
     <nav
       :class="[
-        'mx-auto h-16 px-8 lg:px-6 pt-2 lg:pt-3 relative overflow-clip bg-cota-background/80 backdrop-filter backdrop-blur-md',
+        'mx-auto h-16 px-5 lg:px-6 pt-0.5 lg:pt-3 relative overflow-clip bg-cota-background/80 backdrop-filter backdrop-blur-md',
         { 'shadow-md shadow-cota-primary': !isAtTop }
       ]"
       aria-label="Global"
@@ -11,7 +11,7 @@
         <div class="flex lg:flex-1">
           <a href="/" class="lg:-my-2.5 lg:-mx-0 -my-0 -mx-3">
             <span class="sr-only">code.talks</span>
-            <img class="h-10 lg:h-12 w-auto pt-1 lg:pt-0" src="/cota_logo.png"/>
+            <img class="h-14  w-auto pt-1 lg:pt-0" src="/cota_logo.png"/>
           </a>
         </div>
         <div class="flex lg:hidden">
@@ -45,12 +45,12 @@
     <HeadlessDialog as="div" class="lg:hidden" @close="mobileMenuOpen = false" :open="mobileMenuOpen">
       <div class="fixed inset-0 z-20" />
       <HeadlessDialogPanel
-        class="fixed inset-y-0 right-0 z-20 w-full overflow-y-auto bg-cota-background px-8 lg:px-6 pt-2 lg:pt-3  sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
+        class="fixed inset-y-0 right-0 z-20 w-full overflow-y-auto bg-cota-background px-5 pt-0.5 lg:pt-3  sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
       >
         <div class="flex items-center justify-between mb-10">
           <a href="/" class="lg:-my-2.5 lg:-mx-0 -my-0 -mx-3">
             <span class="sr-only">code.talks</span>
-            <img class="h-10 lg:h-12 w-auto pt-1 lg:pt-0" src="/cota_logo.png"/>
+            <img class="h-14 w-auto pt-1 lg:pt-0" src="/cota_logo.png"/>
           </a>
           <button
             type="button"
@@ -61,8 +61,8 @@
             <XMarkIcon class="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
-        <div class="flow-root px-3">
-          <div class="-my-6 divide-y divide-gray-500/10">
+        <div class="flow-root px-6">
+          <div class="divide-y divide-gray-500/10">
             <div class="space-y-3 py-6">
               <a
                 v-for="item in navigation"
@@ -107,8 +107,8 @@ onUnmounted(() => {
 
 const navigation = [
   { name: 'Talks', href: '/talks' },
-  { name: 'Speaker', href: '/speaker' },
-  { name: 'Partner', href: '/partner' },
+  { name: 'Speakers', href: '/speakers' },
+  { name: 'Partners', href: '/partners' },
   { name: 'Curators', href: '/curators' },
   { name: 'About Us', href: '/about-us' }
 ]

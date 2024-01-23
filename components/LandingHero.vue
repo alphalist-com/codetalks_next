@@ -9,25 +9,26 @@
             loop
             muted
             playsinline
-            src="/cota.webm"
             alt="codetalks-loop"
             class="h-full w-full object-cover brightness-50 bg-gradient-to-t from-black to-transparent"
-          />
+          >
+            <source src="/background_video/cota.webm" type="video/webm" />
+            <source src="/background_video/cota.mp4" type="video/mp4" />
+          </video>
         </div>
         <div
           class="content-around flex flex-col items-center justify-center w-full h-full px-6 -mt-6"
         >
           <div class="max-w-4xl w-full text-center">
-            <div class="sm:mb-8 sm:flex sm:justify-center mb-8">
+            <div class="sm:mb-8 sm:flex flex justify-center mb-8">
               <div
                 class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-400 ring-1 ring-white/10 hover:ring-white/20"
               >
-                Become a speaker. 
+                Become a
                 <a
-                  href="https://discord.gg/3FMWuzCXmQ"
+                  href="/partner"
                   class="font-semibold text-white"
-                  ><span class="absolute inset-0" aria-hidden="true" />Join
-                  Apply <span aria-hidden="true">&rarr;</span></a
+                  ><span class="absolute inset-0" aria-hidden="true" />Partner <span aria-hidden="true">&rarr;</span></a
                 >
               </div>
             </div>
@@ -45,21 +46,19 @@
               </p>
 
               <div class="mt-10 flex items-center justify-center gap-x-6">
-
                 <a
                   href="#"
                   class="rounded-md px-3.5 py-2 text-sm font-semibold text-cota-on-primary bg-cota-primary"
                   >Tickets</a
                 >
                 <a
-                  class=" text-sm font-semibold text-white"
+                  class="text-sm font-semibold text-white"
                   @click="dialogOpen = true"
                   >RECAP 2023 <span aria-hidden="true">→</span></a
                 >
               </div>
             </div>
           </div>
-         
         </div>
         <div
           class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
@@ -149,7 +148,6 @@ const dialogClosed = () => {
   playBgVideo();
 };
 
-
 onMounted(() => {
   videoRef.value = document.getElementById(
     "backgroundVideo"
@@ -171,7 +169,7 @@ watch(dialogOpen, (newVal) => {
 
 <style scoped>
 .outline-text {
-  -webkit-text-stroke: 2px #1aba8b;
+  -webkit-text-stroke: 1px #1aba8b;
   color: transparent;
 }
 

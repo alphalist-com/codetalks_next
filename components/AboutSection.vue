@@ -13,7 +13,7 @@
               <span class="text-cota-primary font-thin">HORIZON!</span>
             </h1>
             <p
-              class="relative mt-6 text-lg font-mono pr-8 sm:pr-0 leading-8 text-gray-600 sm:max-w-md lg:max-w-none"
+              class="relative mt-6 text-lg font-mono pr-8 sm:pr-0 leading-8 text-cota-secondary sm:max-w-md lg:max-w-none"
             >
               code.talks offers a varied program with more than 100 talks from
               14 subject areas. More than 130 national and international
@@ -42,7 +42,7 @@
             >
               <div class="relative">
                 <img
-                  src="/cota-1.png"
+                  src="/gallery/cota-1.png"
                   alt=""
                   class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                 />
@@ -56,7 +56,7 @@
             >
               <div class="relative">
                 <img
-                  src="/cota-2.png"
+                  src="/gallery/cota-2.png"
                   alt=""
                   class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                 />
@@ -66,7 +66,7 @@
               </div>
               <div class="relative">
                 <img
-                  src="/cota-3.png"
+                  src="/gallery/cota-3.png"
                   alt=""
                   class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                 />
@@ -78,7 +78,7 @@
             <div class="w-44 flex-none space-y-8 pt-32 sm:pt-0">
               <div class="relative">
                 <img
-                  src="/cota-4.png"
+                  src="/gallery/cota-4.png"
                   alt=""
                   class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                 />
@@ -88,7 +88,7 @@
               </div>
               <div class="relative">
                 <img
-                  src="/cota-5.png"
+                  src="/gallery/cota-5.png"
                   alt=""
                   class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                 />

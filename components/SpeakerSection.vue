@@ -1,17 +1,17 @@
 <template>
-  <div class="bg-transparent sm:py-8 z-10">
+  <div class="bg-transparent sm:py-8 z-10 -mx-10 sm:-mx-0">
     <div class="text-center">
       <h2 class="text-3xl font-extrabold tracking-tight text-cota-secondary sm:text-4xl">
         {{ title }} <span class="text-cota-primary font-extralight">{{ titleHighlight }}</span>
       </h2>
-      <p class="mt-4 text-xl leading-8 text-cota-secondary">{{ subtitle }}</p>
+      <p class="mt-4 px-16 sm:mx-10 text-xl leading-8 text-cota-secondary">{{ subtitle }}</p>
     </div>
       <ul
       role="list"
       class="mx-auto max-w-fit mt-12 grid grid-cols-2 gap-6 px-4 sm:grid-cols-3 sm:px-6 md:grid-cols-4 xl:grid-cols-6"
     >
       <li
-        v-for="speaker in speakers"
+        v-for="speaker in getSpeakers"
         :key="speaker.name"
         class="relative flex flex-col items-center w-40 h-64 rounded-md p-1 hover:p-0 transition-all text-sm font-semibold text-cota-green shadow-lg backdrop-filter backdrop-blur-md bg-gradient-to-br firefox:bg-opacity-90 from-10% from-white/30 to-85% to-white/5 bg-frosted-glass-texture/50"
       >
@@ -32,12 +32,12 @@
         </div>
       </li>
     </ul>
-    <div class="mt-10 flex items-center justify-center gap-x-6">
+    <div class="mt-10 flex flex-col sm:flex-row  items-center justify-center gap-x-6 mx-14">
       <a
         v-for="button in buttons"
         :key="button.text"
         :href="button.link"
-        class="rounded-md px-3.5 py-2 text-md font-semibold text-cota-on-primary bg-cota-primary"
+        class="rounded-md px-3.5 py-2 mb-4 text-md font-semibold text-cota-on-primary bg-cota-primary"
       >
         {{ button.text }} <span v-if="button.arrow" aria-hidden="true">→</span>
       </a>
@@ -49,13 +49,24 @@
 <script setup lang="ts">
 
 import type { Button } from '@/utils/types/button';
+import type { Speaker } from '@/utils/types/speaker';
 import { defineProps } from 'vue';
+
 
 const props = defineProps({
   title: String,
   titleHighlight: String,
   subtitle: String,
   buttons: Array<Button>,
+  speakerList: Array<Speaker>
+});
+
+
+const getSpeakers = computed(() => {
+  if (props.speakerList != null) {
+    return props.speakerList;
+  }
+  return speakers;
 });
 
 const speakers = [

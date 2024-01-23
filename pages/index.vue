@@ -7,11 +7,11 @@
       >
         <SyntaxHighlighter :code="formattedCode" />
       </div>
-      <div class="relative z-10 bg-cota-background bg-opacity-60">
+      <div class="relative z-10 bg-cota-background bg-opacity-40">
         <div class="px-12">
           <AboutSection />
-          <CtaSection />
-          <GallerySection />
+          <CtaSection :items="ctas" />
+          <GallerySection :imageInfos="pictures" />
           <FactsSection />
           <NetworkBrandSection />
           <SpeakerSection
@@ -40,12 +40,52 @@ import { ref, onMounted } from "vue";
 const codeContent = ref("");
 const formattedCode = ref("");
 
+const pictures = [
+  {
+    url: "/gallery/cota-1.png",
+    focusPoint: "50% 30%",
+    description: "Image 1 Description",
+  },
+  {
+    url: "/gallery/cota-2.png",
+    focusPoint: "80% 20%",
+    description: "Image 2 Description",
+  },
+  { url: "/gallery/cota-3.png", focusPoint: "20% 80%" },
+  { url: "/gallery/cota-4.png", focusPoint: "50% 30%" },
+  { url: "/gallery/cota-5.png", focusPoint: "50% 45%" }
+];
+
+const ctas = [
+  {
+    name: "MEET",
+    description:
+      "code.talks offers a varied program with more than 100 talks from 14 subject areas. More than 130 national.",
+    icon: "🌍",
+    cta: "See more",
+  },
+  {
+    name: "TALK",
+    description:
+      "code.talks offers a varied program with more than 100 talks from 14 subject areas. More than 130 national.",
+    icon: "👋",
+    cta: "See more",
+  },
+  {
+    name: "CODE",
+    description:
+      "code.talks offers a varied program with more than 100 talks from 14 subject areas. More than 130 national.",
+    icon: "💻",
+    cta: "See more",
+  },
+];
+
 onMounted(async () => {
   const response = await fetch("/background_code.html");
   if (response.ok) {
     codeContent.value = await response.text();
     // Workaround: On mobile the text might not be long enough to cover the full height off the screen
-    codeContent.value = codeContent.value + '/n' + codeContent.value;
+    codeContent.value = codeContent.value + "/n" + codeContent.value;
     formattedCode.value = addLineNumbers(codeContent.value);
   } else {
     console.error("Failed to fetch the file");

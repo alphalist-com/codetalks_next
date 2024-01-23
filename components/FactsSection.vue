@@ -1,6 +1,6 @@
 <template>
   <div class="py-12">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-7xl">
       <dl class="grid grid-cols-2 gap-x-8 gap-y-16 text-center lg:grid-cols-3 xl:grid-cols-4">
         <div 
           v-for="stat in stats" 
@@ -8,8 +8,8 @@
           class="mx-auto flex max-w-xs flex-col gap-y-4"
           :class="{'sm:col-start-auto': stat.id === stats.length}"
         >
-          <dt class="font-extrabold md:text-4xl italic text-3xl text-cota-secondary">{{ stat.name }}</dt>
-          <dd class="order-first text-5xl font-extrabold tracking-tight text-cota-primary md:text-7xl">{{ stat.value }}</dd>
+          <dt class="font-extrabold md:text-4xl text-3xl text-cota-secondary">{{ stat.name }}</dt>
+          <dd class="order-first text-4xl font-extrabold tracking-tight text-cota-primary md:text-7xl">{{ stat.value }}</dd>
         </div>
       </dl>
     </div>

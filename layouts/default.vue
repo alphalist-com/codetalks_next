@@ -3,7 +3,7 @@
   <div>
     <slot/>
   </div>
-  <FooterSection/>
+  <FooterSection id="footer"/>
 </template>
 
 <script lang="ts" setup>
