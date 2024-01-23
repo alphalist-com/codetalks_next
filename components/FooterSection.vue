@@ -149,8 +149,8 @@ const removeHash = () => {
 
 const navigation = {
   solutions: [
-    { name: "Partnering", href: "#" },
-    { name: "Speaking", href: "#" },
+    { name: "Partnering", href: "/partners" },
+    { name: "Speaking", href: "/speakers" },
   ],
   support: [
     { name: "All Speakers", href: "#" },
@@ -169,7 +169,7 @@ const navigation = {
   social: [
     {
       name: "Facebook",
-      href: "#",
+      href: "https://www.facebook.com/developer.conference.hamburg/",
       icon: defineComponent({
         render: () =>
           h("svg", { fill: "currentColor", viewBox: "0 0 24 24" }, [
@@ -183,7 +183,7 @@ const navigation = {
     },
     {
       name: "Instagram",
-      href: "#",
+      href: "https://www.instagram.com/code.talks/",
       icon: defineComponent({
         render: () =>
           h("svg", { fill: "currentColor", viewBox: "0 0 24 24" }, [
@@ -197,7 +197,7 @@ const navigation = {
     },
     {
       name: "Twitter",
-      href: "#",
+      href: "https://twitter.com/codetalkshh",
       icon: defineComponent({
         render: () =>
           h("svg", { fill: "currentColor", viewBox: "0 0 24 24" }, [
@@ -210,7 +210,7 @@ const navigation = {
 
     {
       name: "YouTube",
-      href: "#",
+      href: "https://www.youtube.com/@code.talksbyalphalist",
       icon: defineComponent({
         render: () =>
           h("svg", { fill: "currentColor", viewBox: "0 0 24 24" }, [
