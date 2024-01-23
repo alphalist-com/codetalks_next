@@ -27,10 +27,10 @@
 
 
               <div class="mt-10 flex items-center justify-center gap-x-6">
-                <a
+                <NuxtLink
                   href="#"
                   class="rounded-md px-3.5 py-2 text-sm font-semibold text-cota-on-primary bg-cota-primary"
-                  >Subscribe to Newsletter</a
+                  >Subscribe to Newsletter</NuxtLink
                 >
               </div>
             </div>
@@ -84,10 +84,10 @@
             As every year we strive to have people from the community build the program for the community. We will announce this years Curators Beginning of March. 
           </p>
           <div class="mt-10 flex gap-x-6">
-            <a
+            <NuxtLink
               href="#newsletter"
               class="rounded-md px-3.5 py-2 text-sm font-semibold text-cota-on-primary bg-cota-primary"
-              >Stay tuned!</a
+              >Stay tuned!</NuxtLink
             >
           </div>
         </div>

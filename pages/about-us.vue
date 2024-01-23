@@ -27,10 +27,10 @@
             
 
               <div class="mt-10 flex items-center justify-center gap-x-6">
-                <a
+                <NuxtLink
                   @click="dialogOpen = true"
                   class="rounded-md px-3.5 py-2 text-sm font-semibold text-cota-on-primary bg-cota-primary"
-                  >Watch Recap</a
+                  >Watch Recap</NuxtLink
                 >
               </div>
             </div>

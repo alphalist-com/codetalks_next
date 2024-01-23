@@ -25,10 +25,10 @@
                 class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-400 ring-1 ring-white/10 hover:ring-white/20"
               >
                 Become a
-                <a
-                  href="/partner"
+                <NuxtLink
+                  href="/partners"
                   class="font-semibold text-white"
-                  ><span class="absolute inset-0" aria-hidden="true" />Partner <span aria-hidden="true">&rarr;</span></a
+                  ><span class="absolute inset-0" aria-hidden="true" />Partner <span aria-hidden="true">&rarr;</span></NuxtLink
                 >
               </div>
             </div>
@@ -46,15 +46,15 @@
               </p>
 
               <div class="mt-10 flex items-center justify-center gap-x-6">
-                <a
+                <NuxtLink
                   href="#"
                   class="rounded-md px-3.5 py-2 text-sm font-semibold text-cota-on-primary bg-cota-primary"
-                  >Tickets</a
+                  >Tickets</NuxtLink
                 >
-                <a
+                <NuxtLink
                   class="text-sm font-semibold text-white"
                   @click="dialogOpen = true"
-                  >RECAP 2023 <span aria-hidden="true">→</span></a
+                  >RECAP 2023 <span aria-hidden="true">→</span></NuxtLink
                 >
               </div>
             </div>

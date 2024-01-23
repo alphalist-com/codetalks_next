@@ -25,10 +25,10 @@
               </p>
 
               <div class="mt-10 flex items-center justify-center gap-x-6">
-                <a
+                <NuxtLink
                   href="#newsletter"
                   class="rounded-md px-3.5 py-2 text-sm font-semibold text-cota-on-primary bg-cota-primary"
-                  >Subscribe</a
+                  >Subscribe</NuxtLink
                 >
               </div>
             </div>
@@ -86,10 +86,10 @@
       </div>
 
       <div class="flex items-center justify-center gap-x-6 mt-12">
-        <a
+        <NuxtLink
           href="https://www.youtube.com/@code.talksbyalphalist"
           class="rounded-md px-3.5 py-2 text-sm font-semibold text-cota-on-primary bg-cota-primary"
-          >Explore more Videos</a
+          >Explore more Videos</NuxtLink
         >
       </div>
     </div>

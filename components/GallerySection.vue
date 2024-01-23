@@ -19,12 +19,6 @@
               :alt="`Image ${index + 1}`"
               :style="{ objectPosition: imageInfo.focusPoint }"
             />
-            <div 
-              v-if="imageInfo.description"
-              class="absolute bottom-0 left-0 right-0 rounded-b-xl bg-gradient-to-t from-black to-transparent p-4"
-            >
-              <p class="text-white text-sm">{{ imageInfo.description }}</p>
-            </div>
           </div>
         </SwiperSlide>
       </Swiper>

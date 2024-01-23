@@ -9,10 +9,10 @@
     >
       <div class="max-w-7xl flex items-center justify-between mx-auto">
         <div class="flex lg:flex-1">
-          <a href="/" class="lg:-my-2.5 lg:-mx-0 -my-0 -mx-3">
+          <NuxtLink href="/" class="lg:-my-2.5 lg:-mx-0 -my-0 -mx-3">
             <span class="sr-only">code.talks</span>
-            <img class="h-14  w-auto pt-1 lg:pt-0" src="/cota_logo.png"/>
-          </a>
+            <img class="h-10 w-auto pt-1 lg:pt-0" src="/cota_logo.png"/>
+          </NuxtLink>
         </div>
         <div class="flex lg:hidden">
           <button
@@ -25,19 +25,19 @@
           </button>
         </div>
         <div class="hidden lg:flex lg:gap-x-10">
-          <a
+          <NuxtLink
             v-for="item in navigation"
             :key="item.name"
             :href="item.href"
             class="text-sm font-semibold leading-6 text-white hover:text-cota"
-            >{{ item.name }}</a
+            >{{ item.name }}</NuxtLink
           >
         </div>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a
+          <NuxtLink
             href="#"
             class="rounded-md bg-white outline-3 outline-cota-primary px-3.5 py-2 text-sm font-semibold text-cota-on-secondary shadow-sm  transition-shadow duration-500 hover:shadow-2xl shadow-cota-primary"
-            >Tickets</a
+            >Tickets</NuxtLink
           >
         </div>
       </div>
@@ -48,10 +48,10 @@
         class="fixed inset-y-0 right-0 z-20 w-full overflow-y-auto bg-cota-background px-5 pt-0.5 lg:pt-3  sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
       >
         <div class="flex items-center justify-between mb-10">
-          <a href="/" class="lg:-my-2.5 lg:-mx-0 -my-0 -mx-3">
+          <NuxtLink href="/" class="lg:-my-2.5 lg:-mx-0 -my-0 -mx-3">
             <span class="sr-only">code.talks</span>
             <img class="h-14 w-auto pt-1 lg:pt-0" src="/cota_logo.png"/>
-          </a>
+          </NuxtLink>
           <button
             type="button"
             class="rounded-md text-white"
@@ -64,19 +64,19 @@
         <div class="flow-root px-6">
           <div class="divide-y divide-gray-500/10">
             <div class="space-y-3 py-6">
-              <a
+              <NuxtLink
                 v-for="item in navigation"
                 :key="item.name"
                 :href="item.href"
                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-primary"
-                >{{ item.name }}</a
+                >{{ item.name }}</NuxtLink
               >
             </div>
             <div class="py-6 -ml-3">
-              <a
+              <NuxtLink
                 href="#"
                 class="rounded-md bg-white outline-2 outline-cota-primary px-3.5 py-2 text-sm font-semibold text-cota-on-secondary shadow-sm hover:shadow-lg shadow-cota-primary"
-                >Tickets</a
+                >Tickets</NuxtLink
               >
             </div>
           </div>

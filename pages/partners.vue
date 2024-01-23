@@ -26,10 +26,10 @@
               </p>
 
               <div class="mt-10 flex items-center justify-center gap-x-6">
-                <a
+                <NuxtLink
                   href="#"
                   class="rounded-md px-3.5 py-2 text-sm font-semibold text-cota-on-primary bg-cota-primary"
-                  >BECOME A PARTNER</a
+                  >BECOME A PARTNER</NuxtLink
                 >
               </div>
             </div>
@@ -89,10 +89,10 @@
               atmosphere.
             </p>
             <div class="mt-10 flex gap-x-6">
-              <a
+              <NuxtLink
                 href="#"
                 class="rounded-md px-3.5 py-2 text-sm font-semibold text-cota-on-primary bg-cota-primary"
-                >Find our more</a
+                >Find our more</NuxtLink
               >
             </div>
           </div>

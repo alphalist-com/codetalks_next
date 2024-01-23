@@ -33,14 +33,14 @@
       </li>
     </ul>
     <div class="mt-10 flex flex-col sm:flex-row  items-center justify-center gap-x-6 mx-14">
-      <a
+      <NuxtLink
         v-for="button in buttons"
         :key="button.text"
         :href="button.link"
         class="rounded-md px-3.5 py-2 mb-4 text-md font-semibold text-cota-on-primary bg-cota-primary"
       >
         {{ button.text }} <span v-if="button.arrow" aria-hidden="true">→</span>
-      </a>
+      </NuxtLink>
     </div>
   </div>
 </template>

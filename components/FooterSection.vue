@@ -14,10 +14,10 @@
               </h3>
               <ul role="list" class="mt-6 space-y-4">
                 <li v-for="item in navigation.solutions" :key="item.name">
-                  <a
+                  <NuxtLink
                     :href="item.href"
                     class="text-sm leading-6 text-gray-300 hover:text-white"
-                    >{{ item.name }}</a
+                    >{{ item.name }}</NuxtLink
                   >
                 </li>
               </ul>
@@ -28,10 +28,10 @@
               </h3>
               <ul role="list" class="mt-6 space-y-4">
                 <li v-for="item in navigation.support" :key="item.name">
-                  <a
+                  <NuxtLink
                     :href="item.href"
                     class="text-sm leading-6 text-gray-300 hover:text-white"
-                    >{{ item.name }}</a
+                    >{{ item.name }}</NuxtLink
                   >
                 </li>
               </ul>
@@ -44,10 +44,10 @@
               </h3>
               <ul role="list" class="mt-6 space-y-4">
                 <li v-for="item in navigation.company" :key="item.name">
-                  <a
+                  <NuxtLink
                     :href="item.href"
                     class="text-sm leading-6 text-gray-300 hover:text-white"
-                    >{{ item.name }}</a
+                    >{{ item.name }}</NuxtLink
                   >
                 </li>
               </ul>
@@ -56,10 +56,10 @@
               <h3 class="text-sm font-semibold leading-6 text-white">Legal</h3>
               <ul role="list" class="mt-6 space-y-4">
                 <li v-for="item in navigation.legal" :key="item.name">
-                  <a
+                  <NuxtLink
                     :href="item.href"
                     class="text-sm leading-6 text-gray-300 hover:text-white"
-                    >{{ item.name }}</a
+                    >{{ item.name }}</NuxtLink
                   >
                 </li>
               </ul>
@@ -101,7 +101,7 @@
         class="mt-16 border-t border-cota-darkergrey pt-8 sm:mt-20 md:flex md:items-center md:justify-between lg:mt-24"
       >
         <div class="flex space-x-6 md:order-2">
-          <a
+          <NuxtLink
             v-for="item in navigation.social"
             :key="item.name"
             :href="item.href"
@@ -109,7 +109,7 @@
           >
             <span class="sr-only">{{ item.name }}</span>
             <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
-          </a>
+          </NuxtLink>
         </div>
         <p class="mt-8 text-xs leading-5 text-gray-400 md:order-1 md:mt-0">
           &copy; 2023 alphalist GmbH. All rights reserved.

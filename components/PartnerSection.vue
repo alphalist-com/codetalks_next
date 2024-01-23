@@ -18,10 +18,10 @@
             Experiences with the community.
           </p>
           <div class="mt-10 flex gap-x-6">
-            <a
+            <NuxtLink
               href="#"
               class="rounded-md px-3.5 py-2 text-sm font-semibold text-cota-on-primary bg-cota-primary"
-              >Find our more</a
+              >Find our more</NuxtLink
             >
           </div>
         </div>

@@ -29,18 +29,18 @@
               </p>
 
               <div class="mt-10 flex items-center justify-center gap-x-6">
-                <a
+                <NuxtLink
                   href="#newsletter"
                   class="rounded-md px-3.5 py-2 text-sm font-semibold text-cota-on-primary bg-cota-primary"
-                  >Subscribe to Newsletter</a
+                  >Subscribe to Newsletter</NuxtLink
                 >
               </div>
             </div>
           </div>
-          <a
+          <NuxtLink
             class="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-sm font-semibold text-white"
             href="#speakerSection"
-            >Speakers of code.talks <span aria-hidden="true">→</span></a
+            >Speakers of code.talks <span aria-hidden="true">→</span></NuxtLink
           >
         </div>
         <div

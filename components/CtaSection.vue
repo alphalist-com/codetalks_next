@@ -21,10 +21,10 @@
               {{ item.description }}
             </p>
             <div v-if="item.cta" class="mt-4">
-              <a
+              <NuxtLink
                 class="text-sm font-semibold text-cota-primary"
                 @click="dialogOpen = true"
-                >{{ item.cta }} <span aria-hidden="true">→</span></a
+                >{{ item.cta }} <span aria-hidden="true">→</span></NuxtLink
               >
             </div>
           </div>
@@ -35,12 +35,10 @@
 </template>
 
 <script setup>
-
 const props = defineProps({
   items: {
     type: Array,
-    default: () => []
-  }
+    default: () => [],
+  },
 });
-
 </script>
