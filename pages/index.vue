@@ -9,7 +9,7 @@
       </div>
       <div class="relative z-10 bg-cota-background bg-opacity-40">
         <div class="px-12">
-          <NuxtLinkboutSection />
+          <AboutSection/>
           <CtaSection :items="ctas" />
           <GallerySection :imageInfos="pictures" />
           <FactsSection />
