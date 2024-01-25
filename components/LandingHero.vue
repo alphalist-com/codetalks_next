@@ -38,12 +38,12 @@
               >
                 Germanys Greatest Developer Conference
               </h1>
-              <p class="mt-6 text-lg leading-8 text-gray-100">
+              <h2 class="mt-6 text-3xl  leading-8 text-gray-100">
                 Broaden your horizons, get in touch with the community
-              </p>
-              <p class="mt-6 text-lg font-extrabold leading-6 text-gray-100">
+              </h2>
+              <h3 class="mt-6 text-xl font-extrabold leading-6 text-gray-100">
                 19 & 20 Sept. 2024, Hamburg
-              </p>
+              </h3>
 
               <div class="mt-10 flex items-center justify-center gap-x-6">
                 <NuxtLink
