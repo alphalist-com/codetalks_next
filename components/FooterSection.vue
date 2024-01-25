@@ -5,115 +5,103 @@
   >
     <h2 id="footer-heading" class="sr-only">Footer</h2>
     <div class="mx-auto max-w-7xl px-12 pb-8 pt-8 sm:pt-24 lg:px-16 lg:pt-16">
-      <div class="xl:grid xl:grid-cols-3 xl:gap-8">
-        <div class="grid grid-cols-2 gap-8 xl:col-span-2 mx:-auto">
-          <div class="md:grid md:grid-cols-2 md:gap-8">
-            <div>
-              <h3 class="text-sm font-semibold leading-6 text-white">
-                Get Involved
-              </h3>
-              <ul role="list" class="mt-6 space-y-4">
-                <li v-for="item in navigation.solutions" :key="item.name">
-                  <NuxtLink
-                    :href="item.href"
-                    class="text-sm leading-6 text-gray-300 hover:text-white"
-                    >{{ item.name }}</NuxtLink
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="mt-10 md:mt-0">
-              <h3 class="text-sm font-semibold leading-6 text-white">
-                Resources
-              </h3>
-              <ul role="list" class="mt-6 space-y-4">
-                <li v-for="item in navigation.support" :key="item.name">
-                  <NuxtLink
-                    :href="item.href"
-                    class="text-sm leading-6 text-gray-300 hover:text-white"
-                    >{{ item.name }}</NuxtLink
-                  >
-                </li>
-              </ul>
-            </div>
+      <div class="grid grid-cols-5">
+        <div class="col-span-3 flex justify-start gap-28">
+          <div class="">
+            <h3 class="text-sm font-semibold leading-6 text-white">
+              Get Involved
+            </h3>
+            <ul role="list" class="mt-6 space-y-4">
+              <li v-for="item in navigation.solutions" :key="item.name">
+                <NuxtLink
+                  :href="item.href"
+                  class="text-sm leading-6 text-gray-300 hover:text-white"
+                  >{{ item.name }}</NuxtLink
+                >
+              </li>
+            </ul>
           </div>
-          <div class="md:grid md:grid-cols-2 md:gap-8">
-            <div>
-              <h3 class="text-sm font-semibold leading-6 text-white">
-                Company
-              </h3>
-              <ul role="list" class="mt-6 space-y-4">
-                <li v-for="item in navigation.company" :key="item.name">
-                  <NuxtLink
-                    :href="item.href"
-                    class="text-sm leading-6 text-gray-300 hover:text-white"
-                    >{{ item.name }}</NuxtLink
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="mt-10 md:mt-0">
-              <h3 class="text-sm font-semibold leading-6 text-white">Legal</h3>
-              <ul role="list" class="mt-6 space-y-4">
-                <li v-for="item in navigation.legal" :key="item.name">
-                  <NuxtLink
-                    :href="item.href"
-                    class="text-sm leading-6 text-gray-300 hover:text-white"
-                    >{{ item.name }}</NuxtLink
-                  >
-                </li>
-              </ul>
-            </div>
+          <div class="">
+            <h3 class="text-sm font-semibold leading-6 text-white">Legal</h3>
+            <ul role="list" class="mt-6 space-y-4">
+              <li v-for="item in navigation.legal" :key="item.name">
+                <NuxtLink
+                  :href="item.href"
+                  class="text-sm leading-6 text-gray-300 hover:text-white"
+                  >{{ item.name }}</NuxtLink
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="">
+            <h3 class="text-sm font-semibold leading-6 text-white">About</h3>
+            <ul role="list" class="mt-6 space-y-4">
+              <li v-for="item in navigation.company" :key="item.name">
+                <NuxtLink
+                  :href="item.href"
+                  class="text-sm leading-6 text-gray-300 hover:text-white"
+                  >{{ item.name }}</NuxtLink
+                >
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="mt-10 xl:mt-0" id="newsletter">
-          <h3 class="text-sm font-semibold leading-6 text-white">
-            Subscribe to our newsletter
-          </h3>
-          <p class="mt-2 text-sm leading-6 text-gray-300">
-            The latest news, articles, and resources, sent to your inbox weekly.
-          </p>
-          <form class="mt-6 sm:flex sm:max-w-md">
-            <label for="email-address" class="sr-only">Email address</label>
-            <input
-              ref="newsletterInput"
-              type="email"
-              name="email-address"
-              id="email-address"
-              autocomplete="email"
-              required
-              class="w-full min-w-0 appearance-none rounded-md border-0 bg-cota-darkergrey px-3 py-1.5 text-base text-cota-on-secondary shadow-sm placeholder:text-cota-primary focus:shadow-lg focus:shadow-cota-primary transition-shadow duration-300 sm:w-64 sm:text-sm sm:leading-6 xl:w-full"
-              placeholder="Enter your email"
-              @blur="removeHash"
-            />
-            <div class="mt-4 sm:ml-4 sm:mt-0 sm:flex-shrink-0">
-              <button
-                type="submit"
-                class="flex w-full items-center justify-center rounded-md bg-primary px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-primary-[100] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cota-primary"
-              >
-                Subscribe
-              </button>
+        <div class="bg-green col-span-2 justify-between grid-cols-1">
+          <div>
+            <div class="xl:mt-0" id="newsletter">
+              <h3 class="text-sm font-semibold leading-6 text-white">
+                Subscribe to our newsletter
+              </h3>
+              <p class="mt-2 text-sm leading-6 text-gray-300">
+                The latest news, articles, and resources, sent to your inbox
+                weekly.
+              </p>
+              <form class="mt-6 sm:flex sm:max-w-md">
+                <label for="email-address" class="sr-only">Email address</label>
+                <input
+                  ref="newsletterInput"
+                  type="email"
+                  name="email-address"
+                  id="email-address"
+                  autocomplete="email"
+                  required
+                  class="w-full min-w-0 appearance-none rounded-md border-0 bg-cota-darkergrey px-3 py-1.5 text-base text-cota-on-secondary shadow-sm placeholder:text-cota-primary focus:shadow-lg focus:shadow-cota-primary transition-shadow duration-300 sm:w-64 sm:text-sm sm:leading-6 xl:w-full"
+                  placeholder="Enter your email"
+                  @blur="removeHash"
+                />
+                <div class="mt-4 sm:ml-4 sm:mt-0 sm:flex-shrink-0">
+                  <button
+                    type="submit"
+                    class="flex w-full items-center justify-center rounded-md bg-primary px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-primary-[100] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cota-primary"
+                  >
+                    Subscribe
+                  </button>
+                </div>
+              </form>
             </div>
-          </form>
+            <div class="flex space-x-6 md:order-2 mt-6">
+              <NuxtLink
+                v-for="item in navigation.social"
+                :key="item.name"
+                :href="item.href"
+                class="text-cota-primary hover:text-gray-400"
+              >
+                <span class="sr-only">{{ item.name }}</span>
+                <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
+              </NuxtLink>
+            </div>
+          </div>
         </div>
       </div>
       <div
-        class="mt-16 border-t border-cota-darkergrey pt-8 sm:mt-20 md:flex md:items-center md:justify-between lg:mt-24"
+        class="mt-16 border-t border-cota-primary pt-8 sm:mt-20 md:flex md:items-center md:justify-between lg:mt-24"
       >
-        <div class="flex space-x-6 md:order-2">
-          <NuxtLink
-            v-for="item in navigation.social"
-            :key="item.name"
-            :href="item.href"
-            class="text-gray-500 hover:text-gray-400"
-          >
-            <span class="sr-only">{{ item.name }}</span>
-            <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
-          </NuxtLink>
-        </div>
-        <p class="mt-8 text-xs leading-5 text-gray-400 md:order-1 md:mt-0">
+        <p class="mt-8 text-xs leading-5 text-gray-400 md:mt-0">
           &copy; 2023 alphalist GmbH. All rights reserved.
         </p>
+        <div class="flex space-x-6 h-5">
+          <NuxtImg src="/alphalist_logo_white.png" />
+        </div>
       </div>
     </div>
   </footer>
@@ -124,42 +112,40 @@ import { defineComponent, h } from "vue";
 
 const newsletterInput = ref<HTMLElement | null>(null);
 
-
 const focusNewsletterInput = () => {
-  if (window.location.hash === '#newsletter' && newsletterInput.value) {
+  if (window.location.hash === "#newsletter" && newsletterInput.value) {
     (newsletterInput.value as HTMLInputElement).focus();
   }
 };
 
 onMounted(() => {
   focusNewsletterInput();
-  window.addEventListener('hashchange', focusNewsletterInput);
+  window.addEventListener("hashchange", focusNewsletterInput);
 });
 
 onUnmounted(() => {
-  window.removeEventListener('hashchange', focusNewsletterInput);
+  window.removeEventListener("hashchange", focusNewsletterInput);
 });
 
 const removeHash = () => {
-  if (window.location.hash === '#newsletter') {
-    history.pushState("", document.title, window.location.pathname + window.location.search);
+  if (window.location.hash === "#newsletter") {
+    history.pushState(
+      "",
+      document.title,
+      window.location.pathname + window.location.search
+    );
   }
 };
 
-
 const navigation = {
   solutions: [
-    { name: "Partnering", href: "/partners" },
-    { name: "Speaking", href: "/speakers" },
-  ],
-  support: [
-    { name: "All Speakers", href: "#" },
-    { name: "All Talks", href: "#" },
+    { name: "as a Partner", href: "/partners" },
+    { name: "as a Speaker", href: "/speakers" },
+    { name: "as a Curator", href: "/speakers" },
   ],
   company: [
-    { name: "About", href: "#" },
-    { name: "Blog", href: "#" },
-    { name: "Jobs", href: "#" },
+    { name: "code.talks", href: "#" },
+    { name: "alphalist", href: "#" },
   ],
   legal: [
     { name: "Claim", href: "#" },
