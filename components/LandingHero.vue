@@ -33,11 +33,9 @@
               </div>
             </div>
             <div class="text-center">
-              <h1
-                class="text-4xl font-bold font-mono tracking-tight uppercase text-white sm:text-7xl outline-text"
-              >
+              <HeroHeadline>
                 Germanys Greatest Developer Conference
-              </h1>
+              </HeroHeadline>
               <h2 class="mt-6 text-3xl  leading-8 text-gray-100">
                 Broaden your horizons, get in touch with the community
               </h2>
@@ -46,11 +44,8 @@
               </h3>
 
               <div class="mt-10 flex items-center justify-center gap-x-6">
-                <NuxtLink
-                  href="#"
-                  class="rounded-md px-3.5 py-2 text-sm font-semibold text-cota-on-primary bg-cota-primary"
-                  >Tickets</NuxtLink
-                >
+                <PrimaryBtn link="#">Tickets</PrimaryBtn>
+                
                 <NuxtLink
                   class="text-sm font-semibold text-white"
                   @click="dialogOpen = true"
@@ -168,10 +163,6 @@ watch(dialogOpen, (newVal) => {
 </script>
 
 <style scoped>
-.outline-text {
-  -webkit-text-stroke: 1px #1aba8b;
-  color: transparent;
-}
 
 .gradient-border {
   border-width: 2px;

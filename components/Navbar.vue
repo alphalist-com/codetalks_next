@@ -2,16 +2,16 @@
     <header class="sticky top-0 z-20">
     <nav
       :class="[
-        'mx-auto h-16 px-5 lg:px-6 pt-0.5 lg:pt-3 relative overflow-clip bg-cota-background/80 backdrop-filter backdrop-blur-md',
+        'mx-auto h-16 px-6 pt-2.5 relative overflow-clip bg-cota-background/80 backdrop-filter backdrop-blur-md',
         { 'shadow-md shadow-cota-primary': !isAtTop }
       ]"
       aria-label="Global"
     >
       <div class="max-w-7xl flex items-center justify-between mx-auto">
         <div class="flex lg:flex-1">
-          <NuxtLink href="/" class="lg:-my-2.5 lg:-mx-0 -my-0 -mx-3">
+          <NuxtLink href="/" class="-my-0 -mx-3">
             <span class="sr-only">code.talks</span>
-            <img class="h-10 w-auto pt-1 lg:pt-0" src="/cota_logo.png"/>
+            <img class="h-10 w-auto" src="/cota_logo.png"/>
           </NuxtLink>
         </div>
         <div class="flex lg:hidden">

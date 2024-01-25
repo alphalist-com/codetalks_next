@@ -2,16 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-    .btn-green {
-      @apply py-2 px-4 bg-cota-primary text-dark font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
-    }
-
-    .btn-white { 
-        @apply p-2 bg-secondary text-cota-primary
-    }
-
-    .frosted-glass {
-      @apply shadow-lg backdrop-filter backdrop-blur-md bg-frosted-glass-texture/50 bg-gradient-to-br from-white/30 via-70% via-transparent to-black/80
-    }
+@layer base {
+  h1 {
+    @apply text-4xl font-bold font-mono tracking-tight uppercase sm:text-7xl text-transparent;
   }
+}
+
+@layer components {
+  .frosted-glass {
+    @apply shadow-lg backdrop-filter backdrop-blur-md bg-frosted-glass-texture/50 bg-gradient-to-br from-white/30 via-70% via-transparent to-black/80;
+  }
+}
