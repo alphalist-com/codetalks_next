@@ -2,7 +2,7 @@
     <header class="sticky top-0 z-20">
     <nav
       :class="[
-        'mx-auto h-16 px-6 pt-2.5 relative overflow-clip bg-cota-background/80 backdrop-filter backdrop-blur-md',
+        'mx-auto h-16 px-6 pt-2 relative overflow-clip bg-cota-background/80 backdrop-filter backdrop-blur-md',
         { 'shadow-md shadow-cota-primary': !isAtTop }
       ]"
       aria-label="Global"
@@ -11,7 +11,7 @@
         <div class="flex lg:flex-1">
           <NuxtLink href="/" class="-my-0 -mx-3">
             <span class="sr-only">code.talks</span>
-            <img class="h-10 w-auto" src="/cota_logo.png"/>
+            <img class="h-12 w-auto" src="/cota_logo.png"/>
           </NuxtLink>
         </div>
         <div class="flex lg:hidden">
@@ -48,9 +48,9 @@
         class="fixed inset-y-0 right-0 z-20 w-full overflow-y-auto bg-cota-background px-5 pt-0.5 lg:pt-3  sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
       >
         <div class="flex items-center justify-between mb-10">
-          <NuxtLink href="/" class="lg:-my-2.5 lg:-mx-0 -my-0 -mx-3">
+          <NuxtLink href="/" class="lg:-my-2.5 lg:-mx-0 pt-1.5 -mx-2">
             <span class="sr-only">code.talks</span>
-            <img class="h-14 w-auto pt-1 lg:pt-0" src="/cota_logo.png"/>
+            <img class="h-12 w-auto lg:pt-0" src="/cota_logo.png"/>
           </NuxtLink>
           <button
             type="button"
@@ -109,7 +109,6 @@ const navigation = [
   { name: 'Talks', href: '/talks' },
   { name: 'Speakers', href: '/speakers' },
   { name: 'Partners', href: '/partners' },
-  { name: 'Curators', href: '/curators' },
   { name: 'About Us', href: '/about-us' }
 ]
 
