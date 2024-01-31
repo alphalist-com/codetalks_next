@@ -56,9 +56,10 @@
                 The latest news, articles, and resources, sent to your inbox
                 weekly.
               </p>
-              <form class="mt-6 sm:flex sm:max-w-md">
+              <form class="mt-6 sm:flex sm:max-w-md" @submit.prevent="handleSubmit">
                 <label for="email-address" class="sr-only">Email address</label>
                 <input
+                  :v-model="email"
                   ref="newsletterInput"
                   type="email"
                   name="email-address"
@@ -108,7 +109,17 @@
 </template>
 
 <script setup lang="ts">
-import { defineComponent, h } from "vue";
+import { ref, defineComponent, h } from "vue";
+import axios from 'axios';
+
+type SubscriptionResult = {
+  success: boolean;
+  message: string;
+};
+
+
+const email = ref('');
+const emit = defineEmits(['submissionResult']);
 
 const newsletterInput = ref<HTMLElement | null>(null);
 
@@ -137,11 +148,21 @@ const removeHash = () => {
   }
 };
 
+const handleSubmit = async () => {
+  try {
+    // await axios.post('/api/subscribe', { email: email.value });
+    emit('submissionResult', { success: true, message: 'Subscription successful!' });
+    email.value = '';
+  } catch (error) {
+    console.error("Error during subscription:", error);
+    emit('submissionResult', { success: false, message: 'Subscription failed. Please try again.' });
+  }
+};
+
 const navigation = {
   solutions: [
     { name: "as a Partner", href: "/partners" },
     { name: "as a Speaker", href: "/speakers" },
-    { name: "as a Curator", href: "/speakers" },
   ],
   company: [
     { name: "code.talks", href: "#" },
@@ -211,3 +232,5 @@ const navigation = {
   ],
 };
 </script>
+
+

@@ -7,8 +7,7 @@ export default defineNuxtConfig({
     "@nuxtjs/google-fonts",
     {
       families: {
-        Roboto: true,
-        "Roboto Mono": true,
+        Roboto: [100,300,400,500,700, 900],
         download: true,
         inject: true,
       },

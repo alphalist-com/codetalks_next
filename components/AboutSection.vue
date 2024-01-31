@@ -1,19 +1,22 @@
 <template>
   <div class="-mr-12">
     <div>
-      <div class="mx-auto max-w-7xl sm:px-6 px-0 pb-32 pt-36 sm:pt-60 lg:px-8 lg:pt-32">
+      <div class="mx-auto max-w-7xl sm:px-6 px-0 pt-36 sm:pt-60 lg:px-8 lg:pt-32">
         <div
           class="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center"
         >
           <div class="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
-            <h1
+            <SectionHeader>
+
+              BROADEN YOUR
+              <SectionHeaderHighlightText text="HORIZON!"/>
+            </SectionHeader>
+            <h3
               class="text-4xl font-bold tracking-tight text-cota-secondary sm:text-6xl"
             >
-              BROADEN YOUR
-              <span class="text-cota-primary font-thin">HORIZON!</span>
-            </h1>
+            </h3>
             <p
-              class="relative mt-6 text-lg font-mono pr-8 sm:pr-0 leading-8 text-cota-secondary sm:max-w-md lg:max-w-none"
+              class="relative mt-6 pr-8 sm:pr-0 leading-8 font-light text-cota-secondary sm:max-w-md lg:max-w-none"
             >
               code.talks offers a varied program with more than 100 talks from
               14 subject areas. More than 130 national and international
@@ -27,12 +30,11 @@
               celebrate wildly or let the day end in a relaxed way just as you
               prefer.
             </p>
-            <div class="mt-6"/>
-            <NuxtLink
-                  href="#"
-                  class=" rounded-md px-3.5 py-2 text-sm font-semibold text-cota-on-primary bg-cota-primary"
-                  >Tickets</NuxtLink
-                >
+            <div class="mt-14">
+
+
+            <PrimaryBtn link="#">explore program</PrimaryBtn>
+            </div>
           </div>
           <div
             class="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0"

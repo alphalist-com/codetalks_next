@@ -34,11 +34,8 @@
           >
         </div>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-          <NuxtLink
-            href="#"
-            class="rounded-md bg-white outline-3 outline-cota-primary px-3.5 py-2 text-sm font-semibold text-cota-on-secondary shadow-sm  transition-shadow duration-500 hover:shadow-2xl shadow-cota-primary"
-            >Tickets</NuxtLink
-          >
+          
+          <OutlineBtn link="#">Get your tickets</OutlineBtn>
         </div>
       </div>
     </nav>
@@ -73,11 +70,7 @@
               >
             </div>
             <div class="py-6 -ml-3">
-              <NuxtLink
-                href="#"
-                class="rounded-md bg-white outline-2 outline-cota-primary px-3.5 py-2 text-sm font-semibold text-cota-on-secondary shadow-sm hover:shadow-lg shadow-cota-primary"
-                >Tickets</NuxtLink
-              >
+              <OutlineBtn link="#">Get your tickets</OutlineBtn>
             </div>
           </div>
         </div>

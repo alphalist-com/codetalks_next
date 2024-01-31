@@ -1,35 +1,27 @@
 <template>
-  <div>
+  <div > 
     <LandingHero />
-    <div class="relative overflow-hidden">
-      <div
-        class="absolute top-0 left-0 right-0 h-full max-h-[1250vh] md:max-h-[850vh] -z-20 bg-cota-background"
-      >
-        <SyntaxHighlighter :code="formattedCode" />
-      </div>
-      <div class="relative z-10 bg-cota-background bg-opacity-40">
-        <div class="px-12">
-          <AboutSection/>
-          <CtaSection :items="ctas" />
-          <GallerySection :imageInfos="pictures" />
-          <FactsSection />
-          <NetworkBrandSection />
-          <SpeakerSection
-            title="OUR"
-            titleHighlight="SPEAKERS"
-            subtitle="Just a few the brilliant minds of code.talks"
-            :buttons="[
-              { text: 'See all Speakers', link: '#', arrow: true },
-              {
-                text: 'Become a Speaker',
-                link: 'https://www.youtube.com/watch?v=Kx5N5QK3rOE',
-                arrow: true,
-              },
-            ]"
-          />
-          <PartnerSection />
-        </div>
-      </div>
+
+    <div class="px-12">
+      <AboutSection class="overflow-hidden" />
+      <CtaSection :items="ctas" />
+      <NetworkBrandSection />
+      <GallerySection :imageInfos="pictures" />
+      <FactsSection />
+      <SpeakerSection
+        title="OUR"
+        titleHighlight="SPEAKERS"
+        subtitle="Whether they are legends of the tech scene, authors, or professionals in their field, we curate the most relevant experts for you and your daily work."
+        :buttons="[
+          { text: 'See all Speakers', link: '#', arrow: true },
+          {
+            text: 'Become a Speaker',
+            link: 'https://www.youtube.com/watch?v=Kx5N5QK3rOE',
+            arrow: true,
+          },
+        ]"
+      />
+      <PartnerSection />
     </div>
   </div>
 </template>
@@ -53,28 +45,28 @@ const pictures = [
   },
   { url: "/gallery/cota-3.png", focusPoint: "20% 80%" },
   { url: "/gallery/cota-4.png", focusPoint: "50% 30%" },
-  { url: "/gallery/cota-5.png", focusPoint: "50% 45%" }
+  { url: "/gallery/cota-5.png", focusPoint: "50% 45%" },
 ];
 
 const ctas = [
   {
     name: "MEET",
     description:
-      "code.talks offers a varied program with more than 100 talks from 14 subject areas. More than 130 national.",
+      "For over 10 years, the two-day code.talks event has been annually bringing together over 3000 developers and top companies from the entire tech industry.",
     icon: "🌍",
     cta: "See more",
   },
   {
     name: "TALK",
     description:
-      "code.talks offers a varied program with more than 100 talks from 14 subject areas. More than 130 national.",
+      "More than 130 national and international speakers will provide their professional insights on current and future trends from the tech scene to you on eight stages. Choose your favourite!",
     icon: "👋",
     cta: "See more",
   },
   {
     name: "CODE",
     description:
-      "code.talks offers a varied program with more than 100 talks from 14 subject areas. More than 130 national.",
+      "Don't miss out on the legendary after conference party on the first day of the event and try out the latest tech gadgets or play some never-forgotten game classics.",
     icon: "💻",
     cta: "See more",
   },

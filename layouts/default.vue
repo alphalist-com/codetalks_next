@@ -1,12 +1,34 @@
 <template>
   <Navbar/>
-  <div>
+  <div class="bg-cota-background">
     <slot/>
   </div>
-  <FooterSection id="footer"/>
+  <FooterSection @submission-result="handleSubscriptionResult" id="footer"/>
+  <NotificationComponent 
+    :show="showNotification" 
+    :message="notificationMessage" 
+    :isSuccess="isSuccess"
+    @close="showNotification = false"
+  />
 </template>
+<script setup lang="ts">
+import { ref } from 'vue';
 
-<script lang="ts" setup>
+type SubscriptionResult = {
+  success: boolean;
+  message: string;
+};
+
+const showNotification = ref(false);
+const notificationMessage = ref('');
+const isSuccess = ref(false);
+
+const handleSubscriptionResult = (result: SubscriptionResult) => {
+  notificationMessage.value = result.message;
+  isSuccess.value = result.success;
+  showNotification.value = true;
+};
+
 </script>
 
 <style>

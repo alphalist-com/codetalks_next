@@ -1,66 +1,83 @@
 <template>
   <div class="bg-transparent sm:py-8 z-10 -mx-10 sm:-mx-0">
     <div class="text-center">
-      <h2 class="text-3xl font-extrabold tracking-tight text-cota-secondary sm:text-4xl">
-        {{ title }} <span class="text-cota-primary font-extralight">{{ titleHighlight }}</span>
-      </h2>
-      <p class="mt-4 px-16 sm:mx-10 text-xl leading-8 text-cota-secondary">{{ subtitle }}</p>
+      <SectionHeader>
+        {{ title }}
+        <SectionHeaderHighlightText :text="titleHighlight!" />
+      </SectionHeader>
+      <SectionSubHeadline class="mt-4 px-16 sm:mx-10">{{
+        subtitle
+      }}</SectionSubHeadline>
     </div>
-      <ul
+    <ul
       role="list"
-      class="mx-auto max-w-fit mt-12 grid grid-cols-2 gap-6 px-4 sm:grid-cols-3 sm:px-6 md:grid-cols-4 xl:grid-cols-6"
+      class="mx-auto max-w-fit mt-12 grid grid-cols-2 gap-6 px-4 sm:grid-cols-3 sm:px-6 md:grid-cols-4 xl:grid-cols-6 relative"
     >
+      <div
+        class="z-20 absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-black from-20% to-transparent to-100%"
+      ></div>
+
       <li
         v-for="speaker in getSpeakers"
         :key="speaker.name"
-        class="relative flex flex-col items-center w-40 h-64 rounded-md p-1 hover:p-0 transition-all text-sm font-semibold text-cota-green shadow-lg backdrop-filter backdrop-blur-md bg-gradient-to-br firefox:bg-opacity-90 from-10% from-white/30 to-85% to-white/5 bg-frosted-glass-texture/50"
+        class="relative flex flex-col items-center w-40 h-64 cursor-pointer"
       >
         <div
-          class="relative w-full h-full rounded-md overflow-hidden shadow-lg"
+          class="relative w-full h-full cota-material rounded-lg overflow-hidden"
         >
           <img
-            class="absolute top-0 left-0 w-full h-full object-cover"
+            class="w-full h-full object-cover"
             :src="speaker.imageUrl"
             :alt="speaker.name"
           />
           <div
             class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-2"
           >
-            <h3 class="text-lg font-semibold text-white">{{ speaker.name }}</h3>
-            <p class="text-sm text-gray-300">{{ speaker.position }}</p>
+            <div class="grid grid-cols-10">
+              <p
+                class="col-span-10 text-md text-clip line-clamp-1 font-semibold text-white"
+              >
+                {{ speaker.name }}
+              </p>
+              <p
+                class="col-span-10 text-sm text-ellipsis line-clamp-1 text-gray-300"
+              >
+                {{ speaker.position }}
+              </p>
+              <p
+                class="col-span-9 text-sm text-clip h-4 line-clamp-1 text-gray-300"
+              >
+                {{ speaker.company }}
+              </p>
+              <button
+                class="col-span-1 items-center justify-center w-4 h-4 cota-material rounded-full"
+              >
+                <p class="text-cota-primary text-xs">i</p>
+              </button>
+            </div>
           </div>
         </div>
       </li>
     </ul>
-    <div class="mt-10 flex flex-col sm:flex-row  items-center justify-center gap-x-6 mx-14">
-      <NuxtLink
-        v-for="button in buttons"
-        :key="button.text"
-        :href="button.link"
-        class="rounded-md px-3.5 py-2 mb-4 text-md font-semibold text-cota-on-primary bg-cota-primary"
-      >
-        {{ button.text }} <span v-if="button.arrow" aria-hidden="true">→</span>
-      </NuxtLink>
+    <div
+      class="flex flex-col sm:flex-row items-center justify-center gap-x-6 mx-14"
+    >
+      <PrimaryBtn link="/speakers">Explore speaker</PrimaryBtn>
     </div>
   </div>
 </template>
 
-
 <script setup lang="ts">
-
-import type { Button } from '@/utils/types/button';
-import type { Speaker } from '@/utils/types/speaker';
-import { defineProps } from 'vue';
-
+import type { Button } from "@/utils/types/button";
+import type { Speaker } from "@/utils/types/speaker";
 
 const props = defineProps({
   title: String,
   titleHighlight: String,
   subtitle: String,
   buttons: Array<Button>,
-  speakerList: Array<Speaker>
+  speakerList: Array<Speaker>,
 });
-
 
 const getSpeakers = computed(() => {
   if (props.speakerList != null) {
@@ -126,7 +143,7 @@ const speakers = [
     imageUrl:
       "https://codetalks.de/storage/images/persons/thumbnails/Barbara_Wittenberg-10c929c0881d0c86b859a22161bef757.jpg",
   },
-  
+
   {
     name: "Philipp Gentz",
     company: "Synatix GmbH",

@@ -2,14 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  h1 {
-    @apply text-4xl font-bold font-mono tracking-tight uppercase sm:text-7xl text-transparent;
-  }
-}
 
 @layer components {
-  .frosted-glass {
-    @apply shadow-lg backdrop-filter backdrop-blur-md bg-frosted-glass-texture/50 bg-gradient-to-br from-white/30 via-70% via-transparent to-black/80;
+  .cota-material {
+    @apply border border-cota-primary rounded-md bg-cota-background/70 backdrop-filter backdrop-blur-md
   }
 }

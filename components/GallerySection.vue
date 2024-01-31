@@ -1,6 +1,6 @@
 <template>
-  <section class="isolate overflow-hidden -mx-12">
-    <div class="relative mx-auto max-w-3xl my-28 lg:max-w-4xl">
+  <section class="isolate overflow-hidden">
+    <div class="relative mx-auto my-10">
       <Swiper
         :slidesPerView="1"
         :spaceBetween="30"

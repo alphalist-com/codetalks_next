@@ -36,20 +36,17 @@
               <HeroHeadline>
                 Germanys Greatest Developer Conference
               </HeroHeadline>
-              <h2 class="mt-6 text-3xl  leading-8 text-gray-100">
-                Broaden your horizons, get in touch with the community
-              </h2>
-              <h3 class="mt-6 text-xl font-extrabold leading-6 text-gray-100">
-                19 & 20 Sept. 2024, Hamburg
-              </h3>
+              <HeroSubHeadline class="lg:mt-11 mt-6">
+                19. & 20. September 2024 in Hamburg
+              </HeroSubHeadline>
 
-              <div class="mt-10 flex items-center justify-center gap-x-6">
-                <PrimaryBtn link="#">Tickets</PrimaryBtn>
+              <div class="mt-32 grid grid-cols-1 items-center justify-evenly gap-6">
+                <PrimaryBtn link="#">GET your tickets</PrimaryBtn>
                 
                 <NuxtLink
-                  class="text-sm font-semibold text-white"
+                  class="text-sm mt-6 font-semibold text-white"
                   @click="dialogOpen = true"
-                  >RECAP 2023 <span aria-hidden="true">→</span></NuxtLink
+                  >RECAP MOVIE 2023 <span aria-hidden="true">></span></NuxtLink
                 >
               </div>
             </div>
