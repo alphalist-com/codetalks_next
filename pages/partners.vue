@@ -76,6 +76,9 @@
     </div>
 
     <GallerySection class="px-12" :image-infos="pictures" />
+    <div class="p-20 flex justify-center">
+      <PrimaryBtn  link="#">Apply as Partner</PrimaryBtn>
+    </div>
   </div>
 </template>
 
