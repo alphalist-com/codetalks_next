@@ -1,4 +1,6 @@
 <template>
+  <div>
+
   <div class="bg-transparent sm:py-8 z-10 -mx-10 sm:-mx-0">
     <div class="text-center">
       <SectionHeader>
@@ -65,20 +67,8 @@
       <PrimaryBtn link="/speakers">Explore speaker</PrimaryBtn>
     </div>
   </div>
-    <Dialog
-      @close="dialogClosed"
-      :open="dialogOpen"
-      class="fixed inset-0 flex items-center justify-center z-20"
-    >
-      <div
-        class="fixed inset-0 bg-black bg-opacity-50"
-        @click="dialogOpen = false"
-      ></div>
-      <DialogPanel
-        class="relative border-2 border-cota-primary mx-auto p-1 rounded-md text-sm font-semibold text-cota-secondary z-30"
-      >
-      </DialogPanel>
-    </Dialog>
+
+  </div>
 </template>
 
 <script setup lang="ts">
