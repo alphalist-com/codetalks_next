@@ -70,7 +70,7 @@
       <SectionHeader
         >WHAT <SectionHeaderHighlightText text="PARTNERSHIP"
       /> MEANS TO US</SectionHeader>
-      <NormalTextBlock class="mx-auto">
+      <NormalTextBlock class="mx-auto px-12">
         At code.talks, a partnership means embarking on a journey of collaboration and innovation, where we work hand-in-hand to create meaningful experiences and drive the tech community forward. It's about building relationships that not only showcase your brand's strengths but also contribute to the growth and enrichment of the entire tech ecosystem.
       </NormalTextBlock>
     </div>
