@@ -66,88 +66,20 @@
       </div>
     </div>
     <CtaSection :items="ctas" />
-    <GallerySection :image-infos="pictures" />
-    <div class="py-32 overflow">
-      <div class="mx-auto max-w-7xl px-6 lg:flex lg:px-8">
-        <div
-          class="mx-auto grid max-w-2xl grid-cols-1 gap-x-12 gap-y-16 lg:mx-0 lg:min-w-full lg:max-w-none lg:flex-none lg:gap-y-8"
-        >
-          <div class="lg:col-end-1 lg:w-full lg:max-w-lg lg:pb-8">
-            <h2
-              class="text-3xl font-extrabold tracking-tight text-cota-secondary sm:text-4xl"
-            >
-              LET’S GET
-              <span class="text-cota-primary font-extralight">PARTNER</span> IN
-              CODE
-            </h2>
-            <p class="mt-6 text-xl leading-8 text-cota-secondary">
-              In recent years, the code.talks in Hamburg has become one of the
-              largest and most popular development conferences in Europe.
-              Therefore, we would like to give interested companies the
-              opportunity to participate in our conference, to present
-              themselves and get in contact with the community in a relaxed
-              atmosphere.
-            </p>
-            <div class="mt-10 flex gap-x-6">
-              <NuxtLink
-                href="#"
-                class="rounded-md px-3.5 py-2 text-sm font-semibold text-cota-on-primary bg-cota-primary"
-                >Find our more</NuxtLink
-              >
-            </div>
-          </div>
-          <div
-            class="flex flex-wrap items-start justify-end gap-6 sm:gap-8 lg:contents"
-          >
-            <div
-              class="w-0 flex-auto lg:ml-auto lg:w-auto lg:flex-none lg:self-end"
-            >
-              <img
-                src="/partner_images/p1.jpg"
-                alt=""
-                class="aspect-[7/5] w-[37rem] max-w-none rounded-2xl object-cover"
-              />
-            </div>
-            <div
-              class="contents lg:col-span-2 lg:col-end-2 lg:ml-auto lg:flex lg:w-[37rem] lg:items-start lg:justify-end lg:gap-x-8"
-            >
-              <div
-                class="order-first flex w-64 flex-none justify-end self-end lg:w-auto"
-              >
-                <img
-                  src="/partner_images/p3.jpg"
-                  alt=""
-                  class="aspect-[4/3] w-[24rem] max-w-none flex-none rounded-2xl object-cover"
-                />
-              </div>
-              <div
-                class="flex w-96 flex-auto justify-end lg:w-auto lg:flex-none"
-              >
-                <img
-                  src="/partner_images/p2.jpg"
-                  alt=""
-                  class="aspect-[7/5] w-[37rem] max-w-none flex-none rounded-2xl object-cover"
-                />
-              </div>
-              <div
-                class="hidden sm:block sm:w-0 sm:flex-auto lg:w-auto lg:flex-none"
-              >
-                <img
-                  src="/partner_images/p4.jpg"
-                  alt=""
-                  class="aspect-[4/3] w-[24rem] max-w-none rounded-2xl object-cover"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="mx-auto mt-12 max-w-6xl text-center">
+      <SectionHeader
+        >WHAT <SectionHeaderHighlightText text="PARTNERSHIP"
+      /> MEANS TO US</SectionHeader>
+      <NormalTextBlock class="mx-auto">
+        At code.talks, a partnership means embarking on a journey of collaboration and innovation, where we work hand-in-hand to create meaningful experiences and drive the tech community forward. It's about building relationships that not only showcase your brand's strengths but also contribute to the growth and enrichment of the entire tech ecosystem.
+      </NormalTextBlock>
     </div>
+
+    <GallerySection class="px-12" :image-infos="pictures" />
   </div>
 </template>
 
 <script setup lang="ts">
-
 const pictures = [
   {
     url: "/gallery/cota-1.png",
@@ -166,19 +98,19 @@ const pictures = [
 
 const ctas = [
   {
-    name: "communicate",
+    name: "INSPIRE",
     description:
-      "Become part of the community and network with developers from many different fields at code.talks.",
+      "Inspire others and share your expertise in lectures and live coding sessions with the developer community.",
     icon: "👥",
   },
   {
-    name: "inspire",
+    name: "CONNECT",
     description:
-      "Inspire others and share your expertise in lectures and live coding sessions with the developer community.",
+      "Become part of the community and network with developers from many different fields at code.talks.",
     icon: "💡",
   },
   {
-    name: "spread your message",
+    name: "BRAND",
     description:
       "Increase brand awareness and reach your target group and audience in an authentic environment.",
     icon: "📋",

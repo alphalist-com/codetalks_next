@@ -1,11 +1,11 @@
 <template>
-  <div > 
+  <div>
     <LandingHero />
 
     <div class="px-12">
       <AboutSection class="overflow-hidden" />
       <CtaSection class="mt-12" :items="ctas" />
-      <NetworkBrandSection class="mt-12"/>
+      <NetworkBrandSection class="mt-12" />
       <GallerySection class="mt-12" :imageInfos="pictures" />
       <FactsSection class="mt-12" />
       <SpeakerSection
@@ -21,9 +21,11 @@
             arrow: true,
           },
         ]"
-      />
-      <PartnerSection class="mt-40 lg:mt-12 "/>
-      <CurrentPartnersSection class="mt-8"/>
+      >
+        <PrimaryBtn link="/speakers">Explore speakers</PrimaryBtn>
+      </SpeakerSection>
+      <PartnerSection class="mt-40 lg:mt-12" />
+      <CurrentPartnersSection class="mt-8" />
     </div>
   </div>
 </template>

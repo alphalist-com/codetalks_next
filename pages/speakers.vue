@@ -14,19 +14,12 @@
         >
           <div class="max-w-4xl w-full text-center">
             <div class="text-center">
-              <h1
-                class="text-5xl font-extrabold tracking-tight uppercase text-cota-secondary"
-              >
-                Speaker
-              </h1>
-              <p class="mt-6 text-lg leading-8 text-gray-100">
-                On our stages, developer heroes, pioneers, and visionaries from
-                the field of software development give talks on the latest
-                innovations and global trends of the scene.
-              </p>
-              <p class="mt-6 text-lg font-extrabold leading-6 text-gray-100">
-                The call for papers opens on 29 February 2024.
-              </p>
+              <HeroHeadline>
+                Our speakers
+              </HeroHeadline>
+              <HeroSubHeadline class="lg:mt-11 mt-6">
+                On our stages, developer heroes, pioneers, and visionaries from the field of software development give talks on the latest innovations and global trends of the scene.
+              </HeroSubHeadline>
 
               <div class="mt-10 flex items-center justify-center gap-x-6">
                 <NuxtLink
@@ -79,7 +72,7 @@
         subtitle="The following great speakers have already attended code.talks in the past. Do you want to share your story, your new project, or your revolutionary ideas with the community as well?
 Sign up as a speaker!"
         :buttons="[
-          // { text: 'Load more Speakers', link: '#' },
+          { text: 'Load more Speakers', link: '#' },
           {
             text: 'Newsletter',
             link: '#newsletter',
@@ -87,7 +80,9 @@ Sign up as a speaker!"
           },
         ]"
         :speaker-list="speakers"
-      />
+      >
+      <PrimaryBtn link="#">more speakers</PrimaryBtn>
+    </SpeakerSection>
     </div>
   </div>
 </template>

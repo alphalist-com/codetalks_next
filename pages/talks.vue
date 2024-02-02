@@ -14,11 +14,9 @@
         >
           <div class="max-w-4xl w-full text-center">
             <div class="text-center">
-              <h1
-                class="text-5xl font-extrabold tracking-tight uppercase text-cota-secondary"
-              >
-                Program
-              </h1>
+              <HeroHeadline>
+                OUR TALKS
+              </HeroHeadline>
               <p class="mt-6 text-lg leading-8 text-gray-100">
                 Our program will be announced soon. Subscribe to our newsletter
                 to stay up to date!
@@ -66,20 +64,18 @@
     </div>
 
     <div class="py-14 px-12">
-      <h1
-        class="text-4xl font-bold tracking-tight text-cota-secondary sm:text-6xl text-center mb-12"
-      >
-        Checkout some of the great talks from our previous events
-        <!-- <span class="text-cota-primary font-thin">HORIZON!</span> -->
-      </h1>
+      <SectionHeader class="text-center">
+
+        Some great <SectionHeaderHighlightText text="talks"/> from our previous events
+      </SectionHeader>
       <div
-        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14 lg:gap-6"
+        class="max-w-7xl mt-12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14 lg:gap-6"
       >
         <div
           v-for="video in videos"
           :key="video.id"
           @click="openDialog(video.id)"
-          class="cursor-pointer rounded-lg overflow-hidden shadow-md shadow-cota-secondary"
+          class="cursor-pointer rounded-lg overflow-hidden border border-cota-primary"
         >
           <img :src="video.thumbnailUrl" :alt="video.title" class="w-full" />
         </div>
@@ -89,7 +85,7 @@
         <NuxtLink
           href="https://www.youtube.com/@code.talksbyalphalist"
           class="rounded-md px-3.5 py-2 text-sm font-semibold text-cota-on-primary bg-cota-primary"
-          >Explore more Videos</NuxtLink
+          >Visit our Youtube channel</NuxtLink
         >
       </div>
     </div>

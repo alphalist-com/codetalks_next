@@ -1,5 +1,5 @@
 <template>
-  <span class="text-cota-primary font-light">{{ text }}</span>
+  <span class="text-cota-primary font-light uppercase">{{ text }}</span>
 </template>
 
 
