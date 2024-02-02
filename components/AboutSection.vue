@@ -1,11 +1,11 @@
 <template>
-  <div class="-mr-12">
+  <div class="-mx-12">
     <div>
-      <div class="mx-auto max-w-7xl sm:px-6 px-0 pt-36 sm:pt-60 lg:px-8 lg:pt-32">
+      <div class="mx-auto max-w-7xl sm:px-6 px-0 lg:px-8 pt-32">
         <div
           class="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center"
         >
-          <div class="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
+          <div class="w-full max-w-xl lg:shrink-0 xl:max-w-2xl px-12">
             <SectionHeader>
 
               BROADEN YOUR
@@ -33,7 +33,7 @@
             <div class="mt-14">
 
 
-            <PrimaryBtn link="#">explore program</PrimaryBtn>
+            <PrimaryBtn link="/talks">explore talks</PrimaryBtn>
             </div>
           </div>
           <div

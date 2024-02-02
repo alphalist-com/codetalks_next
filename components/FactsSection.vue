@@ -2,22 +2,19 @@
   <div class="py-12">
     <div class="mx-auto max-w-7xl">
       <dl
-        class="grid grid-cols-2 gap-x-8 gap-y-16 text-center lg:grid-cols-3 xl:grid-cols-4"
+        class="flex flex-wrap gap-x-20 gap-y-16 text-center justify-evenly items-center"
       >
         <div
           v-for="stat in stats"
           :key="stat.id"
-          class="mx-auto flex max-w-xs flex-col gap-y-2"
-          :class="{ 'sm:col-start-auto': stat.id === stats.length }"
+          class="mx-auto max-w-xs gap-y-2 shrink-0"
         >
           <dd
-            class="order-first text-3xl text-cota-primary md:text-7xl"
+            class="order-first text-cota-primary text-7xl"
           >
             {{ stat.value }}
           </dd>
-          <dt class="uppercase text-3xl font-bold text-cota-secondary">
-            {{ stat.name }}
-          </dt>
+          <SectionHeader>{{ stat.name }}</SectionHeader>
         </div>
       </dl>
     </div>

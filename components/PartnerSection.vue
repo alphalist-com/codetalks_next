@@ -1,37 +1,29 @@
 <template>
   <div>
-    <div class="mx-auto max-w-7xl pt-36 sm:pt-60 lg:pt-32">
+    <div class="mx-auto max-w-7xl">
       <div
         class="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center"
       >
-        <div class="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
+        <div class="max-w-xl xl:max-w-2xl">
           <SectionHeader>
-            BROADEN YOUR
-            <SectionHeaderHighlightText text="HORIZON!" />
+            LET’S GET
+            <SectionHeaderHighlightText text="PARTNER" />
+            IN CODE
           </SectionHeader>
           <p
             class="relative mt-6 pr-8 sm:pr-0 leading-8 font-light text-cota-secondary sm:max-w-md lg:max-w-none"
           >
-            code.talks offers a varied program with more than 100 talks from 14
-            subject areas. More than 130 national and international speakers are
-            waiting for you at the two-day conference in a relaxed cinema flair
-            at the CinemaxX Dammtor in Hamburg. Let the talks and panel
-            discussions, centring on the latest innovations and global trends in
-            the tech scene, inspire you and enjoy the opportunity to exchange
-            ideas with partners, sponsors, and other developers in our Expo
-            Area. The after conference party on the first day of the event is
-            another highlight that will let you celebrate wildly or let the day
-            end in a relaxed way just as you prefer.
+          Present your company at one of the leading developer conferences, network with like-minded individuals, and share your experiences with the community. We place great emphasis on quality and personalized support to ensure your appearance is a complete success and you achieve your goals.
           </p>
           <div class="mt-14">
-            <PrimaryBtn link="#">explore program</PrimaryBtn>
+            <PrimaryBtn link="/partners">Learn more</PrimaryBtn>
           </div>
         </div>
         <div
-          class="mt-14 flex justify-start lg:flex-shrink-0 lg:order-first gap-8 sm:-mt-44 sm:pl-20 lg:mt-0 lg:pl-0"
+          class="flex justify-start lg:flex-shrink-0 lg:-ml-36 lg:order-first gap-8 sm:-mt-44 sm:pl-20 lg:mt-0 lg:pl-0"
         >
           <div
-            class="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80"
+            class="ml-auto w-44 flex-none space-y-8 pt-60 sm:ml-0 sm:pt-80 lg:order-last lg:pt-54 xl:pt-80"
           >
             <div class="relative">
               <img
@@ -45,7 +37,7 @@
             </div>
           </div>
           <div
-            class="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36"
+            class="mr-auto w-44 flex-none space-y-8 sm:mr-0 pt-36 lg:pt-0"
           >
             <div class="relative">
               <img
@@ -68,7 +60,7 @@
               />
             </div>
           </div>
-          <div class="w-44 flex-none space-y-8 pt-32 sm:pt-0">
+          <div class="w-44 flex-none space-y-8 lg:pt-36">
             <div class="relative">
               <img
                 src="/gallery/cota-4.png"

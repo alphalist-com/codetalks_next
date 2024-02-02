@@ -4,11 +4,12 @@
 
     <div class="px-12">
       <AboutSection class="overflow-hidden" />
-      <CtaSection :items="ctas" />
-      <NetworkBrandSection />
-      <GallerySection :imageInfos="pictures" />
-      <FactsSection />
+      <CtaSection class="mt-12" :items="ctas" />
+      <NetworkBrandSection class="mt-12"/>
+      <GallerySection class="mt-12" :imageInfos="pictures" />
+      <FactsSection class="mt-12" />
       <SpeakerSection
+        class="mt-20"
         title="OUR"
         titleHighlight="SPEAKERS"
         subtitle="Whether they are legends of the tech scene, authors, or professionals in their field, we curate the most relevant experts for you and your daily work."
@@ -21,7 +22,8 @@
           },
         ]"
       />
-      <PartnerSection />
+      <PartnerSection class="mt-40 lg:mt-12 "/>
+      <CurrentPartnersSection class="mt-8"/>
     </div>
   </div>
 </template>

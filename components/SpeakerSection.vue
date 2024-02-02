@@ -14,7 +14,7 @@
       class="mx-auto max-w-fit mt-12 grid grid-cols-2 gap-6 px-4 sm:grid-cols-3 sm:px-6 md:grid-cols-4 xl:grid-cols-6 relative"
     >
       <div
-        class="z-20 absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-black from-20% to-transparent to-100%"
+        class="z-20 absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-cota-background from-20% to-transparent to-100%"
       ></div>
 
       <li
@@ -65,11 +65,32 @@
       <PrimaryBtn link="/speakers">Explore speaker</PrimaryBtn>
     </div>
   </div>
+    <Dialog
+      @close="dialogClosed"
+      :open="dialogOpen"
+      class="fixed inset-0 flex items-center justify-center z-20"
+    >
+      <div
+        class="fixed inset-0 bg-black bg-opacity-50"
+        @click="dialogOpen = false"
+      ></div>
+      <DialogPanel
+        class="relative border-2 border-cota-primary mx-auto p-1 rounded-md text-sm font-semibold text-cota-secondary z-30"
+      >
+      </DialogPanel>
+    </Dialog>
 </template>
 
 <script setup lang="ts">
 import type { Button } from "@/utils/types/button";
 import type { Speaker } from "@/utils/types/speaker";
+
+const dialogOpen = ref(false);
+
+const dialogClosed = () => {
+  dialogOpen.value = false;
+};
+
 
 const props = defineProps({
   title: String,

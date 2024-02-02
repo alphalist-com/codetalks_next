@@ -35,7 +35,7 @@
         </div>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
           
-          <OutlineBtn link="#">Get your tickets</OutlineBtn>
+          <OutlineBtn :thin-version="true" link="#">Get your tickets</OutlineBtn>
         </div>
       </div>
     </nav>

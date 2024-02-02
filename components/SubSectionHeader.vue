@@ -1,5 +1,5 @@
 <template>
-  <h3 class="font-bold tracking-tight text-cota-secondary sm:text-4xl text-2xl">
+  <h3 class="font-bold tracking-tight text-cota-secondary text-3xl">
     <slot/>
   </h3>
 </template>

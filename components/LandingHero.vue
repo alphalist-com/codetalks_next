@@ -92,7 +92,7 @@
         @click="dialogOpen = false"
       ></div>
       <DialogPanel
-        class="relative mx-auto p-1 rounded-md text-sm font-semibold text-cota-green shadow-lg backdrop-filter backdrop-blur-md bg-gradient-to-br firefox:bg-opacity-90 from-10% from-white/30 to-85% to-white/5 bg-frosted-glass-texture/50 z-30"
+        class="relative mx-auto p-1 rounded-lg text-sm font-semibold text-cota-green shadow-lg backdrop-filter backdrop-blur-md border-2 border-cota-primary bg-cota-background z-30"
       >
         <iframe
           v-if="dialogOpen"
