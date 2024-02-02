@@ -10,7 +10,7 @@
           class=" p-6 cota-material rounded-3xl"
         >
 
-          <div class="z-10 shrink-0 w-72">
+          <div class="z-10 flex-initial sm:w-72 ">
             <SubSectionHeader>LET'S <SectionHeaderHighlightText :text="item.name"/></SubSectionHeader>
             <p class="mt-2 text-cota-on-dark-material">
               {{ item.description }}

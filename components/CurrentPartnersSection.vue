@@ -32,7 +32,7 @@
       </li>
     </ul>
     <div
-      class="flex flex-col sm:flex-row items-center justify-center gap-x-6 mx-14 mt-16"
+      class="flex flex-col sm:flex-row items-center justify-center gap-x-6 pt-12 pb-28"
     >
       <PrimaryBtn link="/partners">Show more</PrimaryBtn>
     </div>

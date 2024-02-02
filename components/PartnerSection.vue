@@ -20,7 +20,7 @@
           </div>
         </div>
         <div
-          class="flex justify-start lg:flex-shrink-0 lg:-ml-36 lg:order-first gap-8 sm:-mt-44 sm:pl-20 lg:mt-0 lg:pl-0"
+          class="flex justify-start lg:flex-shrink-0 lg:-ml-36 lg:order-first gap-8 -mt-44 sm:pl-20 lg:mt-0 lg:pl-0"
         >
           <div
             class="ml-auto w-44 flex-none space-y-8 pt-60 sm:ml-0 sm:pt-80 lg:order-last lg:pt-54 xl:pt-80"

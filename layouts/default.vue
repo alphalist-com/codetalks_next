@@ -1,4 +1,8 @@
 <template>
+  <head>
+    <meta name="theme-color" content="#020811">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  </head>
   <Navbar/>
   <div class="bg-cota-background">
     <slot/>
