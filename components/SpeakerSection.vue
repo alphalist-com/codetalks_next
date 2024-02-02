@@ -1,73 +1,71 @@
 <template>
   <div>
-
-  <div class="bg-transparent sm:py-8 z-10 -mx-10 sm:-mx-0">
-    <div class="text-center">
-      <SectionHeader>
-        {{ title }}
-        <SectionHeaderHighlightText :text="titleHighlight!" />
-      </SectionHeader>
-      <SectionSubHeadline class="mt-4 px-16 sm:mx-10">{{
-        subtitle
-      }}</SectionSubHeadline>
-    </div>
-    <ul
-      role="list"
-      class="mx-auto max-w-fit mt-12 grid grid-cols-2 gap-6 px-4 sm:grid-cols-3 sm:px-6 md:grid-cols-4 xl:grid-cols-6 relative"
-    >
-      <div
-        class="z-20 absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-cota-background from-20% to-transparent to-100%"
-      ></div>
-
-      <li
-        v-for="speaker in getSpeakers"
-        :key="speaker.name"
-        class="relative flex flex-col items-center w-40 h-64 cursor-pointer"
+    <div class="bg-transparent sm:py-8 z-10 -mx-10 sm:-mx-0">
+      <div class="text-center">
+        <SectionHeader>
+          {{ title }}
+          <SectionHeaderHighlightText :text="titleHighlight!" />
+        </SectionHeader>
+        <SectionSubHeadline class="mt-4 px-16 sm:mx-10">{{
+          subtitle
+        }}</SectionSubHeadline>
+      </div>
+      <ul
+        role="list"
+        class="mx-auto max-w-fit mt-12 grid grid-cols-2 gap-6 px-4 sm:grid-cols-3 sm:px-6 md:grid-cols-4 xl:grid-cols-6 relative"
       >
         <div
-          class="relative w-full h-full cota-material rounded-lg overflow-hidden"
+          class="z-20 absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-cota-background from-20% to-transparent to-100%"
+        ></div>
+
+        <li
+          v-for="speaker in getSpeakers"
+          :key="speaker.name"
+          class="relative flex flex-col items-center w-40 h-64 cursor-pointer"
         >
-          <img
-            class="w-full h-full object-cover"
-            :src="speaker.imageUrl"
-            :alt="speaker.name"
-          />
           <div
-            class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-2"
+            class="relative w-full h-full cota-material rounded-lg overflow-hidden"
           >
-            <div class="grid grid-cols-10">
-              <p
-                class="col-span-10 text-md text-clip line-clamp-1 font-semibold text-white"
-              >
-                {{ speaker.name }}
-              </p>
-              <p
-                class="col-span-10 text-sm text-ellipsis line-clamp-1 text-gray-300"
-              >
-                {{ speaker.position }}
-              </p>
-              <p
-                class="col-span-9 text-sm text-clip h-4 line-clamp-1 text-gray-300"
-              >
-                {{ speaker.company }}
-              </p>
-              <button
-                class="col-span-1 items-center justify-center w-4 h-4 cota-material rounded-full"
-              >
-                <p class="text-cota-primary text-xs">i</p>
-              </button>
+            <img
+              class="w-full h-full object-cover"
+              :src="speaker.imageUrl"
+              :alt="speaker.name"
+            />
+            <div
+              class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-2"
+            >
+              <div class="grid grid-cols-10">
+                <p
+                  class="col-span-10 text-md text-clip line-clamp-1 font-semibold text-white"
+                >
+                  {{ speaker.name }}
+                </p>
+                <p
+                  class="col-span-10 text-sm text-ellipsis line-clamp-1 text-gray-300"
+                >
+                  {{ speaker.position }}
+                </p>
+                <p
+                  class="col-span-9 text-sm text-clip h-4 line-clamp-1 text-gray-300"
+                >
+                  {{ speaker.company }}
+                </p>
+                <button
+                  class="col-span-1 items-center justify-center w-4 h-4 cota-material rounded-full"
+                >
+                  <p class="text-cota-primary text-xs">i</p>
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-      </li>
-    </ul>
-    <div
-      class="flex flex-col sm:flex-row items-center justify-center gap-x-6 mx-14"
-    >
-      <PrimaryBtn link="/speakers">Explore speaker</PrimaryBtn>
+        </li>
+      </ul>
+      <div
+        class="flex flex-col sm:flex-row items-center justify-center gap-x-6 mx-14"
+      >
+        <PrimaryBtn link="/speakers">Explore speaker</PrimaryBtn>
+      </div>
     </div>
-  </div>
-
   </div>
 </template>
 
@@ -75,12 +73,11 @@
 import type { Button } from "@/utils/types/button";
 import type { Speaker } from "@/utils/types/speaker";
 
-const dialogOpen = ref(false);
+const speakerDialogOpen = ref(false);
 
 const dialogClosed = () => {
-  dialogOpen.value = false;
+  speakerDialogOpen.value = false;
 };
-
 
 const props = defineProps({
   title: String,
