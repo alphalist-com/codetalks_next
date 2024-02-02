@@ -6,7 +6,7 @@
     <h2 id="footer-heading" class="sr-only">Footer</h2>
     <div class="mx-auto max-w-7xl px-12 pb-8 pt-8 sm:pt-24 lg:px-16 lg:pt-16">
       <div class="grid grid-cols-5">
-        <div class="col-span-3 flex justify-start gap-28">
+        <div class="col-span-5 md:col-span-3 flex justify-start md gap-20">
           <div class="">
             <h3 class="text-sm font-semibold leading-6 text-white">
               Get Involved
@@ -46,7 +46,7 @@
             </ul>
           </div>
         </div>
-        <div class="bg-green col-span-2 justify-between grid-cols-1">
+        <div class="bg-green col-span-5 mt-16 md:mt-0 md:col-span-2 justify-between grid-cols-1">
           <div>
             <div class="xl:mt-0" id="newsletter">
               <h3 class="text-sm font-semibold leading-6 text-white">
@@ -73,7 +73,7 @@
                 <div class="mt-4 sm:ml-4 sm:mt-0 sm:flex-shrink-0">
                   <button
                     type="submit"
-                    class="flex w-full items-center justify-center rounded-md bg-primary px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-primary-[100] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cota-primary"
+                    class="flex w-full items-center justify-start rounded-md bg-primary px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-primary-[100] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cota-primary"
                   >
                     Subscribe
                   </button>
@@ -95,9 +95,9 @@
         </div>
       </div>
       <div
-        class="mt-16 border-t border-cota-primary pt-8 sm:mt-20 md:flex md:items-center md:justify-between lg:mt-24"
+        class="mt-8 md:mt-16 border-t border-cota-primary pt-8 sm:mt-20 flex justify-between"
       >
-        <p class="mt-8 text-xs leading-5 text-gray-400 md:mt-0">
+        <p class="text-xs leading-5 text-gray-400 mt-0">
           &copy; 2023 alphalist GmbH. All rights reserved.
         </p>
         <div class="flex space-x-6 h-5">

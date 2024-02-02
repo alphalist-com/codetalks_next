@@ -7,17 +7,10 @@
         >
           <div class="w-full max-w-xl lg:shrink-0 xl:max-w-2xl px-12">
             <SectionHeader>
-
               BROADEN YOUR
-              <SectionHeaderHighlightText text="HORIZON!"/>
+              <SectionHeaderHighlightText text="HORIZON!" />
             </SectionHeader>
-            <h3
-              class="text-4xl font-bold tracking-tight text-cota-secondary sm:text-6xl"
-            >
-            </h3>
-            <p
-              class="relative mt-6 pr-8 sm:pr-0 leading-8 font-light text-cota-secondary sm:max-w-md lg:max-w-none"
-            >
+            <NormalTextBlock>
               code.talks offers a varied program with more than 100 talks from
               14 subject areas. More than 130 national and international
               speakers are waiting for you at the two-day conference in a
@@ -29,11 +22,10 @@
               first day of the event is another highlight that will let you
               celebrate wildly or let the day end in a relaxed way just as you
               prefer.
-            </p>
+            </NormalTextBlock>
+
             <div class="mt-14">
-
-
-            <PrimaryBtn link="/talks">explore talks</PrimaryBtn>
+              <PrimaryBtn link="/talks">explore talks</PrimaryBtn>
             </div>
           </div>
           <div
