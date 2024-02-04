@@ -82,31 +82,82 @@
       </NormalTextBlock>
     </div>
 
-    <GallerySection class="px-6" :image-infos="pictures" />
-    <div class="mt-12">
+    <GallerySection class="px-12" :image-infos="pictures" />
+    <div class="py-12">
       <div class="text-center">
         <SectionHeader
           >Big <SectionHeaderHighlightText text="shout-out"
         /></SectionHeader>
-        <SubSectionHeader
+        <SectionSubHeadline class="px-6 sm:px-12"
           >This year we like to say thank you to our beloved partners in
-          code.</SubSectionHeader
+          code.</SectionSubHeadline
         >
       </div>
-      <div>
+      <div class="mt-12 px-6 sm:px-12 max-w-7xl">
         <div
-          class="relative w-full h-full cota-material rounded-3xl px-4 py-8 backdrop-blur-md filter bg-white/10 shadow-[inset_0_0_15px_1px_rgba(0,0,0,1.0)]"
+          class="mt-12 py-12 text-center items-center cota-material rounded-3xl px-6 sm:px-12 backdrop-blur-md filter bg-white/10 shadow-[inset_0_0_15px_1px_rgba(0,0,0,1.0)]"
         >
-          <div v-for="headliner in headlinerPartner">
-            <NuxtLink :href="headliner.link">
-              <img
-                class="w-full h-full object-contain"
-                :src="headliner.logo"
-                :alt="headliner.name"
-              />
+          <PartnerClassText>Headliner</PartnerClassText>
+          <div
+            class="py-12 grid grid-cols-1 sm:grid-cols-2 gap-y-16 place-items-center"
+          >
+            <NuxtLink
+              :href="headliner.link"
+              v-for="headliner in headlinerPartner"
+            >
+              <img class="h-56" :src="headliner.logo" :alt="headliner.name" />
             </NuxtLink>
           </div>
         </div>
+
+        <div
+          class="mt-12 py-12 text-center items-center cota-material rounded-3xl px-6 sm:px-12 backdrop-blur-md filter bg-white/10 shadow-[inset_0_0_15px_1px_rgba(0,0,0,1.0)]"
+        >
+          <PartnerClassText>PRemium</PartnerClassText>
+          <div
+            class="py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:md:grid-cols-4 gap-y-16 place-items-center"
+          >
+            <NuxtLink
+              :href="headliner.link"
+              v-for="headliner in premiumPartner"
+            >
+              <img class="h-40" :src="headliner.logo" :alt="headliner.name" />
+            </NuxtLink>
+          </div>
+        </div>
+
+        <div
+          class="mt-12 py-12 text-center items-center cota-material rounded-3xl px-6 sm:px-12 backdrop-blur-md filter bg-white/10 shadow-[inset_0_0_15px_1px_rgba(0,0,0,1.0)]"
+        >
+          <PartnerClassText>TRAILBLAZERS</PartnerClassText>
+          <div
+            class="py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:md:grid-cols-4 gap-y-16 place-items-center"
+          >
+            <NuxtLink
+              :href="headliner.link"
+              v-for="headliner in trailblazersPartner"
+            >
+              <img class="h-28" :src="headliner.logo" :alt="headliner.name" />
+            </NuxtLink>
+          </div>
+        </div>
+
+        <div
+          class="mt-12 py-12 text-center items-center cota-material rounded-3xl px-6 sm:px-12 backdrop-blur-md filter bg-white/10 shadow-[inset_0_0_15px_1px_rgba(0,0,0,1.0)]"
+        >
+          <PartnerClassText>FEELGOOD</PartnerClassText>
+          <div
+            class="py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:md:grid-cols-4 gap-y-16 place-items-center"
+          >
+            <NuxtLink
+              :href="headliner.link"
+              v-for="headliner in feelgoodPartner"
+            >
+              <img class="h-28" :src="headliner.logo" :alt="headliner.name" />
+            </NuxtLink>
+          </div>
+        </div>
+        
       </div>
     </div>
   </div>
