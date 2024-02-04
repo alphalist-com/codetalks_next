@@ -68,16 +68,22 @@
     <CtaSection :items="ctas" />
     <div class="mx-auto mt-12 max-w-6xl text-center">
       <SectionHeader
-        >WHAT <SectionHeaderHighlightText text="PARTNERSHIP"
-      /> MEANS TO US</SectionHeader>
+        >WHAT <SectionHeaderHighlightText text="PARTNERSHIP" /> MEANS TO
+        US</SectionHeader
+      >
       <NormalTextBlock class="mx-auto px-12">
-        At code.talks, a partnership means embarking on a journey of collaboration and innovation, where we work hand-in-hand to create meaningful experiences and drive the tech community forward. It's about building relationships that not only showcase your brand's strengths but also contribute to the growth and enrichment of the entire tech ecosystem.
+        At code.talks, a partnership means embarking on a journey of
+        collaboration and innovation, where we work hand-in-hand to create
+        meaningful experiences and drive the tech community forward. It's about
+        building relationships that not only showcase your brand's strengths but
+        also contribute to the growth and enrichment of the entire tech
+        ecosystem.
       </NormalTextBlock>
     </div>
 
     <GallerySection class="px-12" :image-infos="pictures" />
     <div class="p-20 flex justify-center">
-      <PrimaryBtn  link="#">Apply as Partner</PrimaryBtn>
+      <PrimaryBtn link="#">Apply as Partner</PrimaryBtn>
     </div>
   </div>
 </template>
@@ -85,18 +91,25 @@
 <script setup lang="ts">
 const pictures = [
   {
-    url: "/gallery/cota-1.png",
+    url: "/partner_page/slider_1.jpeg",
     focusPoint: "50% 30%",
-    description: "Image 1 Description",
   },
   {
-    url: "/gallery/cota-2.png",
+    url: "/partner_page/slider_2.jpeg",
     focusPoint: "80% 20%",
-    description: "Image 2 Description",
   },
-  { url: "/gallery/cota-3.png", focusPoint: "20% 80%" },
-  { url: "/gallery/cota-4.png", focusPoint: "50% 30%" },
-  { url: "/gallery/cota-5.png", focusPoint: "50% 45%" },
+  { url: "/partner_page/slider_3.jpeg", focusPoint: "20% 80%" },
+  { url: "/partner_page/slider_4.jpeg", focusPoint: "50% 30%" },
+  { url: "/partner_page/slider_5.jpeg", focusPoint: "50% 50%" },
+  { url: "/partner_page/slider_6.jpeg", focusPoint: "50% 50%" },
+  { url: "/partner_page/slider_7.jpeg", focusPoint: "50% 50%" },
+  { url: "/partner_page/slider_8.jpeg", focusPoint: "50% 50%" },
+  { url: "/partner_page/slider_9.jpeg", focusPoint: "50% 50%" },
+  { url: "/partner_page/slider_10.jpeg", focusPoint: "50% 50%" },
+  { url: "/partner_page/slider_11.jpeg", focusPoint: "50% 50%" },
+  { url: "/partner_page/slider_12.jpeg", focusPoint: "50% 50%" },
+  { url: "/partner_page/slider_13.jpeg", focusPoint: "50% 50%" },
+  { url: "/partner_page/slider_14.jpeg", focusPoint: "50% 50%" },
 ];
 
 const ctas = [
