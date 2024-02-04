@@ -4,7 +4,8 @@
       <div class="relative isolate overflow-hidden h-full pt-14" id="hero">
         <div class="absolute inset-0 -z-10">
           <img
-            src="https://codetalks.de/img/sections/hero/partnerPage.jpg"
+            src="/partner_page/hero.jpeg"
+            style="objectposition: 20% 50%"
             alt=""
             class="h-full w-full object-cover brightness-50 bg-gradient-to-t from-black to-transparent"
           />
@@ -65,9 +66,9 @@
         </div>
       </div>
     </div>
-    <CtaSection :items="ctas" />
+    <CtaSection class="mt-12" :items="ctas" />
     <div class="mx-auto mt-12 max-w-6xl text-center">
-      <SectionHeader
+      <SectionHeader class="px-12"
         >WHAT <SectionHeaderHighlightText text="PARTNERSHIP" /> MEANS TO
         US</SectionHeader
       >
@@ -81,9 +82,32 @@
       </NormalTextBlock>
     </div>
 
-    <GallerySection class="px-12" :image-infos="pictures" />
-    <div class="p-20 flex justify-center">
-      <PrimaryBtn link="#">Apply as Partner</PrimaryBtn>
+    <GallerySection class="px-6" :image-infos="pictures" />
+    <div class="mt-12">
+      <div class="text-center">
+        <SectionHeader
+          >Big <SectionHeaderHighlightText text="shout-out"
+        /></SectionHeader>
+        <SubSectionHeader
+          >This year we like to say thank you to our beloved partners in
+          code.</SubSectionHeader
+        >
+      </div>
+      <div>
+        <div
+          class="relative w-full h-full cota-material rounded-3xl px-4 py-8 backdrop-blur-md filter bg-white/10 shadow-[inset_0_0_15px_1px_rgba(0,0,0,1.0)]"
+        >
+          <div v-for="headliner in headlinerPartner">
+            <NuxtLink :href="headliner.link">
+              <img
+                class="w-full h-full object-contain"
+                :src="headliner.logo"
+                :alt="headliner.name"
+              />
+            </NuxtLink>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -130,6 +154,88 @@ const ctas = [
     description:
       "Increase brand awareness and reach your target group and audience in an authentic environment.",
     icon: "📋",
+  },
+];
+
+const headlinerPartner = [
+  {
+    name: "Apple",
+    logo: "/network_logos/Apple_white.png",
+    link: "https://www.apple.com",
+  },
+  {
+    name: "Apple",
+    logo: "/network_logos/Apple_white.png",
+    link: "https://www.apple.com",
+  },
+];
+
+const premiumPartner = [
+  {
+    name: "Apple",
+    logo: "/network_logos/Apple_white.png",
+    link: "https://www.apple.com",
+  },
+  {
+    name: "Apple",
+    logo: "/network_logos/Apple_white.png",
+    link: "https://www.apple.com",
+  },
+  {
+    name: "Apple",
+    logo: "/network_logos/Apple_white.png",
+    link: "https://www.apple.com",
+  },
+  {
+    name: "Apple",
+    logo: "/network_logos/Apple_white.png",
+    link: "https://www.apple.com",
+  },
+];
+
+const trailblazersPartner = [
+  {
+    name: "Apple",
+    logo: "/network_logos/Apple_white.png",
+    link: "https://www.apple.com",
+  },
+  {
+    name: "Apple",
+    logo: "/network_logos/Apple_white.png",
+    link: "https://www.apple.com",
+  },
+  {
+    name: "Apple",
+    logo: "/network_logos/Apple_white.png",
+    link: "https://www.apple.com",
+  },
+  {
+    name: "Apple",
+    logo: "/network_logos/Apple_white.png",
+    link: "https://www.apple.com",
+  },
+];
+
+const feelgoodPartner = [
+  {
+    name: "Apple",
+    logo: "/network_logos/Apple_white.png",
+    link: "https://www.apple.com",
+  },
+  {
+    name: "Apple",
+    logo: "/network_logos/Apple_white.png",
+    link: "https://www.apple.com",
+  },
+  {
+    name: "Apple",
+    logo: "/network_logos/Apple_white.png",
+    link: "https://www.apple.com",
+  },
+  {
+    name: "Apple",
+    logo: "/network_logos/Apple_white.png",
+    link: "https://www.apple.com",
   },
 ];
 </script>
