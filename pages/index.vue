@@ -37,19 +37,21 @@ const codeContent = ref("");
 const formattedCode = ref("");
 
 const pictures = [
-  {
-    url: "/gallery/cota-1.png",
-    focusPoint: "50% 30%",
-    description: "Image 1 Description",
-  },
-  {
-    url: "/gallery/cota-2.png",
-    focusPoint: "80% 20%",
-    description: "Image 2 Description",
-  },
-  { url: "/gallery/cota-3.png", focusPoint: "20% 80%" },
-  { url: "/gallery/cota-4.png", focusPoint: "50% 30%" },
-  { url: "/gallery/cota-5.png", focusPoint: "50% 45%" },
+  { url: "/landing_page/slider_1.jpeg", focusPoint: "50% 50%" },
+  { url: "/landing_page/slider_2.jpeg", focusPoint: "50% 50%" },
+  { url: "/landing_page/slider_3.jpeg", focusPoint: "50% 50%" },
+  { url: "/landing_page/slider_4.jpeg", focusPoint: "50% 50%" },
+  { url: "/landing_page/slider_5.jpeg", focusPoint: "50% 50%" },
+  { url: "/landing_page/slider_6.jpeg", focusPoint: "50% 50%" },
+  { url: "/landing_page/slider_7.jpeg", focusPoint: "50% 50%" },
+  { url: "/landing_page/slider_8.jpeg", focusPoint: "50% 50%" },
+  { url: "/landing_page/slider_9.jpeg", focusPoint: "50% 50%" },
+  { url: "/landing_page/slider_10.jpeg", focusPoint: "50% 50%" },
+  { url: "/landing_page/slider_11.jpeg", focusPoint: "50% 50%" },
+  { url: "/landing_page/slider_12.jpeg", focusPoint: "20% 50%" },
+  { url: "/landing_page/slider_13.jpeg", focusPoint: "50% 25%" },
+  { url: "/landing_page/slider_14.jpeg", focusPoint: "50% 50%" },
+  { url: "/landing_page/slider_15.jpeg", focusPoint: "50% 50%" },
 ];
 
 const ctas = [
