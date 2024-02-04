@@ -4,7 +4,8 @@
       <div class="relative isolate overflow-hidden h-full pt-14" id="hero">
         <div class="absolute inset-0 -z-10">
           <img
-            src="https://codetalks.de/img/sections/hero/speakerPage.jpg"
+            src="/speaker_page/hero.jpeg"
+            style="objectPosition: 40% 50%"
             alt=""
             class="h-full w-full object-cover brightness-50 bg-gradient-to-t from-black to-transparent"
           />
