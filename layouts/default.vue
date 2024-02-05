@@ -16,6 +16,29 @@
   />
 </template>
 <script setup lang="ts">
+
+useSeoMeta({
+  title: 'code.talks conference',
+  description: 'Home page of the code.talks Hamburg developer conference.',
+  ogTitle: 'code.talks conference',
+  ogDescription: 'Home page of the code.talks Hamburg developer conference.',
+  ogImage: '/cota_logo.png',
+})
+
+useHead({
+  htmlAttrs: {
+    lang: 'en'
+  },
+  link: [
+    {
+      rel: 'icon',
+      type: 'image/png',
+      href: '/favicon-16x16.png'
+    }
+  ]
+})
+
+
 import { ref } from 'vue';
 
 type SubscriptionResult = {
