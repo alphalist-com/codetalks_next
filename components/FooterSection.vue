@@ -64,10 +64,8 @@
                 class="mt-6 sm:flex sm:max-w-md"
                 @submit.prevent="handleSubmit"
               >
-                <label for="email-address" class="sr-only">Email address</label>
                 <input
-                  :v-model="email"
-                  ref="newsletterInput"
+                  v-model="formData.email"
                   type="email"
                   name="email-address"
                   id="email-address"
@@ -125,8 +123,9 @@ type SubscriptionResult = {
   success: boolean;
   message: string;
 };
-
-const email = ref("");
+const formData = reactive({
+  email: "",
+});
 const submittingEmail = ref(false);
 const emit = defineEmits(["submissionResult"]);
 
@@ -159,17 +158,17 @@ const removeHash = () => {
 
 const handleSubmit = async () => {
   submittingEmail.value = true;
-  useFetch("/api/newsletter/subscribe", {
+  await $fetch("/api/newsletter/subscribe", {
     method: "post",
-    body: JSON.stringify(email),
+    body: JSON.stringify(formData)
   })
     .then((res) => {
-      console.log(res);
+      console.log('succuess',res);
       emit("submissionResult", {
         success: true,
         message: "Subscription successful!",
       });
-      email.value = "";
+      formData.email = "";
     })
     .catch((reason) => {
       console.error("Error during subscription:", reason);

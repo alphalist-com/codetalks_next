@@ -6,7 +6,7 @@ export default defineEventHandler(async (event) => {
 
   const body = await readBody(event)
   
-  const response = await fetch(`https://us14.api.mailchimp.com/3.0/lists/${listId}/members`, {
+  const response = await fetch(`https://us9.api.mailchimp.com/3.0/lists/${listId}/members`, {
     method: 'POST',
     headers: {
       'Authorization': `apikey ${apiKey}`,
