@@ -1,9 +1,9 @@
 <template>
-    <header class="sticky top-0 z-20">
+  <header class="sticky top-0 z-20">
     <nav
       :class="[
         'mx-auto h-16 px-6 pt-2 relative overflow-clip bg-cota-background/80 backdrop-filter backdrop-blur-md',
-        { 'shadow-md shadow-cota-primary': !isAtTop }
+        { 'shadow-md shadow-cota-primary': !isAtTop },
       ]"
       aria-label="Global"
     >
@@ -11,7 +11,7 @@
         <div class="flex lg:flex-1">
           <NuxtLink href="/" class="-my-0 -mx-3">
             <span class="sr-only">code.talks</span>
-            <img class="h-12 w-auto" src="/cota_logo.png"/>
+            <img class="h-12 w-auto" src="/cota_logo.png" />
           </NuxtLink>
         </div>
         <div class="flex lg:hidden">
@@ -34,20 +34,26 @@
           >
         </div>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-          
-          <OutlineBtn :thin-version="true" link="#">Get your tickets</OutlineBtn>
+          <OutlineBtn :thin-version="true" link="#"
+            >Get your tickets</OutlineBtn
+          >
         </div>
       </div>
     </nav>
-    <HeadlessDialog as="div" class="lg:hidden" @close="mobileMenuOpen = false" :open="mobileMenuOpen">
+    <HeadlessDialog
+      as="div"
+      class="lg:hidden"
+      @close="mobileMenuOpen = false"
+      :open="mobileMenuOpen"
+    >
       <div class="fixed inset-0 z-20" />
       <HeadlessDialogPanel
-        class="fixed inset-y-0 right-0 z-20 w-full overflow-y-auto bg-cota-background px-5 pt-0.5 lg:pt-3  sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
+        class="fixed inset-y-0 right-0 z-20 w-full overflow-y-auto bg-cota-background px-5 pt-0.5 lg:pt-3 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
       >
         <div class="flex items-center justify-between mb-10">
           <NuxtLink href="/" class="lg:-my-2.5 lg:-mx-0 pt-1.5 -mx-2">
             <span class="sr-only">code.talks</span>
-            <img class="h-12 w-auto lg:pt-0" src="/cota_logo.png"/>
+            <img class="h-12 w-auto lg:pt-0" src="/cota_logo.png" />
           </NuxtLink>
           <button
             type="button"
@@ -65,6 +71,7 @@
                 v-for="item in navigation"
                 :key="item.name"
                 :href="item.href"
+                @click="closeMobileMenu"
                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-primary"
                 >{{ item.name }}</NuxtLink
               >
@@ -80,30 +87,34 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from 'vue'
-import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
+import { ref, onMounted, onUnmounted } from "vue";
+import { Bars3Icon, XMarkIcon } from "@heroicons/vue/24/outline";
 
-const isAtTop = ref(true)
+const isAtTop = ref(true);
 
 const checkScroll = () => {
-  isAtTop.value = window.scrollY <= 0
-}
+  isAtTop.value = window.scrollY <= 0;
+};
+
+const closeMobileMenu = () => {
+  mobileMenuOpen.value = false;
+};
 
 onMounted(() => {
-  window.addEventListener('scroll', checkScroll)
-  checkScroll() // Check initial position
-})
+  window.addEventListener("scroll", checkScroll);
+  checkScroll(); // Check initial position
+});
 
 onUnmounted(() => {
-  window.removeEventListener('scroll', checkScroll)
-})
+  window.removeEventListener("scroll", checkScroll);
+});
 
 const navigation = [
-  { name: 'Talks', href: '/talks' },
-  { name: 'Speakers', href: '/speakers' },
-  { name: 'Partners', href: '/partners' },
-  { name: 'About Us', href: '/about-us' }
-]
+  { name: "Talks", href: "/talks" },
+  { name: "Speakers", href: "/speakers" },
+  { name: "Partners", href: "/partners" },
+  { name: "About Us", href: "/about-us" },
+];
 
-const mobileMenuOpen = ref(false)
+const mobileMenuOpen = ref(false);
 </script>

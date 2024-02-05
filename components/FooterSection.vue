@@ -6,8 +6,8 @@
     <h2 id="footer-heading" class="sr-only">Footer</h2>
     <div class="mx-auto max-w-7xl px-12 pb-8 pt-8 sm:pt-24 lg:px-16 lg:pt-16">
       <div class="grid grid-cols-5">
-        <div class="col-span-5 md:col-span-3 flex justify-start md gap-20">
-          <div class="">
+        <div class="col-span-5 md:col-span-3 flex justify-start md gap-10 sm:gap-20">
+          <div class="shrink-0">
             <h3 class="text-sm font-semibold leading-6 text-white">
               Get Involved
             </h3>

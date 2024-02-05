@@ -40,7 +40,7 @@
                 19. & 20. September 2024 in Hamburg
               </HeroSubHeadline>
 
-              <div class="mt-32 grid grid-cols-1 items-center justify-evenly gap-6">
+              <div class="mt-12 grid grid-cols-1 items-center justify-evenly gap-6">
                 <PrimaryBtn link="#">GET your tickets</PrimaryBtn>
                 
                 <NuxtLink

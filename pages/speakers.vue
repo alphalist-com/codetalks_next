@@ -1,89 +1,37 @@
 <template>
   <div class="bg-cota-background">
-    <div class="-mt-16 h-screen">
-      <div class="relative isolate overflow-hidden h-full pt-14" id="hero">
-        <div class="absolute inset-0 -z-10">
-          <img
-            src="/speaker_page/hero.jpeg"
-            style="objectPosition: 40% 50%"
-            alt=""
-            class="h-full w-full object-cover brightness-50 bg-gradient-to-t from-black to-transparent"
-          />
-        </div>
-        <div
-          class="content-around flex flex-col items-center justify-center w-full h-full px-6 -mt-6"
-        >
-          <div class="max-w-4xl w-full text-center">
-            <div class="text-center">
-              <HeroHeadline>
-                Our speakers
-              </HeroHeadline>
-              <HeroSubHeadline class="lg:mt-11 mt-6">
-                On our stages, developer heroes, pioneers, and visionaries from the field of software development give talks on the latest innovations and global trends of the scene.
-              </HeroSubHeadline>
+    <HeroSection>
+      <template v-slot:background>
+        <HeroBgImage image-url="/speaker_page/hero.jpeg"></HeroBgImage>
+      </template>
+      <HeroHeadline> Our speakers </HeroHeadline>
+      <HeroSubHeadline class="lg:mt-11 mt-6">
+        On our stages, developer heroes, pioneers, and visionaries from the
+        field of software development give talks on the latest innovations and
+        global trends of the scene.
+      </HeroSubHeadline>
 
-              <div class="mt-10 flex items-center justify-center gap-x-6">
-                <NuxtLink
-                  href="#newsletter"
-                  class="rounded-md px-3.5 py-2 text-sm font-semibold text-cota-on-primary bg-cota-primary"
-                  >Subscribe to Newsletter</NuxtLink
-                >
-              </div>
-            </div>
-          </div>
-          <NuxtLink
-            class="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-sm font-semibold text-white"
-            href="#speakerSection"
-            >Speakers of code.talks <span aria-hidden="true">→</span></NuxtLink
-          >
-        </div>
-        <div
-          class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
-          aria-hidden="true"
-        >
-          <div
-            class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
-            style="
-              clip-path: polygon(
-                74.1% 44.1%,
-                100% 61.6%,
-                97.5% 26.9%,
-                85.5% 0.1%,
-                80.7% 2%,
-                72.5% 32.5%,
-                60.2% 62.4%,
-                52.4% 68.1%,
-                47.5% 58.3%,
-                45.2% 34.5%,
-                27.5% 76.7%,
-                0.1% 64.9%,
-                17.9% 100%,
-                27.6% 76.8%,
-                76.1% 97.7%,
-                74.1% 44.1%
-              );
-            "
-          />
-        </div>
+      <div class="mt-10 flex items-center justify-center gap-x-6">
+        <PrimaryBtn link="#newsletter">Subscribe to Newsletter</PrimaryBtn>
       </div>
-    </div>
-    <div id="speakerSection" class="py-20">
-      <SpeakerSection
-        title="Speaker Gallery"
-        subtitle="The following great speakers have already attended code.talks in the past. Do you want to share your story, your new project, or your revolutionary ideas with the community as well?
-Sign up as a speaker!"
-        :buttons="[
-          { text: 'Load more Speakers', link: '#' },
-          {
-            text: 'Newsletter',
-            link: '#newsletter',
-            arrow: true,
-          },
-        ]"
-        :speaker-list="speakers"
-      >
-      <PrimaryBtn link="#">more speakers</PrimaryBtn>
-    </SpeakerSection>
+    </HeroSection>
+    <div class="bg-transparent sm:py-8 z-10 mt-12 -mx-10 sm:-mx-0">
+      <div class="text-center">
+        <SectionHeader> Speaker Gallery </SectionHeader>
+        <SectionSubHeadline class="mt-4 px-16 sm:mx-10">
+          The following great speakers have already attended code.talks in the
+          past. Do you want to share your story, your new project, or your
+          revolutionary ideas with the community as well? Sign up as a
+          speaker!</SectionSubHeadline
+        >
+      </div>
+      <PersonTileList
+        :fade-out="true"
+        :person-array="speakers"
+      ></PersonTileList>
+      <div class="flex items-center justify-center gap-x-6 mx-14">
+        <PrimaryBtn link="#">more speakers</PrimaryBtn>
+      </div>
     </div>
   </div>
 </template>
@@ -93,61 +41,187 @@ const dialogClosed = () => {};
 
 const dialogOpen = ref(false);
 
-const speakers = [
+
+const speakers: Array<Person> = [
+  {
+    name: "Ivan Notaroš",
+    position: "Tech Artist",
+    company: "nothke",
+    image:
+      "https://codetalks.de/storage/images/persons/thumbnails/Ivan_Notaroš-7dae29ae2a9e396ddc8a8038bab1c8d1.png",
+    detailedInfos: "temp",
+  },
+  {
+    name: "Philipp Gentz",
+    company: "Synatix GmbH",
+    position: "Team Lead und Developer",
+    image:
+      "https://codetalks.de/storage/images/persons/thumbnails/Philipp_Gentz-6f8dd39ab6ed605242bada98754410ad.jpg",
+    detailedInfos: "temp",
+  },
+  {
+    name: "Jonas Jaenicke",
+    position: "Consultant",
+    company: "Netlight Consulting GmbH",
+    image:
+      "https://codetalks.de/storage/images/persons/thumbnails/Jonas_Jaenicke-0f85e566c5cbca2d77950366854e2a2d.jpg",
+    detailedInfos: "temp",
+  },
+  {
+    name: "Rami Ismail",
+    position: "Executive Director",
+    company: "Rami Ismail",
+    image:
+      "https://codetalks.de/storage/images/persons/thumbnails/Rami_Ismail-b5c8a6a1481f13506be50cab18d3e66a.png",
+    detailedInfos: "temp",
+  },
+  {
+    name: "Anna Nadeina",
+    position: "Head of Growth @saas.group",
+    company: "saas.group",
+    image:
+      "https://codetalks.de/storage/images/persons/thumbnails/Anna_Nadeina-c3cf26fc15e3f2218aaad45cf50dbfa3.jpg",
+    detailedInfos: "temp",
+  },
+  {
+    name: "Barbara Wittenberg",
+    position: "CTO",
+    company: "1KOMMA5°",
+    image:
+      "https://codetalks.de/storage/images/persons/thumbnails/Barbara_Wittenberg-10c929c0881d0c86b859a22161bef757.jpg",
+    detailedInfos: "temp",
+  },
+  {
+    name: "Anna Nadeina",
+    position: "Head of Growth @saas.group",
+    company: "saas.group",
+    image:
+      "https://codetalks.de/storage/images/persons/thumbnails/Anna_Nadeina-c3cf26fc15e3f2218aaad45cf50dbfa3.jpg",
+    detailedInfos: "temp",
+  },
+  {
+    name: "Barbara Wittenberg",
+    position: "CTO",
+    company: "1KOMMA5°",
+    image:
+      "https://codetalks.de/storage/images/persons/thumbnails/Barbara_Wittenberg-10c929c0881d0c86b859a22161bef757.jpg",
+    detailedInfos: "temp",
+  },
+
+  {
+    name: "Philipp Gentz",
+    company: "Synatix GmbH",
+    position: "Team Lead und Developer",
+    image:
+      "https://codetalks.de/storage/images/persons/thumbnails/Philipp_Gentz-6f8dd39ab6ed605242bada98754410ad.jpg",
+    detailedInfos: "temp",
+  },
+  {
+    name: "Ivan Notaroš",
+    position: "Tech Artist",
+    company: "nothke",
+    image:
+      "https://codetalks.de/storage/images/persons/thumbnails/Ivan_Notaroš-7dae29ae2a9e396ddc8a8038bab1c8d1.png",
+    detailedInfos: "temp",
+  },
+  {
+    name: "Jonas Jaenicke",
+    position: "Consultant",
+    company: "Netlight Consulting GmbH",
+    image:
+      "https://codetalks.de/storage/images/persons/thumbnails/Jonas_Jaenicke-0f85e566c5cbca2d77950366854e2a2d.jpg",
+    detailedInfos: "temp",
+  },
+  {
+    name: "Rami Ismail",
+    position: "Executive Director",
+    company: "Rami Ismail",
+    image:
+      "https://codetalks.de/storage/images/persons/thumbnails/Rami_Ismail-b5c8a6a1481f13506be50cab18d3e66a.png",
+    detailedInfos: "temp",
+  },
   {
     name: "John Romero",
     position: "Managing Director",
     company: "Romero Games",
-    imageUrl:
+    image:
       "https://codetalks.de/storage/images/persons/thumbnails/John_Romero-04090320358a7126b152c5173b478309.jpeg",
   },
   {
     name: "David Catuhe",
     position: "Principal Software Developer Lead",
     company: "Microsoft",
-    imageUrl:
+    image:
       "https://codetalks.de/storage/images/persons/thumbnails/David_Catuhe-157a58c5cfc11dd6f25f19a55457b1e8.jpeg",
   },
   {
     name: "Ryan Singer",
     position: "Founder",
     company: "Felt Presence LLC",
-    imageUrl:
+    image:
       "https://codetalks.de/storage/images/persons/thumbnails/Ryan_Singer-f783ef3518af41e48fc8b82565f427d6.jpg",
   },
   {
     name: "Katerina Trajchevska",
     position: "CEO",
     company: "Adeva",
-    imageUrl:
+    image:
       "https://codetalks.de/storage/images/persons/hh-2018/thumbnails/katerina_trajchevska-df8256e4af8446abe84e0018d75b3a9e.jpeg",
   },
   {
     name: "Krystal Campioni",
     position: "Senior Frontend Developer",
     company: "Oberlo - Shopify",
-    imageUrl:
+    image:
       "https://codetalks.de/storage/images/persons/thumbnails/Krystal_Campioni-5e432be9932ef2f3d2a4a86d5494833d.jpeg",
   },
   {
     name: "Jenny Shen",
     position: "Senior UX/Product Designer",
     company: "Jenny Shen",
-    imageUrl:
+    image:
       "https://codetalks.de/storage/images/persons/hh-2018/thumbnails/Jenny_Shen-aa81557f868ffdc117252f37425eb205.jpeg",
   },
   {
     name: "Billy Ellis",
     position: "Security Researcher",
     company: "ZygoSec",
-    imageUrl:
+    image:
       "https://codetalks.de/storage/images/persons/hh-2018/thumbnails/billy_ellis-1f8b79d6d59e3fe0d5c11fe88eb6d566.jpeg",
   },
   {
     name: "Nico Lumma",
     position: "Managing Partner",
     company: "next media accelerator GmbH",
-    imageUrl:
+    image:
+      "https://codetalks.de/storage/images/persons/hh-2018/thumbnails/Nico_Lumma-4328190538068c08fd5b557aac45d1ed.png",
+  },
+  {
+    name: "Krystal Campioni",
+    position: "Senior Frontend Developer",
+    company: "Oberlo - Shopify",
+    image:
+      "https://codetalks.de/storage/images/persons/thumbnails/Krystal_Campioni-5e432be9932ef2f3d2a4a86d5494833d.jpeg",
+  },
+  {
+    name: "Jenny Shen",
+    position: "Senior UX/Product Designer",
+    company: "Jenny Shen",
+    image:
+      "https://codetalks.de/storage/images/persons/hh-2018/thumbnails/Jenny_Shen-aa81557f868ffdc117252f37425eb205.jpeg",
+  },
+  {
+    name: "Billy Ellis",
+    position: "Security Researcher",
+    company: "ZygoSec",
+    image:
+      "https://codetalks.de/storage/images/persons/hh-2018/thumbnails/billy_ellis-1f8b79d6d59e3fe0d5c11fe88eb6d566.jpeg",
+  },
+  {
+    name: "Nico Lumma",
+    position: "Managing Partner",
+    company: "next media accelerator GmbH",
+    image:
       "https://codetalks.de/storage/images/persons/hh-2018/thumbnails/Nico_Lumma-4328190538068c08fd5b557aac45d1ed.png",
   },
 ];

@@ -1,7 +1,7 @@
 <template>
-  <h3 class="font-bold tracking-tight text-cota-secondary text-3xl">
+  <h4 class="font-bold tracking-tight text-cota-secondary text-3xl">
     <slot/>
-  </h3>
+  </h4>
 </template>
 
 <script lang="ts" setup></script>

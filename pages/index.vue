@@ -2,36 +2,41 @@
   <div>
     <LandingHero />
 
-    <div class="px-12">
+    <div class="px-6 sm:px-12">
       <AboutSection class="overflow-hidden" />
       <CtaSection class="mt-12" :items="ctas" />
       <NetworkBrandSection class="mt-12" />
       <GallerySection class="mt-12" :imageInfos="pictures" />
       <FactsSection class="mt-12" />
-      <SpeakerSection
-        class="mt-20"
-        title="OUR"
-        titleHighlight="SPEAKERS"
-        subtitle="Whether they are legends of the tech scene, authors, or professionals in their field, we curate the most relevant experts for you and your daily work."
-        :buttons="[
-          { text: 'See all Speakers', link: '#', arrow: true },
-          {
-            text: 'Become a Speaker',
-            link: 'https://www.youtube.com/watch?v=Kx5N5QK3rOE',
-            arrow: true,
-          },
-        ]"
-      >
-        <PrimaryBtn link="/speakers">Explore speakers</PrimaryBtn>
-      </SpeakerSection>
+      <div class="-mx-12 bg-transparent sm:py-8 z-10">
+        <div class="text-center">
+          <SectionHeader>
+            OUR
+            <SectionHeaderHighlightText text="SPEAKERS!" />
+          </SectionHeader>
+          <SectionSubHeadline class="mt-4 px-16 sm:mx-10">
+            Whether they are legends of the tech scene, authors, or
+            professionals in their field, we curate the most relevant experts
+            for you and your daily work.
+          </SectionSubHeadline>
+        </div>
+        <PersonTileList
+          :fade-out="true"
+          :person-array="speakers"
+        ></PersonTileList>
+        <div class="flex items-center justify-center gap-x-6 mx-14">
+          <PrimaryBtn link="/speakers">Explore speakers</PrimaryBtn>
+        </div>
+      </div>
       <PartnerSection class="mt-40 lg:mt-12" />
-      <CurrentPartnersSection class="mt-8" />
+      <CurrentPartnersSection class="mt-20" />
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
 import { ref, onMounted } from "vue";
+import type { Person } from "~/utils/types/person";
 
 const codeContent = ref("");
 const formattedCode = ref("");
@@ -96,6 +101,106 @@ function addLineNumbers(codeString: string): string {
     .map((line, index) => `${index + 1}  ${line}`)
     .join("\n");
 }
+
+const speakers: Array<Person> = [
+  {
+    name: "Ivan Notaroš",
+    position: "Tech Artist",
+    company: "nothke",
+    image:
+      "https://codetalks.de/storage/images/persons/thumbnails/Ivan_Notaroš-7dae29ae2a9e396ddc8a8038bab1c8d1.png",
+    detailedInfos: "temp",
+  },
+  {
+    name: "Philipp Gentz",
+    company: "Synatix GmbH",
+    position: "Team Lead und Developer",
+    image:
+      "https://codetalks.de/storage/images/persons/thumbnails/Philipp_Gentz-6f8dd39ab6ed605242bada98754410ad.jpg",
+    detailedInfos: "temp",
+  },
+  {
+    name: "Jonas Jaenicke",
+    position: "Consultant",
+    company: "Netlight Consulting GmbH",
+    image:
+      "https://codetalks.de/storage/images/persons/thumbnails/Jonas_Jaenicke-0f85e566c5cbca2d77950366854e2a2d.jpg",
+    detailedInfos: "temp",
+  },
+  {
+    name: "Rami Ismail",
+    position: "Executive Director",
+    company: "Rami Ismail",
+    image:
+      "https://codetalks.de/storage/images/persons/thumbnails/Rami_Ismail-b5c8a6a1481f13506be50cab18d3e66a.png",
+    detailedInfos: "temp",
+  },
+  {
+    name: "Anna Nadeina",
+    position: "Head of Growth @saas.group",
+    company: "saas.group",
+    image:
+      "https://codetalks.de/storage/images/persons/thumbnails/Anna_Nadeina-c3cf26fc15e3f2218aaad45cf50dbfa3.jpg",
+    detailedInfos: "temp",
+  },
+  {
+    name: "Barbara Wittenberg",
+    position: "CTO",
+    company: "1KOMMA5°",
+    image:
+      "https://codetalks.de/storage/images/persons/thumbnails/Barbara_Wittenberg-10c929c0881d0c86b859a22161bef757.jpg",
+    detailedInfos: "temp",
+  },
+  {
+    name: "Anna Nadeina",
+    position: "Head of Growth @saas.group",
+    company: "saas.group",
+    image:
+      "https://codetalks.de/storage/images/persons/thumbnails/Anna_Nadeina-c3cf26fc15e3f2218aaad45cf50dbfa3.jpg",
+    detailedInfos: "temp",
+  },
+  {
+    name: "Barbara Wittenberg",
+    position: "CTO",
+    company: "1KOMMA5°",
+    image:
+      "https://codetalks.de/storage/images/persons/thumbnails/Barbara_Wittenberg-10c929c0881d0c86b859a22161bef757.jpg",
+    detailedInfos: "temp",
+  },
+
+  {
+    name: "Philipp Gentz",
+    company: "Synatix GmbH",
+    position: "Team Lead und Developer",
+    image:
+      "https://codetalks.de/storage/images/persons/thumbnails/Philipp_Gentz-6f8dd39ab6ed605242bada98754410ad.jpg",
+    detailedInfos: "temp",
+  },
+  {
+    name: "Ivan Notaroš",
+    position: "Tech Artist",
+    company: "nothke",
+    image:
+      "https://codetalks.de/storage/images/persons/thumbnails/Ivan_Notaroš-7dae29ae2a9e396ddc8a8038bab1c8d1.png",
+    detailedInfos: "temp",
+  },
+  {
+    name: "Jonas Jaenicke",
+    position: "Consultant",
+    company: "Netlight Consulting GmbH",
+    image:
+      "https://codetalks.de/storage/images/persons/thumbnails/Jonas_Jaenicke-0f85e566c5cbca2d77950366854e2a2d.jpg",
+    detailedInfos: "temp",
+  },
+  {
+    name: "Rami Ismail",
+    position: "Executive Director",
+    company: "Rami Ismail",
+    image:
+      "https://codetalks.de/storage/images/persons/thumbnails/Rami_Ismail-b5c8a6a1481f13506be50cab18d3e66a.png",
+    detailedInfos: "temp",
+  },
+];
 </script>
 
 <style></style>
