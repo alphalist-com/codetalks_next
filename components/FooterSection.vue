@@ -170,8 +170,8 @@ const navigation = {
   ],
   legal: [
     { name: "Imprint", href: "/imprint" },
-    { name: "Privacy", href: "#" },
-    { name: "Terms", href: "#" },
+    { name: "Privacy", href: "/privacy" },
+    { name: "Terms", href: "/tc" },
   ],
   social: [
     {
