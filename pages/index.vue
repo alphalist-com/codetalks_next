@@ -38,8 +38,18 @@
 import { ref, onMounted } from "vue";
 import type { Person } from "~/utils/types/person";
 
-const codeContent = ref("");
-const formattedCode = ref("");
+import { provide, ref } from 'vue';
+import DialogComponent from '@/components/DialogComponent.vue';
+
+const personData = ref({});
+const showDialog = ref(false);
+
+const openDialogWithPerson = (data) => {
+  personData.value = data;
+  showDialog.value = true;
+};
+
+provide('openDialogWithPerson', openDialogWithPerson);
 
 const pictures = [
   { url: "/landing_page/slider_1.jpeg", focusPoint: "50% 50%" },
@@ -82,25 +92,6 @@ const ctas = [
     cta: "See more",
   },
 ];
-
-onMounted(async () => {
-  const response = await fetch("/background_code.html");
-  if (response.ok) {
-    codeContent.value = await response.text();
-    // Workaround: On mobile the text might not be long enough to cover the full height off the screen
-    codeContent.value = codeContent.value + "/n" + codeContent.value;
-    formattedCode.value = addLineNumbers(codeContent.value);
-  } else {
-    console.error("Failed to fetch the file");
-  }
-});
-
-function addLineNumbers(codeString: string): string {
-  return codeString
-    .split("\n")
-    .map((line, index) => `${index + 1}  ${line}`)
-    .join("\n");
-}
 
 const speakers: Array<Person> = [
   {
