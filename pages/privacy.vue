@@ -767,7 +767,7 @@
 
 <script lang="ts" setup></script>
 
-<style>
+<style scoped>
 h2 {
   margin: 70px 0 50px;
 }
