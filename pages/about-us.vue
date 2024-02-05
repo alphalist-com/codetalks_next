@@ -148,41 +148,32 @@ import type { Person } from "~/utils/types/person";
 
 const team: Array<Person> = [
   {
-    name: "Ivan Notaroš",
-
+    name: "Tobi",
     image:
       "https://codetalks.de/storage/images/persons/thumbnails/Ivan_Notaroš-7dae29ae2a9e396ddc8a8038bab1c8d1.png",
   },
   {
-    name: "Philipp Gentz",
-    company: "Synatix GmbH",
-
+    name: "Joni",
     image:
       "https://codetalks.de/storage/images/persons/thumbnails/Philipp_Gentz-6f8dd39ab6ed605242bada98754410ad.jpg",
   },
   {
-    name: "Ivan Notaroš",
-
+    name: "Regina",
     image:
       "https://codetalks.de/storage/images/persons/thumbnails/Ivan_Notaroš-7dae29ae2a9e396ddc8a8038bab1c8d1.png",
   },
   {
-    name: "Philipp Gentz",
-    company: "Synatix GmbH",
-
+    name: "Valentina",
     image:
       "https://codetalks.de/storage/images/persons/thumbnails/Philipp_Gentz-6f8dd39ab6ed605242bada98754410ad.jpg",
   },
   {
-    name: "Ivan Notaroš",
-
+    name: "Chaya",
     image:
       "https://codetalks.de/storage/images/persons/thumbnails/Ivan_Notaroš-7dae29ae2a9e396ddc8a8038bab1c8d1.png",
   },
   {
-    name: "Philipp Gentz",
-    company: "Synatix GmbH",
-
+    name: "Marten",
     image:
       "https://codetalks.de/storage/images/persons/thumbnails/Philipp_Gentz-6f8dd39ab6ed605242bada98754410ad.jpg",
   },
