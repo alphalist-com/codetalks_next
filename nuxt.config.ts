@@ -1,6 +1,15 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
+  runtimeConfig: {
+    app: {
+      env: process.env.NUXT_APP_ENV || 'development',
+    },
+    mailchimp: {
+      apiKey: '',
+      listId: ''
+    },
+  },
   pages: true,
   css: ["@/assets/css/tailwind.css"],
   modules: ["nuxt-swiper", "nuxt-headlessui", [

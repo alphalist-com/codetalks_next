@@ -6,7 +6,9 @@
     <h2 id="footer-heading" class="sr-only">Footer</h2>
     <div class="mx-auto max-w-7xl px-12 pb-8 pt-8 sm:pt-24 lg:px-16 lg:pt-16">
       <div class="grid grid-cols-5">
-        <div class="col-span-5 md:col-span-3 flex justify-start md gap-10 sm:gap-20">
+        <div
+          class="col-span-5 md:col-span-3 flex justify-start md gap-10 sm:gap-20"
+        >
           <div class="shrink-0">
             <h3 class="text-sm font-semibold leading-6 text-white">
               Get Involved
@@ -46,7 +48,9 @@
             </ul>
           </div>
         </div>
-        <div class="bg-green col-span-5 mt-16 md:mt-0 md:col-span-2 justify-between grid-cols-1">
+        <div
+          class="bg-green col-span-5 mt-16 md:mt-0 md:col-span-2 justify-between grid-cols-1"
+        >
           <div>
             <div class="xl:mt-0" id="newsletter">
               <h3 class="text-sm font-semibold leading-6 text-white">
@@ -56,7 +60,10 @@
                 The latest news, articles, and resources, sent to your inbox
                 weekly.
               </p>
-              <form class="mt-6 sm:flex sm:max-w-md" @submit.prevent="handleSubmit">
+              <form
+                class="mt-6 sm:flex sm:max-w-md"
+                @submit.prevent="handleSubmit"
+              >
                 <label for="email-address" class="sr-only">Email address</label>
                 <input
                   :v-model="email"
@@ -66,6 +73,7 @@
                   id="email-address"
                   autocomplete="email"
                   required
+                  :disabled="submittingEmail"
                   class="w-full min-w-0 appearance-none rounded-md border-0 bg-cota-darkergrey px-3 py-1.5 text-base text-cota-on-secondary shadow-sm placeholder:text-cota-primary focus:shadow-lg focus:shadow-cota-primary transition-shadow duration-300 sm:w-64 sm:text-sm sm:leading-6 xl:w-full"
                   placeholder="Enter your email"
                   @blur="removeHash"
@@ -73,6 +81,7 @@
                 <div class="mt-4 sm:ml-4 sm:mt-0 sm:flex-shrink-0">
                   <button
                     type="submit"
+                    :disabled="submittingEmail"
                     class="flex w-full items-center justify-start rounded-md bg-primary px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-primary-[100] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cota-primary"
                   >
                     Subscribe
@@ -117,9 +126,9 @@ type SubscriptionResult = {
   message: string;
 };
 
-
-const email = ref('');
-const emit = defineEmits(['submissionResult']);
+const email = ref("");
+const submittingEmail = ref(false);
+const emit = defineEmits(["submissionResult"]);
 
 const newsletterInput = ref<HTMLElement | null>(null);
 
@@ -149,15 +158,27 @@ const removeHash = () => {
 };
 
 const handleSubmit = async () => {
-  try {
-    let response = await axios.post('/api/subscribe', { email: email.value });
-    console.log(response);
-    emit('submissionResult', { success: true, message: 'Subscription successful!' });
-    email.value = '';
-  } catch (error) {
-    console.error("Error during subscription:", error);
-    emit('submissionResult', { success: false, message: 'Subscription failed. Please try again.' });
-  }
+  submittingEmail.value = true;
+  useFetch("/api/newsletter/subscribe", {
+    method: "post",
+    body: JSON.stringify(email),
+  })
+    .then((res) => {
+      console.log(res);
+      emit("submissionResult", {
+        success: true,
+        message: "Subscription successful!",
+      });
+      email.value = "";
+    })
+    .catch((reason) => {
+      console.error("Error during subscription:", reason);
+      emit("submissionResult", {
+        success: false,
+        message: "Subscription failed. Please try again.",
+      });
+    });
+  submittingEmail.value = false;
 };
 
 const navigation = {
@@ -233,5 +254,3 @@ const navigation = {
   ],
 };
 </script>
-
-
