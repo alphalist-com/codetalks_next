@@ -165,11 +165,11 @@ const navigation = {
     { name: "as a Speaker", href: "/speakers" },
   ],
   company: [
-    { name: "code.talks", href: "#" },
-    { name: "alphalist", href: "#" },
+    { name: "code.talks", href: "/about-us" },
+    { name: "alphalist", href: "https://alphalist.com/" },
   ],
   legal: [
-    { name: "Claim", href: "#" },
+    { name: "Imprint", href: "/imprint" },
     { name: "Privacy", href: "#" },
     { name: "Terms", href: "#" },
   ],
