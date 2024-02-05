@@ -13,8 +13,8 @@
 
     <h3 class="font-semibold mt-4">Contact details</h3>
     <ul class="list-none mb-4">
-      <li>Phone: 01795255475</li>
-      <li>Email: cto@alphalist.com</li>
+      <li>Phone: <NuxtLink class="underline text-cota-primary" href="tel:+491795255475">01795255475</NuxtLink></li>
+      <li>Email: <NuxtLink  class="underline text-cota-primary" href="mailto:cto@alphalist.com"> cto@alphalist.com </NuxtLink></li>
       <li>Registration number: HRB 25560 KI</li>
       <li>Court location: Hamburg</li>
     </ul>
