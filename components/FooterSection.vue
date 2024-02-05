@@ -109,8 +109,8 @@
 </template>
 
 <script setup lang="ts">
+import axios from "axios";
 import { ref, defineComponent, h } from "vue";
-import axios from 'axios';
 
 type SubscriptionResult = {
   success: boolean;
@@ -150,7 +150,8 @@ const removeHash = () => {
 
 const handleSubmit = async () => {
   try {
-    // await axios.post('/api/subscribe', { email: email.value });
+    let response = await axios.post('/api/subscribe', { email: email.value });
+    console.log(response);
     emit('submissionResult', { success: true, message: 'Subscription successful!' });
     email.value = '';
   } catch (error) {
