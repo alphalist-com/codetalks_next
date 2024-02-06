@@ -5,7 +5,7 @@
         'relative flex flex-col items-center w-36 h-56 sm:w-40 sm:h-64',
         person.detailedInfos ? 'cursor-pointer' : '',
       ]"
-      @click=""
+      @click="handleClick"
     >
       <div
         class="relative w-full h-full cota-material rounded-lg overflow-hidden"
@@ -51,6 +51,9 @@
 
 <script lang="ts" setup>
 import type { Person } from "@/utils/types/person";
+import { inject } from 'vue';
+
+type OpenDialogFunction = (details: any) => void;
 
 const props = defineProps({
   person: {
@@ -58,6 +61,16 @@ const props = defineProps({
     required: true,
   },
 });
+
+const openDialog = inject<OpenDialogFunction>('openDialogWithPersonId', (details) => {
+  console.log('Undefined openDialogCall with data', details);
+});
+
+const handleClick = () => {
+  if (props.person.detailedInfos && openDialog) {
+    openDialog(props.person.detailedInfos);
+  }
+};
 </script>
 
 <style></style>

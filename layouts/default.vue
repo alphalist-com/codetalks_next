@@ -12,6 +12,16 @@
     <slot />
 
     <FooterSection @submission-result="handleSubscriptionResult" id="footer" />
+    <SpeakerDialog
+      @close="speakerDialogClosed"
+      :speaker-dialog-open="showSpeakerDialog"
+      :speaker-id="speakerId"
+    />
+    <TalkDialog
+      @close="talkDialogClosed"
+      :talk-dialog-open="showTalkDialog"
+      :talk-data="talkData"
+    />
     <NotificationComponent
       :show="showNotification"
       :message="notificationMessage"
@@ -42,7 +52,36 @@ useHead({
   ],
 });
 
-import { ref } from "vue";
+import { ref, provide  } from "vue";
+
+const speakerId = ref("");
+const talkData = ref<Object|null>(null);
+const showSpeakerDialog = ref(false);
+const showTalkDialog = ref(false);
+
+const speakerDialogClosed = () => {
+  showSpeakerDialog.value = false;
+};
+
+const talkDialogClosed = () => {
+  showTalkDialog.value = false;
+};
+
+const openDialogWithPersonId = async (id: string) => {
+  speakerId.value = id;
+  showTalkDialog.value = false;
+  showSpeakerDialog.value = true;
+};
+
+
+const openDialogWithTalkData = async (talk: Object) => {
+  talkData.value = talk;
+  showSpeakerDialog.value = false;
+  showTalkDialog.value = true;
+};
+
+provide("openDialogWithPersonId", openDialogWithPersonId);
+provide("openDialogWithTalkData", openDialogWithTalkData);
 
 type SubscriptionResult = {
   success: boolean;

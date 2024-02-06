@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-transparent sm:py-8 z-10 -mx-10 sm:-mx-0">
+  <div class="bg-transparent sm:py-8 z-10 ">
     <div class="text-center">
       <SectionHeader>
         OUR

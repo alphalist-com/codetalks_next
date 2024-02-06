@@ -1,0 +1,616 @@
+{
+    "id": 648,
+    "name": "John",
+    "surname": "Romero",
+    "photo_path": "images\/persons\/originals\/John_Romero-04090320358a7126b152c5173b478309.jpeg",
+    "thumbnail_path": "images\/persons\/thumbnails\/John_Romero-04090320358a7126b152c5173b478309.jpeg",
+    "is_admin": 0,
+    "on_contact": 0,
+    "created_at": "2019-07-10 18:07:03",
+    "updated_at": "2019-07-10 18:07:03",
+    "full_name": "John Romero",
+    "photo_url": "\/storage\/images\/persons\/originals\/John_Romero-04090320358a7126b152c5173b478309.jpeg",
+    "thumbnail_url": "\/storage\/images\/persons\/thumbnails\/John_Romero-04090320358a7126b152c5173b478309.jpeg",
+    "profile_fields": {
+        "email": {
+            "label": "E-Mail"
+        },
+        "name": {
+            "label": "Name"
+        },
+        "surname": {
+            "label": "Nachname"
+        }
+    },
+    "attendee": {
+        "id": 601,
+        "position": "Managing Director",
+        "biography": "John Romero is an award-winning game development icon whose work spans over 130 games, 108 of which have been published commercially. Romero is the \"father of first person shooters\" having led the design and contributed to the programming and audio design of the iconic and genre-defining games DOOM, Quake, Heretic and Hexen. Romero is also was also one of the earliest supporters of eSports and a current competitive DOOM and Quake player. To date, Romero has co-founded eight successful game companies including the likes of id Software. He is considered to be among the world\u2019s top game designers, and his products have won well over 100 awards. Romero most recently won a Lifetime Achievement award at the Fun & Serious Games Festival in Bilbao and the Legend Award at 2017\u2019s Develop: Brighton. One of the earliest indie developers, Romero began working in the game space in 1979 on mainframes before moving to the Apple II in 1981. He is a completely self-taught programmer, designer and artist, having drawn his inspirations from early Apple II programmers.",
+        "xing_profile": null,
+        "linkedin_profile": null,
+        "twitter_profile": "https:\/\/twitter.com\/romerogamesltd",
+        "youtube_profile": null,
+        "github_profile": null,
+        "medium_profile": null,
+        "blog": null,
+        "is_curator": 0,
+        "is_speaker": 1,
+        "user_id": 648,
+        "company_id": 399,
+        "website_id": 438,
+        "gitlab_profile": null,
+        "talks": [
+            {
+                "id": 790,
+                "created_at": "2019-07-10 18:07:02",
+                "updated_at": "2023-08-26 20:45:18",
+                "starts_at": "2019-10-24 11:00:00",
+                "ends_at": "2019-10-24 11:45:00",
+                "title": "DOOM GUY: Life in First Person",
+                "duration": "",
+                "abstract": "The Early Days of Id Software: Programming Principles: As co-founders of id Software, John Romero and John Carmack created the code behind the company's seminal titles. The principles they defined through experience in id\u2019s earliest days built upon one another to produce a unique methodology and a constantly shippable codebase. In this talk, John Romero discusses id software\u2019s early days, these programming principles and the events and games that led to their creation. (30 min talk with 30 mins for question)",
+                "track_id": 16,
+                "subtrack_id": null,
+                "level": "General",
+                "language": "en",
+                "status": "confirmed",
+                "rank": 1,
+                "is_slot": 0,
+                "published": 1,
+                "visitor_percent": null,
+                "video_link": "https:\/\/youtu.be\/myE5ohMpqxw",
+                "event_id": 5,
+                "slides_path": null,
+                "show_in_review": 0,
+                "type": "talk",
+                "room_id": 1,
+                "language_label": "Englisch",
+                "starts_at_time": "11:00",
+                "ends_at_time": "11:45",
+                "starts_at_day": "Do",
+                "starts_at_day_full": "Donnerstag",
+                "starts_at_date": "2019-10-24",
+                "starts_at_utc": "2019-10-24T09:00:00.000000Z",
+                "ends_at_utc": "2019-10-24T09:45:00.000000Z",
+                "is_reviewable": true,
+                "video_link_approved": true,
+                "has_ended": true,
+                "slides_url": null,
+                "pivot": {
+                    "speaker_id": 601,
+                    "talk_id": 790,
+                    "created_at": "2019-07-10 18:07:04",
+                    "updated_at": "2019-07-10 18:07:04"
+                },
+                "speakers": [
+                    {
+                        "id": 601,
+                        "position": "Managing Director",
+                        "biography": "John Romero is an award-winning game development icon whose work spans over 130 games, 108 of which have been published commercially. Romero is the \"father of first person shooters\" having led the design and contributed to the programming and audio design of the iconic and genre-defining games DOOM, Quake, Heretic and Hexen. Romero is also was also one of the earliest supporters of eSports and a current competitive DOOM and Quake player. To date, Romero has co-founded eight successful game companies including the likes of id Software. He is considered to be among the world\u2019s top game designers, and his products have won well over 100 awards. Romero most recently won a Lifetime Achievement award at the Fun & Serious Games Festival in Bilbao and the Legend Award at 2017\u2019s Develop: Brighton. One of the earliest indie developers, Romero began working in the game space in 1979 on mainframes before moving to the Apple II in 1981. He is a completely self-taught programmer, designer and artist, having drawn his inspirations from early Apple II programmers.",
+                        "xing_profile": null,
+                        "linkedin_profile": null,
+                        "twitter_profile": "https:\/\/twitter.com\/romerogamesltd",
+                        "youtube_profile": null,
+                        "github_profile": null,
+                        "medium_profile": null,
+                        "blog": null,
+                        "is_curator": 0,
+                        "is_speaker": 1,
+                        "user_id": 648,
+                        "company_id": 399,
+                        "website_id": 438,
+                        "gitlab_profile": null,
+                        "profile_fields": {
+                            "biography": {
+                                "label": "Bio",
+                                "type": "textarea-input"
+                            },
+                            "position": {
+                                "label": "Job Position"
+                            },
+                            "phone": {
+                                "label": "Phone"
+                            }
+                        },
+                        "social_fields": {
+                            "xing_profile": {
+                                "label": "Xing"
+                            },
+                            "linkedin_profile": {
+                                "label": "LinkedIn"
+                            },
+                            "twitter_profile": {
+                                "label": "Twitter"
+                            },
+                            "github_profile": {
+                                "label": "GitHub"
+                            },
+                            "youtube_profile": {
+                                "label": "YouTube"
+                            },
+                            "medium_profile": {
+                                "label": "Medium"
+                            },
+                            "blog": {
+                                "label": "Blog"
+                            }
+                        },
+                        "name": "John",
+                        "surname": "Romero",
+                        "email": null,
+                        "photo_url": "\/storage\/images\/persons\/originals\/John_Romero-04090320358a7126b152c5173b478309.jpeg",
+                        "thumbnail_url": "\/storage\/images\/persons\/thumbnails\/John_Romero-04090320358a7126b152c5173b478309.jpeg",
+                        "full_name": "John Romero",
+                        "pivot": {
+                            "talk_id": 790,
+                            "speaker_id": 601,
+                            "created_at": "2019-07-10 18:07:04",
+                            "updated_at": "2019-07-10 18:07:04"
+                        },
+                        "company": {
+                            "id": 399,
+                            "created_at": "2019-07-10 18:07:03",
+                            "updated_at": "2019-07-10 18:07:03",
+                            "name": "Romero Games",
+                            "logo_original_path": "images\/companies\/originals\/Romero Games-219f763bf2dbed7a8641b64ea146251a.png",
+                            "logo_thumbnail_path": "images\/companies\/thumbnails\/Romero Games-219f763bf2dbed7a8641b64ea146251a.png",
+                            "created_by_user_id": 648,
+                            "logo_url": "\/storage\/images\/companies\/originals\/Romero Games-219f763bf2dbed7a8641b64ea146251a.png",
+                            "thumbnail_url": "\/storage\/images\/companies\/thumbnails\/Romero Games-219f763bf2dbed7a8641b64ea146251a.png"
+                        },
+                        "user": {
+                            "id": 648,
+                            "name": "John",
+                            "surname": "Romero",
+                            "photo_path": "images\/persons\/originals\/John_Romero-04090320358a7126b152c5173b478309.jpeg",
+                            "thumbnail_path": "images\/persons\/thumbnails\/John_Romero-04090320358a7126b152c5173b478309.jpeg",
+                            "is_admin": 0,
+                            "on_contact": 0,
+                            "created_at": "2019-07-10 18:07:03",
+                            "updated_at": "2019-07-10 18:07:03",
+                            "full_name": "John Romero",
+                            "photo_url": "\/storage\/images\/persons\/originals\/John_Romero-04090320358a7126b152c5173b478309.jpeg",
+                            "thumbnail_url": "\/storage\/images\/persons\/thumbnails\/John_Romero-04090320358a7126b152c5173b478309.jpeg",
+                            "profile_fields": {
+                                "email": {
+                                    "label": "E-Mail"
+                                },
+                                "name": {
+                                    "label": "Name"
+                                },
+                                "surname": {
+                                    "label": "Nachname"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "track": {
+                    "id": 16,
+                    "created_at": null,
+                    "updated_at": "2019-03-01 11:13:50",
+                    "icon_path": "images\/tracks\/thumbnails\/track_icon-91e2ab1d8191c46d2dd7c73db4fde580.png",
+                    "label_content_id": 16,
+                    "description_content_id": 111,
+                    "is_type": 0,
+                    "icon_url": "\/storage\/images\/tracks\/thumbnails\/track_icon-91e2ab1d8191c46d2dd7c73db4fde580.png",
+                    "label_translations": [
+                        {
+                            "content_id": 16,
+                            "lang": "de",
+                            "translation": "Alternative Realities & Games"
+                        },
+                        {
+                            "content_id": 16,
+                            "lang": "en",
+                            "translation": "Alternative Realities & Games"
+                        }
+                    ]
+                },
+                "programming_languages": [
+                    {
+                        "id": 15,
+                        "created_at": null,
+                        "updated_at": null,
+                        "label_content_id": 31,
+                        "pivot": {
+                            "talk_id": 790,
+                            "programming_language_id": 15,
+                            "created_at": null,
+                            "updated_at": null
+                        },
+                        "label_translations": [
+                            {
+                                "content_id": 31,
+                                "lang": "de",
+                                "translation": "Andere"
+                            },
+                            {
+                                "content_id": 31,
+                                "lang": "en",
+                                "translation": "Other"
+                            }
+                        ]
+                    }
+                ],
+                "moderators": [],
+                "event": {
+                    "id": 5,
+                    "created_at": "2018-12-10 13:59:24",
+                    "updated_at": "2020-02-11 15:23:26",
+                    "slug": "2019",
+                    "start_date": "2019-10-24",
+                    "end_date": "2019-10-25",
+                    "fallback_start_time": "08:00:00",
+                    "call_for_papers_start": "2019-03-01 12:00:00",
+                    "call_for_papers_end": "2019-07-31 21:59:00",
+                    "voting_start": "2019-07-18 08:00:00",
+                    "voting_end": "2019-09-02 18:00:00",
+                    "reviews_end": "2019-10-31 18:00:00",
+                    "type": "codetalks",
+                    "current": 0,
+                    "ticketshop_iframe_link": "https:\/\/code-talks-2019-modules.xing-events.com\/code-talks-2019.html?viewType=iframe&distributionChannel=CHANNEL_IFRAME&language=de&useDefaults=false&resizeIFrame=true",
+                    "ticketshop_script_link": "https:\/\/code-talks-2019-modules.xing-events.com\/resources\/js\/amiandoExport.js",
+                    "student_tickets": null,
+                    "blogger_tickets": null,
+                    "blogger_ticket_price": null,
+                    "ticketshop_online": 1,
+                    "show_program": 1,
+                    "location_id": 1,
+                    "name": "code.talks",
+                    "show_non_scheduled_program": 0,
+                    "call_for_papers_start_input": "2019-03-01T12:00",
+                    "call_for_papers_end_input": "2019-07-31T21:59",
+                    "voting_start_input": "2019-07-18T08:00",
+                    "voting_end_input": "2019-09-02T18:00",
+                    "reviews_end_input": "2019-10-31T18:00",
+                    "voting_start_formatted": "18.07.2019 08:00",
+                    "voting_end_formatted": "02.09.2019 18:00",
+                    "voting_end_utc": "2019-09-02T16:00:00.000000Z",
+                    "has_reviews_ended": true,
+                    "has_started": true,
+                    "has_ended": true,
+                    "has_call_for_papers_started": true,
+                    "has_call_for_papers_ended": true,
+                    "starts_at_utc": "2019-10-24T06:00:00.000000Z",
+                    "ends_at_utc": "2019-10-25T21:59:59.999999Z",
+                    "date_span": "24. - 25. Oktober 2019",
+                    "days": [
+                        "2019-10-24",
+                        "2019-10-25"
+                    ],
+                    "call_for_papers_start_formatted": " 1 M\u00e4rz 2019"
+                },
+                "video_approvals": []
+            },
+            {
+                "id": 1926,
+                "created_at": "2023-08-18 16:50:05",
+                "updated_at": "2023-09-12 22:27:10",
+                "starts_at": "2023-09-15 14:00:00",
+                "ends_at": "2023-09-15 14:45:00",
+                "title": "DOOM GUY: Life in First Person",
+                "duration": "45 minutes (30 mins talks, 15 mins Q&A)",
+                "abstract": "I tell my life story about where I grew up, how I learned to code, the creation of id Software and our games, and what may be next for the game industry.",
+                "track_id": 16,
+                "subtrack_id": null,
+                "level": "General",
+                "language": "en",
+                "status": "confirmed",
+                "rank": 1,
+                "is_slot": 0,
+                "published": 1,
+                "visitor_percent": null,
+                "video_link": null,
+                "event_id": 8,
+                "slides_path": null,
+                "show_in_review": 0,
+                "type": "talk",
+                "room_id": 1,
+                "language_label": "Englisch",
+                "starts_at_time": "14:00",
+                "ends_at_time": "14:45",
+                "starts_at_day": "Fr",
+                "starts_at_day_full": "Freitag",
+                "starts_at_date": "2023-09-15",
+                "starts_at_utc": "2023-09-15T12:00:00.000000Z",
+                "ends_at_utc": "2023-09-15T12:45:00.000000Z",
+                "is_reviewable": true,
+                "video_link_approved": null,
+                "has_ended": true,
+                "slides_url": null,
+                "pivot": {
+                    "speaker_id": 601,
+                    "talk_id": 1926,
+                    "created_at": "2023-08-23 22:36:44",
+                    "updated_at": "2023-08-23 22:36:44"
+                },
+                "speakers": [
+                    {
+                        "id": 601,
+                        "position": "Managing Director",
+                        "biography": "John Romero is an award-winning game development icon whose work spans over 130 games, 108 of which have been published commercially. Romero is the \"father of first person shooters\" having led the design and contributed to the programming and audio design of the iconic and genre-defining games DOOM, Quake, Heretic and Hexen. Romero is also was also one of the earliest supporters of eSports and a current competitive DOOM and Quake player. To date, Romero has co-founded eight successful game companies including the likes of id Software. He is considered to be among the world\u2019s top game designers, and his products have won well over 100 awards. Romero most recently won a Lifetime Achievement award at the Fun & Serious Games Festival in Bilbao and the Legend Award at 2017\u2019s Develop: Brighton. One of the earliest indie developers, Romero began working in the game space in 1979 on mainframes before moving to the Apple II in 1981. He is a completely self-taught programmer, designer and artist, having drawn his inspirations from early Apple II programmers.",
+                        "xing_profile": null,
+                        "linkedin_profile": null,
+                        "twitter_profile": "https:\/\/twitter.com\/romerogamesltd",
+                        "youtube_profile": null,
+                        "github_profile": null,
+                        "medium_profile": null,
+                        "blog": null,
+                        "is_curator": 0,
+                        "is_speaker": 1,
+                        "user_id": 648,
+                        "company_id": 399,
+                        "website_id": 438,
+                        "gitlab_profile": null,
+                        "profile_fields": {
+                            "biography": {
+                                "label": "Bio",
+                                "type": "textarea-input"
+                            },
+                            "position": {
+                                "label": "Job Position"
+                            },
+                            "phone": {
+                                "label": "Phone"
+                            }
+                        },
+                        "social_fields": {
+                            "xing_profile": {
+                                "label": "Xing"
+                            },
+                            "linkedin_profile": {
+                                "label": "LinkedIn"
+                            },
+                            "twitter_profile": {
+                                "label": "Twitter"
+                            },
+                            "github_profile": {
+                                "label": "GitHub"
+                            },
+                            "youtube_profile": {
+                                "label": "YouTube"
+                            },
+                            "medium_profile": {
+                                "label": "Medium"
+                            },
+                            "blog": {
+                                "label": "Blog"
+                            }
+                        },
+                        "name": "John",
+                        "surname": "Romero",
+                        "email": null,
+                        "photo_url": "\/storage\/images\/persons\/originals\/John_Romero-04090320358a7126b152c5173b478309.jpeg",
+                        "thumbnail_url": "\/storage\/images\/persons\/thumbnails\/John_Romero-04090320358a7126b152c5173b478309.jpeg",
+                        "full_name": "John Romero",
+                        "pivot": {
+                            "talk_id": 1926,
+                            "speaker_id": 601,
+                            "created_at": "2023-08-23 22:36:44",
+                            "updated_at": "2023-08-23 22:36:44"
+                        },
+                        "company": {
+                            "id": 399,
+                            "created_at": "2019-07-10 18:07:03",
+                            "updated_at": "2019-07-10 18:07:03",
+                            "name": "Romero Games",
+                            "logo_original_path": "images\/companies\/originals\/Romero Games-219f763bf2dbed7a8641b64ea146251a.png",
+                            "logo_thumbnail_path": "images\/companies\/thumbnails\/Romero Games-219f763bf2dbed7a8641b64ea146251a.png",
+                            "created_by_user_id": 648,
+                            "logo_url": "\/storage\/images\/companies\/originals\/Romero Games-219f763bf2dbed7a8641b64ea146251a.png",
+                            "thumbnail_url": "\/storage\/images\/companies\/thumbnails\/Romero Games-219f763bf2dbed7a8641b64ea146251a.png"
+                        },
+                        "user": {
+                            "id": 648,
+                            "name": "John",
+                            "surname": "Romero",
+                            "photo_path": "images\/persons\/originals\/John_Romero-04090320358a7126b152c5173b478309.jpeg",
+                            "thumbnail_path": "images\/persons\/thumbnails\/John_Romero-04090320358a7126b152c5173b478309.jpeg",
+                            "is_admin": 0,
+                            "on_contact": 0,
+                            "created_at": "2019-07-10 18:07:03",
+                            "updated_at": "2019-07-10 18:07:03",
+                            "full_name": "John Romero",
+                            "photo_url": "\/storage\/images\/persons\/originals\/John_Romero-04090320358a7126b152c5173b478309.jpeg",
+                            "thumbnail_url": "\/storage\/images\/persons\/thumbnails\/John_Romero-04090320358a7126b152c5173b478309.jpeg",
+                            "profile_fields": {
+                                "email": {
+                                    "label": "E-Mail"
+                                },
+                                "name": {
+                                    "label": "Name"
+                                },
+                                "surname": {
+                                    "label": "Nachname"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "track": {
+                    "id": 16,
+                    "created_at": null,
+                    "updated_at": "2019-03-01 11:13:50",
+                    "icon_path": "images\/tracks\/thumbnails\/track_icon-91e2ab1d8191c46d2dd7c73db4fde580.png",
+                    "label_content_id": 16,
+                    "description_content_id": 111,
+                    "is_type": 0,
+                    "icon_url": "\/storage\/images\/tracks\/thumbnails\/track_icon-91e2ab1d8191c46d2dd7c73db4fde580.png",
+                    "label_translations": [
+                        {
+                            "content_id": 16,
+                            "lang": "de",
+                            "translation": "Alternative Realities & Games"
+                        },
+                        {
+                            "content_id": 16,
+                            "lang": "en",
+                            "translation": "Alternative Realities & Games"
+                        }
+                    ]
+                },
+                "programming_languages": [
+                    {
+                        "id": 14,
+                        "created_at": null,
+                        "updated_at": null,
+                        "label_content_id": 30,
+                        "pivot": {
+                            "talk_id": 1926,
+                            "programming_language_id": 14,
+                            "created_at": "2023-08-24 18:03:12",
+                            "updated_at": "2023-08-24 18:03:12"
+                        },
+                        "label_translations": [
+                            {
+                                "content_id": 30,
+                                "lang": "de",
+                                "translation": "Sprachunabh\u00e4ngig"
+                            },
+                            {
+                                "content_id": 30,
+                                "lang": "en",
+                                "translation": "Language independent"
+                            }
+                        ]
+                    }
+                ],
+                "moderators": [],
+                "event": {
+                    "id": 8,
+                    "created_at": "2023-02-16 12:58:06",
+                    "updated_at": "2024-01-09 16:36:45",
+                    "slug": "2023",
+                    "start_date": "2023-09-14",
+                    "end_date": "2023-09-15",
+                    "fallback_start_time": "08:00:00",
+                    "call_for_papers_start": "2023-05-05 09:00:00",
+                    "call_for_papers_end": "2023-07-16 23:55:00",
+                    "voting_start": "2023-06-30 23:55:00",
+                    "voting_end": "2023-08-31 23:55:00",
+                    "reviews_end": "2023-10-30 23:55:00",
+                    "type": "codetalks",
+                    "current": 0,
+                    "ticketshop_iframe_link": null,
+                    "ticketshop_script_link": null,
+                    "student_tickets": null,
+                    "blogger_tickets": null,
+                    "blogger_ticket_price": null,
+                    "ticketshop_online": 0,
+                    "show_program": 1,
+                    "location_id": 1,
+                    "name": "code.talks",
+                    "show_non_scheduled_program": 0,
+                    "call_for_papers_start_input": "2023-05-05T09:00",
+                    "call_for_papers_end_input": "2023-07-16T23:55",
+                    "voting_start_input": "2023-06-30T23:55",
+                    "voting_end_input": "2023-08-31T23:55",
+                    "reviews_end_input": "2023-10-30T23:55",
+                    "voting_start_formatted": "30.06.2023 23:55",
+                    "voting_end_formatted": "31.08.2023 23:55",
+                    "voting_end_utc": "2023-08-31T21:55:00.000000Z",
+                    "has_reviews_ended": true,
+                    "has_started": true,
+                    "has_ended": true,
+                    "has_call_for_papers_started": true,
+                    "has_call_for_papers_ended": true,
+                    "starts_at_utc": "2023-09-14T06:00:00.000000Z",
+                    "ends_at_utc": "2023-09-15T21:59:59.999999Z",
+                    "date_span": "14. - 15. September 2023",
+                    "days": [
+                        "2023-09-14",
+                        "2023-09-15"
+                    ],
+                    "call_for_papers_start_formatted": " 5 Mai 2023"
+                },
+                "video_approvals": []
+            }
+        ],
+        "moderatorTalks": [],
+        "profile_fields": {
+            "biography": {
+                "label": "Bio",
+                "type": "textarea-input"
+            },
+            "position": {
+                "label": "Job Position"
+            },
+            "phone": {
+                "label": "Phone"
+            }
+        },
+        "social_fields": {
+            "xing_profile": {
+                "label": "Xing"
+            },
+            "linkedin_profile": {
+                "label": "LinkedIn"
+            },
+            "twitter_profile": {
+                "label": "Twitter"
+            },
+            "github_profile": {
+                "label": "GitHub"
+            },
+            "youtube_profile": {
+                "label": "YouTube"
+            },
+            "medium_profile": {
+                "label": "Medium"
+            },
+            "blog": {
+                "label": "Blog"
+            }
+        },
+        "name": "John",
+        "surname": "Romero",
+        "email": null,
+        "photo_url": "\/storage\/images\/persons\/originals\/John_Romero-04090320358a7126b152c5173b478309.jpeg",
+        "thumbnail_url": "\/storage\/images\/persons\/thumbnails\/John_Romero-04090320358a7126b152c5173b478309.jpeg",
+        "full_name": "John Romero",
+        "website": {
+            "id": 438,
+            "created_at": "2019-07-10 18:07:04",
+            "updated_at": "2019-07-10 18:07:04",
+            "url": "http:\/\/www.romerogames.com",
+            "company_id": 399
+        },
+        "company": {
+            "id": 399,
+            "created_at": "2019-07-10 18:07:03",
+            "updated_at": "2019-07-10 18:07:03",
+            "name": "Romero Games",
+            "logo_original_path": "images\/companies\/originals\/Romero Games-219f763bf2dbed7a8641b64ea146251a.png",
+            "logo_thumbnail_path": "images\/companies\/thumbnails\/Romero Games-219f763bf2dbed7a8641b64ea146251a.png",
+            "created_by_user_id": 648,
+            "logo_url": "\/storage\/images\/companies\/originals\/Romero Games-219f763bf2dbed7a8641b64ea146251a.png",
+            "thumbnail_url": "\/storage\/images\/companies\/thumbnails\/Romero Games-219f763bf2dbed7a8641b64ea146251a.png"
+        },
+        "user": {
+            "id": 648,
+            "name": "John",
+            "surname": "Romero",
+            "photo_path": "images\/persons\/originals\/John_Romero-04090320358a7126b152c5173b478309.jpeg",
+            "thumbnail_path": "images\/persons\/thumbnails\/John_Romero-04090320358a7126b152c5173b478309.jpeg",
+            "is_admin": 0,
+            "on_contact": 0,
+            "created_at": "2019-07-10 18:07:03",
+            "updated_at": "2019-07-10 18:07:03",
+            "full_name": "John Romero",
+            "photo_url": "\/storage\/images\/persons\/originals\/John_Romero-04090320358a7126b152c5173b478309.jpeg",
+            "thumbnail_url": "\/storage\/images\/persons\/thumbnails\/John_Romero-04090320358a7126b152c5173b478309.jpeg",
+            "profile_fields": {
+                "email": {
+                    "label": "E-Mail"
+                },
+                "name": {
+                    "label": "Name"
+                },
+                "surname": {
+                    "label": "Nachname"
+                }
+            }
+        }
+    }
+}
