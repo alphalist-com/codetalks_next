@@ -89,7 +89,7 @@
               >Download Slides</OutlineBtn
             >
           </div>
-          <div class="">
+          <div class="mt-4">
             <ul class="flex flex-col gap-2 sm:gap-4">
               <li
                 v-for="speaker in talkData.speakers"

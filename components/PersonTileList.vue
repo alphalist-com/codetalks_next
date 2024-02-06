@@ -6,7 +6,7 @@
     >
       <div
         v-if="fadeOut"
-        class="z-10 absolute bottom-0 left-0 right-0 h-1/4 bg-gradient-to-t from-cota-background from-15% to-transparent to-100%"
+        class="z-10 absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-t from-cota-background from-50% to-transparent to-100%"
       ></div>
 
       <li v-for="person in personArray" :key="person.name">
