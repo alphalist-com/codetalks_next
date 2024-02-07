@@ -2,7 +2,7 @@
   <div>
     <div
       :class="[
-        'relative flex flex-col items-center w-36 h-56 sm:w-40 sm:h-64',
+        'relative flex flex-col items-center w-36 h-52 sm:w-40 sm:h-60',
         person.detailedInfos ? 'cursor-pointer' : '',
       ]"
       @click="handleClick"
