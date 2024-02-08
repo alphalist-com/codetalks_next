@@ -3,28 +3,37 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   runtimeConfig: {
     app: {
-      env: process.env.NUXT_APP_ENV || 'development',
+      env: process.env.NUXT_APP_ENV || "development",
     },
     mailchimp: {
-      apiKey: '',
-      listId: ''
+      apiKey: "",
+      listId: "",
     },
   },
   pages: true,
   css: ["@/assets/css/tailwind.css"],
-  modules: ["nuxt-swiper", "nuxt-headlessui", [
-    "@nuxtjs/google-fonts",
-    {
-      families: {
-        Roboto: [100,300,400,500,700, 900],
-        download: true,
-        inject: true,
+  modules: [
+    "nuxt-swiper",
+    "nuxt-headlessui",
+    [
+      "@nuxtjs/google-fonts",
+      {
+        families: {
+          Roboto: [100, 300, 400, 500, 700, 900],
+          download: true,
+          inject: true,
+        },
       },
-    },
-  ], "@nuxt/image"],
-  // Optionally change the default prefix.
+    ],
+    "@nuxt/image",
+    "nuxt-gtag",
+  ],
   headlessui: {
     prefix: "Headless",
+  },
+  gtag: {
+    id: "G-GY9G4VJC9G",
+    initialConsent: false,
   },
   postcss: {
     plugins: {
