@@ -11,7 +11,7 @@
 
     <slot />
 
-    <FooterSection @submission-result="handleSubscriptionResult" id="footer"/>
+    <FooterSection @submission-result="handleSubscriptionResult" id="footer" />
     <SpeakerDialog
       @close="speakerDialogClosed"
       :speaker-dialog-open="showSpeakerDialog"
@@ -52,10 +52,10 @@ useHead({
   ],
 });
 
-import { ref, provide  } from "vue";
+import { ref, provide } from "vue";
 
 const speakerId = ref("");
-const talkData = ref<Object|null>(null);
+const talkData = ref<Object | null>(null);
 const showSpeakerDialog = ref(false);
 const showTalkDialog = ref(false);
 
@@ -73,7 +73,6 @@ const openDialogWithPersonId = async (id: string) => {
   showTalkDialog.value = false;
   showSpeakerDialog.value = true;
 };
-
 
 const openDialogWithTalkData = async (talk: Object) => {
   console.log(talk);
@@ -101,4 +100,23 @@ const handleSubscriptionResult = (result: SubscriptionResult) => {
 };
 </script>
 
-<style></style>
+<style>
+::-webkit-scrollbar {
+  margin-left: 4px;
+  z-index: 60;
+  margin-left: -4px;
+  width: 4px;
+  background-color: #020811;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #020811;
+  border-radius: 4px;
+  border: 1px solid #1aba8b;
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1aba8b;
+}
+</style>
