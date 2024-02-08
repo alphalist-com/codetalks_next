@@ -75,9 +75,8 @@ const speakers = [
     name: "John Romero",
     position: "Managing Director",
     company: "Romero Games",
-    image:
-      "https://codetalks.de/storage/images/persons/thumbnails/John_Romero-04090320358a7126b152c5173b478309.jpeg",
-    detailedInfos: "648",
+    image: "https://codetalks.de/storage/images/persons/thumbnails/John_Romero-04090320358a7126b152c5173b478309.jpeg",
+    detailedInfos: "601",
   },
   {
     name: "Barbara Wittenberg",
@@ -91,48 +90,42 @@ const speakers = [
     name: "David Catuhe",
     position: "Principal Software Developer Lead",
     company: "Microsoft",
-    image:
-      "https://codetalks.de/storage/images/persons/thumbnails/David_Catuhe-157a58c5cfc11dd6f25f19a55457b1e8.jpeg",
-    detailedInfos: "745",
-  },
+    image: "https://codetalks.de/storage/images/persons/thumbnails/David_Catuhe-157a58c5cfc11dd6f25f19a55457b1e8.jpeg",
+    detailedInfos: "698",
+  }, 
   {
     name: "Ryan Singer",
     position: "Founder",
     company: "Felt Presence LLC",
-    image:
-      "https://codetalks.de/storage/images/persons/thumbnails/Ryan_Singer-f783ef3518af41e48fc8b82565f427d6.jpg",
-    detailedInfos: "1290",
+    image: "https://codetalks.de/storage/images/persons/thumbnails/Ryan_Singer-f783ef3518af41e48fc8b82565f427d6.jpg",
+    detailedInfos: "1227",
   },
   {
     name: "Katerina Trajchevska",
     position: "CEO",
     company: "Adeva",
-    image:
-      "https://codetalks.de/storage/images/persons/hh-2018/thumbnails/katerina_trajchevska-df8256e4af8446abe84e0018d75b3a9e.jpeg",
+    image: "https://codetalks.de/storage/images/persons/hh-2018/thumbnails/katerina_trajchevska-df8256e4af8446abe84e0018d75b3a9e.jpeg",
     detailedInfos: "210",
   },
   {
     name: "Krystal Campioni",
     position: "Senior Frontend Developer",
     company: "Oberlo - Shopify",
-    image:
-      "https://codetalks.de/storage/images/persons/thumbnails/Krystal_Campioni-5e432be9932ef2f3d2a4a86d5494833d.jpeg",
+    image: "https://codetalks.de/storage/images/persons/thumbnails/Krystal_Campioni-5e432be9932ef2f3d2a4a86d5494833d.jpeg",
     detailedInfos: "6",
   },
   {
     name: "Jenny Shen",
     position: "Senior UX/Product Designer",
     company: "Jenny Shen",
-    image:
-      "https://codetalks.de/storage/images/persons/hh-2018/thumbnails/Jenny_Shen-aa81557f868ffdc117252f37425eb205.jpeg",
+    image: "https://codetalks.de/storage/images/persons/hh-2018/thumbnails/Jenny_Shen-aa81557f868ffdc117252f37425eb205.jpeg",
     detailedInfos: "234",
   },
   {
     name: "Billy Ellis",
     position: "Security Researcher",
     company: "ZygoSec",
-    image:
-      "https://codetalks.de/storage/images/persons/hh-2018/thumbnails/billy_ellis-1f8b79d6d59e3fe0d5c11fe88eb6d566.jpeg",
+    image: "https://codetalks.de/storage/images/persons/hh-2018/thumbnails/billy_ellis-1f8b79d6d59e3fe0d5c11fe88eb6d566.jpeg",
     detailedInfos: "76",
   },
   {
@@ -147,9 +140,8 @@ const speakers = [
     name: "Nico Lumma",
     position: "Managing Partner",
     company: "next media accelerator GmbH",
-    image:
-      "https://codetalks.de/storage/images/persons/hh-2018/thumbnails/Nico_Lumma-4328190538068c08fd5b557aac45d1ed.png",
-    detailedInfos: "253",
+    image: "https://codetalks.de/storage/images/persons/hh-2018/thumbnails/Nico_Lumma-4328190538068c08fd5b557aac45d1ed.png",
+    detailedInfos: "249",
   },
   {
     name: "Jonas Jaenicke",

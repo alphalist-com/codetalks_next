@@ -3,6 +3,8 @@ export default defineEventHandler(async (event) => {
 
   const body = await readBody(event);
 
+  console.log('Loading details for speakerId: ',body.speakerId);
+
   const response = await fetch(
     `https://codetalks.de/user/${body.speakerId}?event=all&type=speaker`,
     {
@@ -26,7 +28,7 @@ export default defineEventHandler(async (event) => {
     }
   );
 
-  console.log(`Successfully subscribed`, response);
+  console.log(`Speaker loaded `, response);
 
   let message = await response.json();
   return { success: true, speakerDetails: message };

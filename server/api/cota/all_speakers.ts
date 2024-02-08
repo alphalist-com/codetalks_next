@@ -4,7 +4,7 @@ export default defineEventHandler(async (event) => {
   const body = await readBody(event);
   const url = `https://codetalks.de/speaker/all-speakers?count=10&exclude_ids=${body.excludeIds}`;
 
-  console.log('exlude',body.excludeIds);
+  console.log('exclude speakerIds: ',body.excludeIds);
 
   const response = await fetch(
     `https://codetalks.de/speaker/all-speakers?count=10&exclude_ids=[${body.excludeIds}]`,

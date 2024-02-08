@@ -101,7 +101,7 @@
                 </div>
               </div>
             </div>
-            <div class="overflow-scroll max-h-96 rounded-lg">
+            <div class="overflow-y-auto overflow-x-hidden max-h-96 rounded-lg">
               <div class="row-span-2 pt-2 pb-4">
                 <p class="text-sm font-light">
                   {{ speakerData.attendee.biography }}

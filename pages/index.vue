@@ -83,7 +83,7 @@ const speakers = [
     position: "Managing Director",
     company: "Romero Games",
     image: "https://codetalks.de/storage/images/persons/thumbnails/John_Romero-04090320358a7126b152c5173b478309.jpeg",
-    detailedInfos: "648",
+    detailedInfos: "601",
   },
   {
     name: "Barbara Wittenberg",
@@ -98,14 +98,14 @@ const speakers = [
     position: "Principal Software Developer Lead",
     company: "Microsoft",
     image: "https://codetalks.de/storage/images/persons/thumbnails/David_Catuhe-157a58c5cfc11dd6f25f19a55457b1e8.jpeg",
-    detailedInfos: "745",
+    detailedInfos: "698",
   }, 
   {
     name: "Ryan Singer",
     position: "Founder",
     company: "Felt Presence LLC",
     image: "https://codetalks.de/storage/images/persons/thumbnails/Ryan_Singer-f783ef3518af41e48fc8b82565f427d6.jpg",
-    detailedInfos: "1290",
+    detailedInfos: "1227",
   },
   {
     name: "Katerina Trajchevska",
@@ -148,7 +148,7 @@ const speakers = [
     position: "Managing Partner",
     company: "next media accelerator GmbH",
     image: "https://codetalks.de/storage/images/persons/hh-2018/thumbnails/Nico_Lumma-4328190538068c08fd5b557aac45d1ed.png",
-    detailedInfos: "253",
+    detailedInfos: "249",
   },
   {
     name: "Jonas Jaenicke",

@@ -11,7 +11,7 @@
 
     <slot />
 
-    <FooterSection @submission-result="handleSubscriptionResult" id="footer" />
+    <FooterSection @submission-result="handleSubscriptionResult" id="footer"/>
     <SpeakerDialog
       @close="speakerDialogClosed"
       :speaker-dialog-open="showSpeakerDialog"
@@ -68,6 +68,7 @@ const talkDialogClosed = () => {
 };
 
 const openDialogWithPersonId = async (id: string) => {
+  console.log(id);
   speakerId.value = id;
   showTalkDialog.value = false;
   showSpeakerDialog.value = true;
@@ -75,6 +76,7 @@ const openDialogWithPersonId = async (id: string) => {
 
 
 const openDialogWithTalkData = async (talk: Object) => {
+  console.log(talk);
   talkData.value = talk;
   showSpeakerDialog.value = false;
   showTalkDialog.value = true;
