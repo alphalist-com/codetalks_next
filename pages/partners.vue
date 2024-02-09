@@ -30,8 +30,12 @@
       </NormalTextBlock>
     </div>
 
+    <p>
+      {{ currentPartners?.length }}
+    </p>
+
     <GallerySection class="px-12" :image-infos="pictures" />
-    <div class="py-12">
+    <div class="py-12" id="shout-out">
       <div class="text-center">
         <SectionHeader
           >Big <SectionHeaderHighlightText text="shout-out"
@@ -43,66 +47,117 @@
       </div>
       <div class="mt-12 px-6 sm:px-12 max-w-7xl mx-auto">
         <div
-          class="mt-12 py-12 text-center items-center cota-material rounded-3xl px-6 sm:px-12 backdrop-blur-md filter bg-white/10 shadow-[inset_0_0_15px_1px_rgba(0,0,0,1.0)]"
+          :class="[
+            'mt-12 py-12 transition[height] duration-300 ease-in-out text-center items-center cota-material rounded-3xl px-6 sm:px-12 backdrop-blur-md filter bg-white/10 shadow-[inset_0_0_15px_1px_rgba(0,0,0,1.0)]',
+            currentPartners ? 'h-96' : 'h-72',
+          ]"
         >
-          <PartnerClassText>Headliner</PartnerClassText>
-          <div
-            class="py-12 grid grid-cols-1 sm:grid-cols-2 gap-y-16 place-items-center"
-          >
-            <NuxtLink
-              :href="headliner.link"
-              v-for="headliner in headlinerPartner"
+          <div v-if="!currentPartners">
+            <Loading />
+          </div>
+          <div v-else>
+            <PartnerClassText>{{
+              currentPartners[0].sponsor_category.name_translations[1]
+                .translation
+            }}</PartnerClassText>
+            <div
+              class="py-8 px-6 grid grid-cols-1 sm:grid-cols-2 gap-y-16 gap-x-20 place-items-center"
             >
-              <img class="h-56" :src="headliner.logo" :alt="headliner.name" />
-            </NuxtLink>
+              <NuxtLink
+                :href="topPartner.website.url"
+                v-for="topPartner in currentPartners[0].slots"
+              >
+                <img
+                  class="h-56 object-contain"
+                  :src="`https://codetalks.de${topPartner.company.thumbnail_url}`"
+                  :alt="topPartner.company.name"
+                />
+              </NuxtLink>
+            </div>
           </div>
         </div>
 
         <div
           class="mt-12 py-12 text-center items-center cota-material rounded-3xl px-6 sm:px-12 backdrop-blur-md filter bg-white/10 shadow-[inset_0_0_15px_1px_rgba(0,0,0,1.0)]"
         >
-          <PartnerClassText>PRemium</PartnerClassText>
-          <div
-            class="py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:md:grid-cols-4 gap-y-16 place-items-center"
-          >
-            <NuxtLink
-              :href="headliner.link"
-              v-for="headliner in premiumPartner"
+          <div v-if="!currentPartners">
+            <Loading />
+          </div>
+          <div v-else>
+            <PartnerClassText>{{
+              currentPartners[1].sponsor_category.name_translations[1]
+                .translation
+            }}</PartnerClassText>
+            <div
+              class="py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:md:grid-cols-4 gap-y-16 place-items-center"
             >
-              <img class="h-40" :src="headliner.logo" :alt="headliner.name" />
-            </NuxtLink>
+              <NuxtLink
+                :href="topPartner.website.url"
+                v-for="topPartner in currentPartners[1].slots"
+              >
+                <img
+                  class="h-40 object-contain"
+                  :src="`https://codetalks.de${topPartner.company.thumbnail_url}`"
+                  :alt="topPartner.company.name"
+                />
+              </NuxtLink>
+            </div>
           </div>
         </div>
 
         <div
           class="mt-12 py-12 text-center items-center cota-material rounded-3xl px-6 sm:px-12 backdrop-blur-md filter bg-white/10 shadow-[inset_0_0_15px_1px_rgba(0,0,0,1.0)]"
         >
-          <PartnerClassText>TRAILBLAZERS</PartnerClassText>
-          <div
-            class="py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:md:grid-cols-4 gap-y-16 place-items-center"
-          >
-            <NuxtLink
-              :href="headliner.link"
-              v-for="headliner in trailblazersPartner"
+          <div v-if="!currentPartners">
+            <Loading />
+          </div>
+          <div v-else>
+            <PartnerClassText>{{
+              currentPartners[2].sponsor_category.name_translations[1]
+                .translation
+            }}</PartnerClassText>
+            <div
+              class="py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:md:grid-cols-4 gap-y-16 place-items-center"
             >
-              <img class="h-28" :src="headliner.logo" :alt="headliner.name" />
-            </NuxtLink>
+              <NuxtLink
+                :href="topPartner.website.url"
+                v-for="topPartner in currentPartners[2].slots"
+              >
+                <img
+                  class="h-20 object-contain"
+                  :src="`https://codetalks.de${topPartner.company.thumbnail_url}`"
+                  :alt="topPartner.company.name"
+                />
+              </NuxtLink>
+            </div>
           </div>
         </div>
 
         <div
           class="mt-12 py-12 text-center items-center cota-material rounded-3xl px-6 sm:px-12 backdrop-blur-md filter bg-white/10 shadow-[inset_0_0_15px_1px_rgba(0,0,0,1.0)]"
         >
-          <PartnerClassText>FEELGOOD</PartnerClassText>
-          <div
-            class="py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:md:grid-cols-4 gap-y-16 place-items-center"
-          >
-            <NuxtLink
-              :href="headliner.link"
-              v-for="headliner in feelgoodPartner"
+          <div v-if="!currentPartners">
+            <Loading />
+          </div>
+          <div v-else>
+            <PartnerClassText>{{
+              currentPartners[3].sponsor_category.name_translations[1]
+                .translation
+            }}</PartnerClassText>
+            <div
+              class="py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:md:grid-cols-4 gap-y-16 place-items-center"
             >
-              <img class="h-28" :src="headliner.logo" :alt="headliner.name" />
-            </NuxtLink>
+              <NuxtLink
+                :href="topPartner.website.url"
+                v-for="topPartner in currentPartners[3].slots"
+              >
+                <img
+                  class="h-28 object-contain"
+                  :src="`https://codetalks.de${topPartner.company.thumbnail_url}`"
+                  :alt="topPartner.company.name"
+                />
+              </NuxtLink>
+            </div>
           </div>
         </div>
       </div>
@@ -111,6 +166,17 @@
 </template>
 
 <script setup lang="ts">
+const currentPartners = ref<Array<Object> | null>(null);
+
+onMounted(async () => {
+  const { partners } = await $fetch("/api/cota/current_partners", {
+    method: "get",
+  });
+  if (partners) {
+    currentPartners.value = partners;
+  }
+});
+
 const pictures = [
   {
     url: "/partner_page/slider_1.jpeg",
@@ -157,36 +223,36 @@ const ctas = [
 
 const headlinerPartner = [
   {
-    name: "Apple",
-    logo: "/network_logos/Apple_white.png",
-    link: "https://www.apple.com",
+    name: "adjoe",
+    logo: "/company_logos/adjoe.png",
+    link: "https://adjoe.io/",
   },
   {
-    name: "Apple",
-    logo: "/network_logos/Apple_white.png",
-    link: "https://www.apple.com",
+    name: "About You",
+    logo: "/company_logos/about_you.png",
+    link: "https://en.aboutyou.de/",
   },
 ];
 
 const premiumPartner = [
   {
+    name: "Techniker Krankenkasse",
+    logo: "/company_logos/tk.png",
+    link: "https://www.tk.de/",
+  },
+  {
     name: "Apple",
-    logo: "/network_logos/Apple_white.png",
+    logo: "/company_logos/Apple_white.png",
     link: "https://www.apple.com",
   },
   {
     name: "Apple",
-    logo: "/network_logos/Apple_white.png",
+    logo: "/company_logos/Apple_white.png",
     link: "https://www.apple.com",
   },
   {
     name: "Apple",
-    logo: "/network_logos/Apple_white.png",
-    link: "https://www.apple.com",
-  },
-  {
-    name: "Apple",
-    logo: "/network_logos/Apple_white.png",
+    logo: "/company_logos/Apple_white.png",
     link: "https://www.apple.com",
   },
 ];
@@ -194,22 +260,22 @@ const premiumPartner = [
 const trailblazersPartner = [
   {
     name: "Apple",
-    logo: "/network_logos/Apple_white.png",
+    logo: "/company_logos/Apple_white.png",
     link: "https://www.apple.com",
   },
   {
     name: "Apple",
-    logo: "/network_logos/Apple_white.png",
+    logo: "/company_logos/Apple_white.png",
     link: "https://www.apple.com",
   },
   {
     name: "Apple",
-    logo: "/network_logos/Apple_white.png",
+    logo: "/company_logos/Apple_white.png",
     link: "https://www.apple.com",
   },
   {
     name: "Apple",
-    logo: "/network_logos/Apple_white.png",
+    logo: "/company_logos/Apple_white.png",
     link: "https://www.apple.com",
   },
 ];
@@ -217,22 +283,22 @@ const trailblazersPartner = [
 const feelgoodPartner = [
   {
     name: "Apple",
-    logo: "/network_logos/Apple_white.png",
+    logo: "/company_logos/Apple_white.png",
     link: "https://www.apple.com",
   },
   {
     name: "Apple",
-    logo: "/network_logos/Apple_white.png",
+    logo: "/company_logos/Apple_white.png",
     link: "https://www.apple.com",
   },
   {
     name: "Apple",
-    logo: "/network_logos/Apple_white.png",
+    logo: "/company_logos/Apple_white.png",
     link: "https://www.apple.com",
   },
   {
     name: "Apple",
-    logo: "/network_logos/Apple_white.png",
+    logo: "/company_logos/Apple_white.png",
     link: "https://www.apple.com",
   },
 ];

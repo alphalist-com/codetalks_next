@@ -10,35 +10,35 @@
       >
         <img
           class="max-h-10 sm:max-h-12 object-contain filter flex-initial grayscale brightness-100"
-          src="/network_logos/IBM.png"
+          src="/company_logos/IBM.png"
           alt="IBM Logo"
           width="158"
           height="48"
         />
         <img
           class="max-h-10 sm:max-h-12 object-contain filter flex-initial grayscale brightness-100"
-          src="/network_logos/Google.png"
+          src="/company_logos/Google.png"
           alt="Google Logo"
           width="158"
           height="48"
         />
         <img
           class="max-h-10 sm:max-h-12 object-contain filter flex-initial grayscale brightness-100"
-          src="/network_logos/Github.png"
+          src="/company_logos/Github.png"
           alt="Github Logo"
           width="158"
           height="48"
         />
         <img
           class="max-h-10 sm:max-h-12 object-contain filter flex-initial grayscale brightness-100"
-          src="/network_logos/Mozilla.png"
+          src="/company_logos/Mozilla.png"
           alt="Mozilla Logo"
           width="158"
           height="48"
         />
         <img
           class="max-h-10 sm:max-h-12 object-contain filter flex-initial grayscale brightness-100"
-          src="/network_logos/Telekom.png"
+          src="/company_logos/Telekom.png"
           alt="Telekom logo"
           width="158"
           height="48"

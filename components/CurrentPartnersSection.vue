@@ -50,52 +50,52 @@ const partners: BasicPartnerInfos[] = [
   {
     name: "Schufa",
     website: "https://www.schufa.de",
-    logoUrl: "/network_logos/Apple_white.png",
+    logoUrl: "/company_logos/Apple_white.png",
   },
   {
     name: "Schufa1",
     website: "https://www.schufa.de",
-    logoUrl: "/network_logos/Apple_white.png",
+    logoUrl: "/company_logos/Apple_white.png",
   },
   {
     name: "Schufa2",
     website: "https://www.schufa.de",
-    logoUrl: "/network_logos/Apple_white.png",
+    logoUrl: "/company_logos/Apple_white.png",
   },
   {
     name: "Schufa3",
     website: "https://www.schufa.de",
-    logoUrl: "/network_logos/Apple_white.png",
+    logoUrl: "/company_logos/Apple_white.png",
   },
   {
     name: "Schufa4",
     website: "https://www.schufa.de",
-    logoUrl: "/network_logos/Apple_white.png",
+    logoUrl: "/company_logos/Apple_white.png",
   },
   {
     name: "Schufa5",
     website: "https://www.schufa.de",
-    logoUrl: "/network_logos/Apple_white.png",
+    logoUrl: "/company_logos/Apple_white.png",
   },
   {
     name: "Schufa6",
     website: "https://www.schufa.de",
-    logoUrl: "/network_logos/Apple_white.png",
+    logoUrl: "/company_logos/Apple_white.png",
   },
   {
     name: "Schufa7",
     website: "https://www.schufa.de",
-    logoUrl: "/network_logos/Apple_white.png",
+    logoUrl: "/company_logos/Apple_white.png",
   },
   {
     name: "Schufa6",
     website: "https://www.schufa.de",
-    logoUrl: "/network_logos/Apple_white.png",
+    logoUrl: "/company_logos/Apple_white.png",
   },
   {
     name: "Schufa7",
     website: "https://www.schufa.de",
-    logoUrl: "/network_logos/Apple_white.png",
+    logoUrl: "/company_logos/Apple_white.png",
   },
 ];
 </script>

@@ -15,9 +15,7 @@
           class="h-full flex justify-center items-center"
           v-if="fetchingData"
         >
-          <h1 class="px-6 py-4 text-center text-3xl animate-text-outline">
-            Loading
-          </h1>
+          <Loading/>
         </div>
         <div class="p-3 sm:p-6" v-else>
           <div class="">
@@ -187,26 +185,4 @@ watch(
 );
 </script>
 
-<style scoped>
-@keyframes textOutline {
-  0%,
-  100% {
-    text-shadow: 0 0 2px #1aba8b;
-  }
-  25% {
-    text-shadow: 0 0 2px #1aba8b, 0 0 4px #1aba8b;
-  }
-  50% {
-    text-shadow: 0 0 2px #1aba8b, 0 0 4px #1aba8b, 0 0 6px #1aba8b;
-  }
-  75% {
-    text-shadow: 0 0 2px #1aba8b, 0 0 4px #1aba8b, 0 0 6px #1aba8b,
-      0 0 8px #1aba8b;
-  }
-}
-
-.animate-text-outline {
-  animation: textOutline 1s infinite;
-  color: transparent;
-}
-</style>
+<style></style>

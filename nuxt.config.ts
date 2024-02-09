@@ -9,6 +9,9 @@ export default defineNuxtConfig({
       apiKey: "",
       listId: "",
     },
+    cota: {
+      currentEventId: 9,
+    }
   },
   pages: true,
   css: ["@/assets/css/tailwind.css"],

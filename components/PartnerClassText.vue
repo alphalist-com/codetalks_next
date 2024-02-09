@@ -1,5 +1,5 @@
 <template>
-  <h3 class="outline-text text-3xl font-bold tracking-tight uppercase sm:text-4xl text-transparent"><slot/></h3>
+  <h3 class="outline-text text-3xl font-bold tracking-tight uppercase sm:text-5xl text-transparent"><slot/></h3>
 </template>
 
 <script lang="ts" setup>

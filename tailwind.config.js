@@ -24,7 +24,9 @@ module.exports = {
       arrow: ">",
     },
     extend: {
-
+      transitionProperty: {
+        height: "height",
+      },
       backgroundImage: {
         "frosted-glass-texture": "url('/frosted_glass.jpg')",
       },
