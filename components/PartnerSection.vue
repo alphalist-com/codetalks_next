@@ -10,6 +10,7 @@
             <SectionHeaderHighlightText text="PARTNER" />
             IN CODE
           </SectionHeader>
+
           <p
             class="relative mt-6 pr-8 font-light leading-8 text-cota-secondary sm:max-w-md sm:pr-0 lg:max-w-none"
           >

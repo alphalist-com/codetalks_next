@@ -1,6 +1,6 @@
 <template>
   <div class="py-12">
-    <div class="mx-auto max-w-7xl">
+    <div class="mx-auto sm:max-w-3xl lg:max-w-5xl">
       <dl
         class="flex flex-wrap items-center justify-evenly gap-x-20 gap-y-16 text-center"
       >
@@ -12,7 +12,7 @@
           <dd class="order-first text-7xl text-cota-primary">
             {{ stat.value }}
           </dd>
-          <SectionHeader>{{ stat.name }}</SectionHeader>
+          <SectionHeader :center-align="true">{{ stat.name }}</SectionHeader>
         </div>
       </dl>
     </div>

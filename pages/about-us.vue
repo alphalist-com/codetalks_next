@@ -13,73 +13,71 @@
         >
       </div>
     </HeroSection>
-    <div class="px-12">
-      <div class="mx-auto mt-20 max-w-6xl text-center">
-        <SectionHeader
-          >OUR <SectionHeaderHighlightText text="STORY"
-        /></SectionHeader>
-        <NormalTextBlock class="mx-auto">
-          Two young entrepreneurs had the idea in 2011 with the "Developer
-          Conference" to bring more developers together in a relaxed and
-          familial atmosphere to form a community, to expand the horizon
-          together, and at the same time to push the location Hamburg in the
-          digital industry. Within two years, today's code.talks conference has
-          grown into an exchange platform for over 1,500 tech enthusiasts who
-          share our passion. Every year, we offer an updated program with a
-          diverse selection of lectures and panel discussions on the topics and
-          trends that currently move our developer industry. To further develop
-          this vision in the coming years, ABOUT YOU and thus code.talks have
-          decided to hand over the developer conference to alphalist GmbH in
-          2023. Together we have the mission to create a large collaborative
-          developer community to promote the exchange within the IT industry
-          even more. So what are you waiting for, share our vision and become
-          part of a large code.talks community. Together we want to experience
-          exciting lectures, exchange ideas, code with others, and last but not
-          least, we of course want to celebrate a great time with you at the
-          After Conference Party.
-        </NormalTextBlock>
-      </div>
-      <div class="mt-12">
-        <GallerySection :image-infos="pictures" />
-      </div>
-      <div class="text-center">
-        <SectionHeader
-          >OUR <SectionHeaderHighlightText text="TEAM"
-        /></SectionHeader>
-        <SubSectionHeader class="mt-6">This is our team.</SubSectionHeader>
-        <PersonTileList :person-array="team"></PersonTileList>
-      </div>
-      <div class="mt-28 text-center">
-        <SectionHeader
-          >OUR <SectionHeaderHighlightText text="Principles"
-        /></SectionHeader>
-        <SubSectionHeader class="mt-6"
-          >This year we like to say thank you to our beloved partners in
-          code.</SubSectionHeader
+    <div class="mx-auto mt-20 max-w-6xl px-6 text-center">
+      <SectionHeader :center-align="true"
+        >OUR <SectionHeaderHighlightText text="STORY"
+      /></SectionHeader>
+      <NormalTextBlock class="mx-auto">
+        Two young entrepreneurs had the idea in 2011 with the "Developer
+        Conference" to bring more developers together in a relaxed and familial
+        atmosphere to form a community, to expand the horizon together, and at
+        the same time to push the location Hamburg in the digital industry.
+        Within two years, today's code.talks conference has grown into an
+        exchange platform for over 1,500 tech enthusiasts who share our passion.
+        Every year, we offer an updated program with a diverse selection of
+        lectures and panel discussions on the topics and trends that currently
+        move our developer industry. To further develop this vision in the
+        coming years, ABOUT YOU and thus code.talks have decided to hand over
+        the developer conference to alphalist GmbH in 2023. Together we have the
+        mission to create a large collaborative developer community to promote
+        the exchange within the IT industry even more. So what are you waiting
+        for, share our vision and become part of a large code.talks community.
+        Together we want to experience exciting lectures, exchange ideas, code
+        with others, and last but not least, we of course want to celebrate a
+        great time with you at the After Conference Party.
+      </NormalTextBlock>
+    </div>
+    <div class="mt-12 px-6">
+      <GallerySection :image-infos="pictures" />
+    </div>
+    <div class="text-center">
+      <SectionHeader :center-align="true"
+        >OUR <SectionHeaderHighlightText text="TEAM"
+      /></SectionHeader>
+      <SubSectionHeader class="mt-6">This is our team.</SubSectionHeader>
+      <PersonTileList :person-array="team"></PersonTileList>
+    </div>
+    <div class="mt-28 px-6 text-center">
+      <SectionHeader :center-align="true"
+        >OUR <SectionHeaderHighlightText text="Principles"
+      /></SectionHeader>
+      <SubSectionHeader class="mt-6"
+        >This year we like to say thank you to our beloved partners in
+        code.</SubSectionHeader
+      >
+      <ul class="mx-auto mt-12 flex flex-wrap justify-center gap-12">
+        <li
+          class="w-96 rounded-xl border border-cota-primary p-8"
+          v-for="principle in principles"
+          :key="principle.title"
         >
-        <ul class="mx-auto mt-12 flex flex-wrap justify-center gap-12">
-          <li
-            class="w-96 rounded-xl border border-cota-primary p-8"
-            v-for="principle in principles"
-            :key="principle.title"
-          >
-            <div class="h-32">
-              <img class="mx-auto h-16 object-contain" :src="principle.icon" />
-              <h3 class="mt-4 text-3xl font-thin text-cota-primary">
-                {{ principle.title }}
-              </h3>
-            </div>
-            <NormalTextBlock class="mt-4 text-center">
-              {{ principle.description }}
-            </NormalTextBlock>
-          </li>
-        </ul>
-      </div>
+          <div class="h-32">
+            <img class="mx-auto h-16 object-contain" :src="principle.icon" />
+            <h3 class="mt-4 text-3xl font-thin text-cota-primary">
+              {{ principle.title }}
+            </h3>
+          </div>
+          <NormalTextBlock class="mt-4 text-center">
+            {{ principle.description }}
+          </NormalTextBlock>
+        </li>
+      </ul>
+
       <div class="mt-20 pb-10 text-center">
-        <SectionHeader
+        <SectionHeader :center-align="true"
           >CODE OF <SectionHeaderHighlightText text="CODUCT"
         /></SectionHeader>
-        <NormalTextBlock class="mx-auto">
+        <NormalTextBlock class="mx-auto mb-6">
           Everyone is welcome at code.talks and should be able to experience two
           comfortable conference days. We have established some rules of conduct
           to warrant exchange of information in a relaxed atmosphere.

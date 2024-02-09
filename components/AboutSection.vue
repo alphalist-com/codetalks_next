@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="mx-auto max-w-7xl px-0 pt-32 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-7xl px-0 pt-12 sm:px-6 lg:px-8">
       <div
         class="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center"
       >

@@ -37,7 +37,7 @@
     <GallerySection class="px-12" :image-infos="pictures" />
     <div class="py-12" id="shout-out">
       <div class="text-center">
-        <SectionHeader element-id="shout-out"
+        <SectionHeader :center-align="true" element-id="shout-out"
           >Big <SectionHeaderHighlightText text="shout-out"
         /></SectionHeader>
         <SectionSubHeadline class="px-6 sm:px-12"
@@ -47,7 +47,7 @@
       </div>
       <div class="mx-auto mt-12 max-w-7xl px-6 sm:px-12">
         <div
-          class="cota-material mt-12 h-auto items-center rounded-3xl bg-white/10 px-6 py-12 text-center shadow-[inset_0_0_15px_1px_rgba(0,0,0,1.0)] filter backdrop-blur-md duration-300 ease-in-out sm:px-12"
+          class="cota-material mt-12 h-auto items-center rounded-3xl px-6 py-12 text-center filter backdrop-blur-md duration-300 ease-in-out sm:px-12"
         >
           <div v-if="pending || !currentPartners.partners[0]">
             <Loading />
@@ -58,7 +58,7 @@
                 .translation
             }}</PartnerClassText>
 
-            <div class="mt-6 flex flex-wrap justify-center gap-x-12 gap-y-6">
+            <div class="gap-y- mt-6 flex flex-wrap justify-center gap-x-12">
               <NuxtLink
                 :href="topPartner.website.url"
                 v-for="topPartner in currentPartners.partners[0].slots"
@@ -74,7 +74,7 @@
         </div>
 
         <div
-          class="cota-material mt-12 items-center rounded-3xl bg-white/10 px-6 py-12 text-center shadow-[inset_0_0_15px_1px_rgba(0,0,0,1.0)] filter backdrop-blur-md sm:px-12"
+          class="cota-material mt-12 items-center rounded-3xl px-6 py-12 text-center filter backdrop-blur-md sm:px-12"
         >
           <div v-if="pending || !currentPartners.partners[1]">
             <Loading />
@@ -100,7 +100,7 @@
         </div>
 
         <div
-          class="cota-material mt-12 items-center rounded-3xl bg-white/10 px-6 py-12 text-center shadow-[inset_0_0_15px_1px_rgba(0,0,0,1.0)] filter backdrop-blur-md sm:px-12"
+          class="cota-material mt-12 items-center rounded-3xl px-6 py-12 text-center filter backdrop-blur-md sm:px-12"
         >
           <div v-if="pending || !currentPartners.partners[2]">
             <Loading />
@@ -127,7 +127,7 @@
         </div>
 
         <div
-          class="cota-material mt-12 items-center rounded-3xl bg-white/10 px-6 py-12 text-center shadow-[inset_0_0_15px_1px_rgba(0,0,0,1.0)] filter backdrop-blur-md sm:px-12"
+          class="cota-material mt-12 items-center rounded-3xl px-6 py-12 text-center filter backdrop-blur-md sm:px-12"
         >
           <div v-if="pending || !currentPartners.partners[3]">
             <Loading />

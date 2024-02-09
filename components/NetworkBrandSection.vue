@@ -1,6 +1,6 @@
 <template>
   <div class="py-24">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl px-6 lg:max-w-6xl lg:px-8">
       <SectionHeader class="px-0 text-center lg:px-16"
         >Meet with <SectionHeaderHighlightText text="leaders" /> from the
         biggest tech companies in Germany and around the world.</SectionHeader

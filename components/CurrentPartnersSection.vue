@@ -1,7 +1,7 @@
 <template>
   <div class="z-10 bg-transparent sm:py-8">
     <div class="text-center">
-      <SectionHeader>
+      <SectionHeader :center-align="true">
         OUR
         <SectionHeaderHighlightText text="PARTNERS" />
       </SectionHeader>
@@ -12,20 +12,23 @@
     </div>
     <ul
       role="list"
-      class="relative mx-auto mt-12 grid max-w-fit grid-cols-2 gap-8 px-4 sm:grid-cols-3 sm:gap-20 sm:px-20 md:grid-cols-4 xl:grid-cols-5"
+      class="relative mx-auto mt-12 flex max-w-3xl flex-wrap justify-center gap-8 px-4 sm:gap-20 sm:px-20"
     >
       <li
-        v-for="partner in partners"
+        v-for="partner in currentPartners"
         :key="partner.name"
         class="relative flex h-32 w-32 flex-col items-center sm:h-40 sm:w-40"
       >
         <div
-          class="cota-material relative h-full w-full rounded-3xl bg-white/10 px-4 py-8 shadow-[inset_0_0_15px_1px_rgba(0,0,0,1.0)] filter backdrop-blur-md"
+          class="cota-material relative h-full w-full rounded-3xl px-4 py-8 filter backdrop-blur-md"
         >
+          <p class="-mt-5 text-center text-cota-primary">
+            {{ partner.type }}
+          </p>
           <NuxtLink :href="partner.website">
             <img
               class="h-full w-full object-contain"
-              :src="partner.logoUrl"
+              :src="`https://codetalks.de${partner.logoUrl}`"
               :alt="partner.name"
             />
           </NuxtLink>
@@ -45,58 +48,29 @@ interface BasicPartnerInfos {
   name: string;
   website: string;
   logoUrl: string;
+  type: string;
 }
 
-const partners: BasicPartnerInfos[] = [
-  {
-    name: "Schufa",
-    website: "https://www.schufa.de",
-    logoUrl: "/company_logos/Apple_white.png",
-  },
-  {
-    name: "Schufa1",
-    website: "https://www.schufa.de",
-    logoUrl: "/company_logos/Apple_white.png",
-  },
-  {
-    name: "Schufa2",
-    website: "https://www.schufa.de",
-    logoUrl: "/company_logos/Apple_white.png",
-  },
-  {
-    name: "Schufa3",
-    website: "https://www.schufa.de",
-    logoUrl: "/company_logos/Apple_white.png",
-  },
-  {
-    name: "Schufa4",
-    website: "https://www.schufa.de",
-    logoUrl: "/company_logos/Apple_white.png",
-  },
-  {
-    name: "Schufa5",
-    website: "https://www.schufa.de",
-    logoUrl: "/company_logos/Apple_white.png",
-  },
-  {
-    name: "Schufa6",
-    website: "https://www.schufa.de",
-    logoUrl: "/company_logos/Apple_white.png",
-  },
-  {
-    name: "Schufa7",
-    website: "https://www.schufa.de",
-    logoUrl: "/company_logos/Apple_white.png",
-  },
-  {
-    name: "Schufa6",
-    website: "https://www.schufa.de",
-    logoUrl: "/company_logos/Apple_white.png",
-  },
-  {
-    name: "Schufa7",
-    website: "https://www.schufa.de",
-    logoUrl: "/company_logos/Apple_white.png",
-  },
-];
+const {
+  data: currentPartners,
+  error,
+  pending,
+  refresh,
+} = useAsyncData<BasicPartnerInfos[]>("currentPartners", () =>
+  $fetch("/api/cota/current_partners").then((data) => {
+    let partners: BasicPartnerInfos[] = [];
+    data.partners.forEach((partnerCategory) => {
+      partnerCategory.slots.forEach((partnerSlot) => {
+        partners.push({
+          name: partnerSlot.company.name,
+          website: partnerSlot.website.url,
+          logoUrl: partnerSlot.company.logo_url,
+          type: partnerCategory.sponsor_category.name_translations[1]
+            .translation,
+        });
+      });
+    });
+    return partners;
+  }),
+);
 </script>

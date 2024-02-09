@@ -5,9 +5,9 @@
   >
     <h2 id="footer-heading" class="sr-only">Footer</h2>
     <div class="mx-auto max-w-7xl px-12 pb-8 pt-8 sm:pt-24 lg:px-16 lg:pt-16">
-      <div class="grid grid-cols-5">
+      <div class="grid grid-cols-5 px-2">
         <div
-          class="md col-span-5 flex justify-start gap-10 sm:gap-20 md:col-span-3"
+          class="col-span-5 flex justify-between gap-x-8 sm:gap-20 md:col-span-3"
         >
           <div class="shrink-0">
             <h3 class="text-sm font-semibold leading-6 text-white">
@@ -49,10 +49,10 @@
           </div>
         </div>
         <div
-          class="bg-green col-span-5 mt-16 grid-cols-1 justify-between md:col-span-2 md:mt-0"
+          class="col-span-5 mt-12 grid-cols-1 justify-between md:col-span-2 md:mt-0"
         >
           <div>
-            <div class="xl:mt-0" id="newsletter">
+            <div id="newsletter">
               <h3 class="text-sm font-semibold leading-6 text-white">
                 Subscribe to our newsletter
               </h3>
@@ -72,15 +72,15 @@
                   autocomplete="email"
                   required
                   :disabled="submittingEmail"
-                  class="bg-cota-darkergrey w-full min-w-0 appearance-none rounded-md border-0 px-3 py-1.5 text-base text-cota-on-secondary shadow-sm transition-shadow duration-300 placeholder:text-cota-primary focus:shadow-lg focus:shadow-cota-primary sm:w-64 sm:text-sm sm:leading-6 xl:w-full"
+                  class="h-fit w-full min-w-0 appearance-none rounded-md border-0 bg-cota-secondary px-3 py-1.5 text-base text-cota-on-secondary shadow-sm transition-shadow duration-300 placeholder:text-cota-primary focus:shadow-lg focus:shadow-cota-primary sm:w-64 sm:text-sm sm:leading-6 xl:w-full"
                   placeholder="Enter your email"
                   @blur="removeHash"
                 />
-                <div class="mt-4 sm:ml-4 sm:mt-0 sm:flex-shrink-0">
+                <div class="mt-4 w-fit sm:ml-4 sm:mt-0 sm:flex-shrink-0">
                   <button
                     type="submit"
                     :disabled="submittingEmail"
-                    class="bg-primary hover:bg-primary-[100] flex w-full items-center justify-start rounded-md px-3 py-2 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cota-primary"
+                    class="hover:bg-primary-[100] flex w-full items-center justify-start rounded-md bg-cota-primary px-3 py-2 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cota-primary"
                   >
                     Subscribe
                   </button>
@@ -101,14 +101,13 @@
           </div>
         </div>
       </div>
-      <div
-        class="mt-8 flex justify-between border-t border-cota-primary pt-8 sm:mt-20 md:mt-16"
-      >
-        <p class="mt-0 text-xs leading-5 text-gray-400">
+      <hr class="mt-8 border-cota-primary" />
+      <div class="flex justify-between px-2 pt-8 sm:mt-20 md:mt-16">
+        <p class="mr-2 text-xs leading-5 text-gray-400">
           &copy; 2023 alphalist GmbH. All rights reserved.
         </p>
         <div class="flex h-5 space-x-6">
-          <NuxtImg src="/alphalist_logo_white.png" />
+          <NuxtImg class="object-contain" src="/alphalist_logo_white.png" />
         </div>
       </div>
     </div>

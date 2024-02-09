@@ -1,6 +1,12 @@
 <template>
-  <div class="mt-12 flex flex-row justify-center align-middle">
-    <div class="relative text-center">
+  <div
+    :class="[
+      'flex flex-row pt-12',
+      centerAlign ? 'justify-center' : 'justify-start',
+    ]"
+    :id="elementId"
+  >
+    <div class="relative">
       <h3
         class="text-2xl font-bold uppercase tracking-tight text-cota-secondary sm:text-4xl"
       >
@@ -9,7 +15,7 @@
       <button
         v-if="elementId"
         @click="copyToClipboard(elementId)"
-        class="absolute bottom-0 right-0 z-10 -mb-0.5 -mr-7 p-2 text-cota-primary"
+        class="absolute bottom-0 right-0 z-10 -mr-10 mb-0.5 p-2 text-cota-primary sm:-mr-12 sm:mb-1.5"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -36,6 +42,10 @@
 <script lang="ts" setup>
 const props = defineProps({
   elementId: String,
+  centerAlign: {
+    type: Boolean,
+    default: false,
+  },
 });
 
 const copyToClipboard = (elementId: String) => {
