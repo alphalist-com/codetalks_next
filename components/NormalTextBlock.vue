@@ -1,6 +1,6 @@
 <template>
   <p
-    class="relative mt-6 leading-8 font-light text-cota-secondary sm:max-w-xl lg:max-w-4xl"
+    class="relative mt-6 font-light leading-8 text-cota-secondary sm:max-w-xl lg:max-w-4xl"
   >
     <slot />
   </p>

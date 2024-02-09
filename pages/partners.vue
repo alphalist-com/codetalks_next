@@ -5,7 +5,7 @@
         <HeroBgImage image-url="/partner_page/hero.jpeg"></HeroBgImage>
       </template>
       <HeroHeadline> Partners </HeroHeadline>
-      <HeroSubHeadline class="lg:mt-11 mt-6">
+      <HeroSubHeadline class="mt-6 lg:mt-11">
         Present your company at one of the leading developer conferences,
         network with like-minded people and share your experiences with the
         community.
@@ -45,10 +45,10 @@
           code.</SectionSubHeadline
         >
       </div>
-      <div class="mt-12 px-6 sm:px-12 max-w-7xl mx-auto">
+      <div class="mx-auto mt-12 max-w-7xl px-6 sm:px-12">
         <div
           :class="[
-            'mt-12 py-12 transition[height] duration-300 ease-in-out text-center items-center cota-material rounded-3xl px-6 sm:px-12 backdrop-blur-md filter bg-white/10 shadow-[inset_0_0_15px_1px_rgba(0,0,0,1.0)]',
+            'transition[height] cota-material mt-12 items-center rounded-3xl bg-white/10 px-6 py-12 text-center shadow-[inset_0_0_15px_1px_rgba(0,0,0,1.0)] filter backdrop-blur-md duration-300 ease-in-out sm:px-12',
             currentPartners ? 'h-96' : 'h-72',
           ]"
         >
@@ -61,7 +61,7 @@
                 .translation
             }}</PartnerClassText>
             <div
-              class="py-8 px-6 grid grid-cols-1 sm:grid-cols-2 gap-y-16 gap-x-20 place-items-center"
+              class="grid grid-cols-1 place-items-center gap-x-20 gap-y-16 px-6 py-8 sm:grid-cols-2"
             >
               <NuxtLink
                 :href="topPartner.website.url"
@@ -78,7 +78,7 @@
         </div>
 
         <div
-          class="mt-12 py-12 text-center items-center cota-material rounded-3xl px-6 sm:px-12 backdrop-blur-md filter bg-white/10 shadow-[inset_0_0_15px_1px_rgba(0,0,0,1.0)]"
+          class="cota-material mt-12 items-center rounded-3xl bg-white/10 px-6 py-12 text-center shadow-[inset_0_0_15px_1px_rgba(0,0,0,1.0)] filter backdrop-blur-md sm:px-12"
         >
           <div v-if="!currentPartners">
             <Loading />
@@ -89,7 +89,7 @@
                 .translation
             }}</PartnerClassText>
             <div
-              class="py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:md:grid-cols-4 gap-y-16 place-items-center"
+              class="grid grid-cols-1 place-items-center gap-y-16 py-12 sm:grid-cols-2 md:grid-cols-3 lg:md:grid-cols-4"
             >
               <NuxtLink
                 :href="topPartner.website.url"
@@ -106,7 +106,7 @@
         </div>
 
         <div
-          class="mt-12 py-12 text-center items-center cota-material rounded-3xl px-6 sm:px-12 backdrop-blur-md filter bg-white/10 shadow-[inset_0_0_15px_1px_rgba(0,0,0,1.0)]"
+          class="cota-material mt-12 items-center rounded-3xl bg-white/10 px-6 py-12 text-center shadow-[inset_0_0_15px_1px_rgba(0,0,0,1.0)] filter backdrop-blur-md sm:px-12"
         >
           <div v-if="!currentPartners">
             <Loading />
@@ -117,7 +117,7 @@
                 .translation
             }}</PartnerClassText>
             <div
-              class="py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:md:grid-cols-4 gap-y-16 place-items-center"
+              class="grid grid-cols-1 place-items-center gap-y-16 py-12 sm:grid-cols-2 md:grid-cols-3 lg:md:grid-cols-4"
             >
               <NuxtLink
                 :href="topPartner.website.url"
@@ -134,7 +134,7 @@
         </div>
 
         <div
-          class="mt-12 py-12 text-center items-center cota-material rounded-3xl px-6 sm:px-12 backdrop-blur-md filter bg-white/10 shadow-[inset_0_0_15px_1px_rgba(0,0,0,1.0)]"
+          class="cota-material mt-12 items-center rounded-3xl bg-white/10 px-6 py-12 text-center shadow-[inset_0_0_15px_1px_rgba(0,0,0,1.0)] filter backdrop-blur-md sm:px-12"
         >
           <div v-if="!currentPartners">
             <Loading />
@@ -145,7 +145,7 @@
                 .translation
             }}</PartnerClassText>
             <div
-              class="py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:md:grid-cols-4 gap-y-16 place-items-center"
+              class="grid grid-cols-1 place-items-center gap-y-16 py-12 sm:grid-cols-2 md:grid-cols-3 lg:md:grid-cols-4"
             >
               <NuxtLink
                 :href="topPartner.website.url"

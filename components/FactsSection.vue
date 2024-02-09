@@ -2,16 +2,14 @@
   <div class="py-12">
     <div class="mx-auto max-w-7xl">
       <dl
-        class="flex flex-wrap gap-x-20 gap-y-16 text-center justify-evenly items-center"
+        class="flex flex-wrap items-center justify-evenly gap-x-20 gap-y-16 text-center"
       >
         <div
           v-for="stat in stats"
           :key="stat.id"
-          class="mx-auto max-w-xs gap-y-2 shrink-0"
+          class="mx-auto max-w-xs shrink-0 gap-y-2"
         >
-          <dd
-            class="order-first text-cota-primary text-7xl"
-          >
+          <dd class="order-first text-7xl text-cota-primary">
             {{ stat.value }}
           </dd>
           <SectionHeader>{{ stat.name }}</SectionHeader>

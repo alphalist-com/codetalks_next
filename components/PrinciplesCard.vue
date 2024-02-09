@@ -1,7 +1,7 @@
 <template>
   <NuxtLink
     :href="href"
-    class="block rounded-lg bg-cota-background p-6 shadow-lg hover:shadow-xl transition-shadow"
+    class="block rounded-lg bg-cota-background p-6 shadow-lg transition-shadow hover:shadow-xl"
     data-toggle="modal"
     data-modal-scroll-top="false"
   >
@@ -16,8 +16,7 @@
 </template>
 
 <script setup lang="ts">
-defineProps(['title', 'description', 'icon', 'href']);
+defineProps(["title", "description", "icon", "href"]);
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

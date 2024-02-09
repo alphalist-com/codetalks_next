@@ -3,7 +3,7 @@ export default defineEventHandler(async (event) => {
 
   const body = await readBody(event);
 
-  console.log('Loading details for speakerId: ',body.speakerId);
+  console.log("Loading details for speakerId: ", body.speakerId);
 
   const response = await fetch(
     `https://codetalks.de/user/${body.speakerId}?event=all&type=speaker`,
@@ -25,7 +25,7 @@ export default defineEventHandler(async (event) => {
       method: "GET",
       mode: "cors",
       credentials: "include",
-    }
+    },
   );
 
   console.log(`Speaker loaded `, response);

@@ -5,7 +5,7 @@
         <HeroBgImage image-url="/speaker_page/hero.jpeg"></HeroBgImage>
       </template>
       <HeroHeadline> Our speakers </HeroHeadline>
-      <HeroSubHeadline class="lg:mt-11 mt-6">
+      <HeroSubHeadline class="mt-6 lg:mt-11">
         On our stages, developer heroes, pioneers, and visionaries from the
         field of software development give talks on the latest innovations and
         global trends of the scene.
@@ -15,12 +15,12 @@
         <PrimaryBtn link="#newsletter">Subscribe to Newsletter</PrimaryBtn>
       </div>
     </HeroSection>
-    <div class="bg-transparent sm:py-8 z-10 mt-12 sm:-mx-0">
+    <div class="z-10 mt-12 bg-transparent sm:-mx-0 sm:py-8">
       <div class="text-center">
         <SectionHeader>
           <SectionHeaderHighlightText text="Speaker" /> Gallery
         </SectionHeader>
-        <SectionSubHeadline class="mt-4 px-6 max-w-3xl mx-auto">
+        <SectionSubHeadline class="mx-auto mt-4 max-w-3xl px-6">
           The following great speakers have already attended code.talks in the
           past. Do you want to share your story, your new project, or your
           revolutionary ideas with the community as well? Sign up as a
@@ -32,11 +32,11 @@
         :fade-out="true"
         :person-array="allSpeakers"
       ></PersonTileList>
-      <div class="flex items-center justify-center gap-x-6 mx-14">
+      <div class="mx-14 flex items-center justify-center gap-x-6">
         <button
           @click="loadMoreSpeakers"
           :disabled="fetchingData"
-          class="rounded-md px-3.5 py-2 justify-self-center text-sm font-semibold uppercase text-cota-on-primary bg-cota-primary"
+          class="justify-self-center rounded-md bg-cota-primary px-3.5 py-2 text-sm font-semibold uppercase text-cota-on-primary"
         >
           Load more Speakers
         </button>
@@ -58,7 +58,9 @@ const fetchingData = ref(false);
 
 const loadMoreSpeakers = async () => {
   fetchingData.value = true;
-  const currentSpeakerIds = allSpeakers.value?.map((speaker) => speaker.detailedInfos);
+  const currentSpeakerIds = allSpeakers.value?.map(
+    (speaker) => speaker.detailedInfos,
+  );
   const { newSpeakers } = await $fetch("/api/cota/all_speakers", {
     method: "post",
     body: JSON.stringify({ excludeIds: currentSpeakerIds }),
@@ -75,7 +77,8 @@ const speakers = [
     name: "John Romero",
     position: "Managing Director",
     company: "Romero Games",
-    image: "https://codetalks.de/storage/images/persons/thumbnails/John_Romero-04090320358a7126b152c5173b478309.jpeg",
+    image:
+      "https://codetalks.de/storage/images/persons/thumbnails/John_Romero-04090320358a7126b152c5173b478309.jpeg",
     detailedInfos: "648",
   },
   {
@@ -90,42 +93,48 @@ const speakers = [
     name: "David Catuhe",
     position: "Principal Software Developer Lead",
     company: "Microsoft",
-    image: "https://codetalks.de/storage/images/persons/thumbnails/David_Catuhe-157a58c5cfc11dd6f25f19a55457b1e8.jpeg",
+    image:
+      "https://codetalks.de/storage/images/persons/thumbnails/David_Catuhe-157a58c5cfc11dd6f25f19a55457b1e8.jpeg",
     detailedInfos: "745",
-  }, 
+  },
   {
     name: "Ryan Singer",
     position: "Founder",
     company: "Felt Presence LLC",
-    image: "https://codetalks.de/storage/images/persons/thumbnails/Ryan_Singer-f783ef3518af41e48fc8b82565f427d6.jpg",
+    image:
+      "https://codetalks.de/storage/images/persons/thumbnails/Ryan_Singer-f783ef3518af41e48fc8b82565f427d6.jpg",
     detailedInfos: "1290",
   },
   {
     name: "Katerina Trajchevska",
     position: "CEO",
     company: "Adeva",
-    image: "https://codetalks.de/storage/images/persons/hh-2018/thumbnails/katerina_trajchevska-df8256e4af8446abe84e0018d75b3a9e.jpeg",
+    image:
+      "https://codetalks.de/storage/images/persons/hh-2018/thumbnails/katerina_trajchevska-df8256e4af8446abe84e0018d75b3a9e.jpeg",
     detailedInfos: "210",
   },
   {
     name: "Krystal Campioni",
     position: "Senior Frontend Developer",
     company: "Oberlo - Shopify",
-    image: "https://codetalks.de/storage/images/persons/thumbnails/Krystal_Campioni-5e432be9932ef2f3d2a4a86d5494833d.jpeg",
+    image:
+      "https://codetalks.de/storage/images/persons/thumbnails/Krystal_Campioni-5e432be9932ef2f3d2a4a86d5494833d.jpeg",
     detailedInfos: "6",
   },
   {
     name: "Jenny Shen",
     position: "Senior UX/Product Designer",
     company: "Jenny Shen",
-    image: "https://codetalks.de/storage/images/persons/hh-2018/thumbnails/Jenny_Shen-aa81557f868ffdc117252f37425eb205.jpeg",
+    image:
+      "https://codetalks.de/storage/images/persons/hh-2018/thumbnails/Jenny_Shen-aa81557f868ffdc117252f37425eb205.jpeg",
     detailedInfos: "234",
   },
   {
     name: "Billy Ellis",
     position: "Security Researcher",
     company: "ZygoSec",
-    image: "https://codetalks.de/storage/images/persons/hh-2018/thumbnails/billy_ellis-1f8b79d6d59e3fe0d5c11fe88eb6d566.jpeg",
+    image:
+      "https://codetalks.de/storage/images/persons/hh-2018/thumbnails/billy_ellis-1f8b79d6d59e3fe0d5c11fe88eb6d566.jpeg",
     detailedInfos: "76",
   },
   {
@@ -140,7 +149,8 @@ const speakers = [
     name: "Nico Lumma",
     position: "Managing Partner",
     company: "next media accelerator GmbH",
-    image: "https://codetalks.de/storage/images/persons/hh-2018/thumbnails/Nico_Lumma-4328190538068c08fd5b557aac45d1ed.png",
+    image:
+      "https://codetalks.de/storage/images/persons/hh-2018/thumbnails/Nico_Lumma-4328190538068c08fd5b557aac45d1ed.png",
     detailedInfos: "253",
   },
   {

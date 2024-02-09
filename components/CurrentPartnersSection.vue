@@ -1,29 +1,30 @@
 <template>
-  <div class="bg-transparent sm:py-8 z-10 ">
+  <div class="z-10 bg-transparent sm:py-8">
     <div class="text-center">
       <SectionHeader>
         OUR
         <SectionHeaderHighlightText text="PARTNERS" />
       </SectionHeader>
       <SectionSubHeadline class="mt-4 px-20 sm:mx-16">
-        Each of our partners gets a unique stage! Anything less would not be fitting
+        Each of our partners gets a unique stage! Anything less would not be
+        fitting
       </SectionSubHeadline>
     </div>
     <ul
       role="list"
-      class="mx-auto max-w-fit mt-12 grid grid-cols-2 gap-8 sm:gap-20 px-4 sm:grid-cols-3 sm:px-20 md:grid-cols-4 xl:grid-cols-5 relative"
+      class="relative mx-auto mt-12 grid max-w-fit grid-cols-2 gap-8 px-4 sm:grid-cols-3 sm:gap-20 sm:px-20 md:grid-cols-4 xl:grid-cols-5"
     >
       <li
         v-for="partner in partners"
         :key="partner.name"
-        class="relative flex flex-col items-center w-32 h-32 sm:w-40 sm:h-40"
+        class="relative flex h-32 w-32 flex-col items-center sm:h-40 sm:w-40"
       >
         <div
-          class="relative w-full h-full cota-material rounded-3xl px-4 py-8 backdrop-blur-md filter bg-white/10 shadow-[inset_0_0_15px_1px_rgba(0,0,0,1.0)]"
+          class="cota-material relative h-full w-full rounded-3xl bg-white/10 px-4 py-8 shadow-[inset_0_0_15px_1px_rgba(0,0,0,1.0)] filter backdrop-blur-md"
         >
           <NuxtLink :href="partner.website">
             <img
-              class="w-full h-full object-contain"
+              class="h-full w-full object-contain"
               :src="partner.logoUrl"
               :alt="partner.name"
             />
@@ -32,7 +33,7 @@
       </li>
     </ul>
     <div
-      class="flex flex-col sm:flex-row items-center justify-center gap-x-6 pt-12 pb-28"
+      class="flex flex-col items-center justify-center gap-x-6 pb-28 pt-12 sm:flex-row"
     >
       <PrimaryBtn link="/partners">Show more</PrimaryBtn>
     </div>

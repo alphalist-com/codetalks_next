@@ -5,7 +5,7 @@
         <HeroBgImage image-url="/talks_page/hero.jpeg"></HeroBgImage>
       </template>
       <HeroHeadline> OUR TALKS </HeroHeadline>
-      <HeroSubHeadline class="lg:mt-11 mt-6">
+      <HeroSubHeadline class="mt-6 lg:mt-11">
         Our program will be announced soon. Subscribe to our newsletter to stay
         up to date!
       </HeroSubHeadline>
@@ -15,28 +15,28 @@
       </div>
     </HeroSection>
 
-    <div class="py-14 px-12">
+    <div class="px-12 py-14">
       <SectionHeader class="text-center">
         Some great <SectionHeaderHighlightText text="talks" /> from our previous
         events
       </SectionHeader>
       <div
-        class="max-w-7xl mt-12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14 lg:gap-6"
+        class="mx-auto mt-12 grid max-w-7xl grid-cols-1 gap-14 md:grid-cols-2 lg:grid-cols-3 lg:gap-6"
       >
         <div
           v-for="video in videos"
           :key="video.id"
           @click="openDialog(video.id)"
-          class="cursor-pointer rounded-lg overflow-hidden border border-cota-primary"
+          class="cursor-pointer overflow-hidden rounded-lg border border-cota-primary"
         >
           <img :src="video.thumbnailUrl" :alt="video.title" class="w-full" />
         </div>
       </div>
 
-      <div class="flex items-center justify-center gap-x-6 mt-12">
+      <div class="mt-12 flex items-center justify-center gap-x-6">
         <NuxtLink
           href="https://www.youtube.com/@code.talksbyalphalist"
-          class="rounded-md px-3.5 py-2 text-sm font-semibold text-cota-on-primary bg-cota-primary"
+          class="rounded-md bg-cota-primary px-3.5 py-2 text-sm font-semibold text-cota-on-primary"
           >Visit our Youtube channel</NuxtLink
         >
       </div>
@@ -45,14 +45,14 @@
     <Dialog
       @close="dialogClosed"
       :open="dialogOpen"
-      class="fixed inset-0 flex items-center justify-center z-20"
+      class="fixed inset-0 z-20 flex items-center justify-center"
     >
       <div
         class="fixed inset-0 bg-black bg-opacity-50"
         @click="dialogOpen = false"
       ></div>
       <DialogPanel
-        class="relative mx-auto p-1 rounded-lg text-sm font-semibold text-cota-green shadow-lg backdrop-filter backdrop-blur-md border-2 border-cota-primary bg-cota-background z-30"
+        class="text-cota-green relative z-30 mx-auto rounded-lg border-2 border-cota-primary bg-cota-background p-1 text-sm font-semibold shadow-lg backdrop-blur-md backdrop-filter"
       >
         <iframe
           v-if="dialogOpen"

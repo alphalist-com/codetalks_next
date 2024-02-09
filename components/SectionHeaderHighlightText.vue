@@ -1,19 +1,16 @@
 <template>
-  <span class="text-cota-primary font-light uppercase">{{ text }}</span>
+  <span class="font-light uppercase text-cota-primary">{{ text }}</span>
 </template>
-
 
 <script lang="ts">
 export default {
   props: {
     text: {
       type: String,
-      required: true
-    }
-  }
+      required: true,
+    },
+  },
 };
 </script>
 
-<style>
-
-</style>
+<style></style>

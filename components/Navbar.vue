@@ -2,14 +2,14 @@
   <header class="sticky top-0 z-20">
     <nav
       :class="[
-        'mx-auto h-16 px-6 pt-2 relative overflow-clip bg-cota-background/80 backdrop-filter backdrop-blur-md',
+        'relative mx-auto h-16 overflow-clip bg-cota-background/80 px-6 pt-2 backdrop-blur-md backdrop-filter',
         { 'shadow-md shadow-cota-primary': !isAtTop },
       ]"
       aria-label="Global"
     >
-      <div class="max-w-7xl flex items-center justify-between mx-auto">
+      <div class="mx-auto flex max-w-7xl items-center justify-between">
         <div class="flex lg:flex-1">
-          <NuxtLink href="/" class="-my-0 -mx-3">
+          <NuxtLink href="/" class="-mx-3 -my-0">
             <span class="sr-only">code.talks</span>
             <img class="h-12 w-auto" src="/cota_logo.png" />
           </NuxtLink>
@@ -29,7 +29,7 @@
             v-for="item in navigation"
             :key="item.name"
             :href="item.href"
-            class="text-sm font-semibold leading-6 text-white hover:text-cota"
+            class="hover:text-cota text-sm font-semibold leading-6 text-white"
             >{{ item.name }}</NuxtLink
           >
         </div>
@@ -48,10 +48,10 @@
     >
       <div class="fixed inset-0 z-20" />
       <HeadlessDialogPanel
-        class="fixed inset-y-0 right-0 z-20 w-full overflow-y-auto bg-cota-background px-5 pt-0.5 lg:pt-3 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
+        class="fixed inset-y-0 right-0 z-20 w-full overflow-y-auto bg-cota-background px-5 pt-0.5 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 lg:pt-3"
       >
-        <div class="flex items-center justify-between mb-10">
-          <NuxtLink href="/" class="lg:-my-2.5 lg:-mx-0 pt-1.5 -mx-2">
+        <div class="mb-10 flex items-center justify-between">
+          <NuxtLink href="/" class="-mx-2 pt-1.5 lg:-mx-0 lg:-my-2.5">
             <span class="sr-only">code.talks</span>
             <img class="h-12 w-auto lg:pt-0" src="/cota_logo.png" />
           </NuxtLink>
@@ -72,11 +72,11 @@
                 :key="item.name"
                 :href="item.href"
                 @click="closeMobileMenu"
-                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-primary"
+                class="hover:bg-primary -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white"
                 >{{ item.name }}</NuxtLink
               >
             </div>
-            <div class="py-6 -ml-3">
+            <div class="-ml-3 py-6">
               <OutlineBtn link="#">Get your tickets</OutlineBtn>
             </div>
           </div>

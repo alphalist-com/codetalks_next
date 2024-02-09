@@ -1,10 +1,10 @@
 <template>
   <div>
-    <div class="mx-auto max-w-7xl sm:px-6 px-0 lg:px-8 pt-32">
+    <div class="mx-auto max-w-7xl px-0 pt-32 sm:px-6 lg:px-8">
       <div
         class="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center"
       >
-        <div class="w-full max-w-xl lg:shrink-0 xl:max-w-2xl px-12">
+        <div class="w-full max-w-xl px-12 lg:shrink-0 xl:max-w-2xl">
           <SectionHeader>
             BROADEN YOUR
             <SectionHeaderHighlightText text="HORIZON!" />
@@ -30,7 +30,7 @@
           class="mt-14 flex justify-end gap-8 sm:-mt-36 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0"
         >
           <div
-            class="ml-auto w-44 flex-none mr-12 space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80"
+            class="ml-auto mr-12 w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80"
           >
             <div class="relative">
               <img
@@ -44,7 +44,7 @@
             </div>
           </div>
           <div
-            class="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36 -ml-12"
+            class="-ml-12 mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36"
           >
             <div class="relative">
               <img

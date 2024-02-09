@@ -2,11 +2,11 @@
   <div>
     <ul
       role="list"
-      class="mx-auto max-w-fit mt-12 grid grid-cols-2 gap-6 px-0 sm:grid-cols-3 sm:px-6 md:grid-cols-4 xl:grid-cols-6 relative"
+      class="relative mx-auto mt-12 grid max-w-fit grid-cols-2 gap-6 px-0 sm:grid-cols-3 sm:px-6 md:grid-cols-4 xl:grid-cols-6"
     >
       <div
         v-if="fadeOut"
-        class="z-10 absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-t from-cota-background from-50% to-transparent to-100%"
+        class="absolute bottom-0 left-0 right-0 z-10 h-64 bg-gradient-to-t from-cota-background from-50% to-transparent to-100%"
       ></div>
 
       <li v-for="person in personArray" :key="person.name">

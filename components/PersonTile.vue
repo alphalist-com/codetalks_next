@@ -2,16 +2,16 @@
   <div>
     <div
       :class="[
-        'relative flex flex-col items-center w-36 h-52 sm:w-40 sm:h-60',
+        'relative flex h-52 w-36 flex-col items-center sm:h-60 sm:w-40',
         person.detailedInfos ? 'cursor-pointer' : '',
       ]"
       @click="handleClick"
     >
       <div
-        class="relative w-full h-full cota-material rounded-lg overflow-hidden"
+        class="cota-material relative h-full w-full overflow-hidden rounded-lg"
       >
         <img
-          class="w-full h-full object-cover"
+          class="h-full w-full object-cover"
           :src="props.person.image"
           :alt="person.name"
         />
@@ -20,27 +20,27 @@
         >
           <div class="grid grid-cols-10">
             <p
-              class="col-span-10 text-md text-clip line-clamp-1 font-semibold text-white"
+              class="text-md col-span-10 line-clamp-1 text-clip font-semibold text-white"
             >
               {{ person.name }}
             </p>
             <p
               v-if="person.position"
-              class="col-span-10 text-sm text-ellipsis line-clamp-1 text-gray-300"
+              class="col-span-10 line-clamp-1 text-ellipsis text-sm text-gray-300"
             >
               {{ person.position }}
             </p>
             <p
               v-if="person.company"
-              class="col-span-9 text-sm text-clip h-4 line-clamp-1 text-gray-300"
+              class="col-span-9 line-clamp-1 h-4 text-clip text-sm text-gray-300"
             >
               {{ person.company }}
             </p>
             <button
               v-if="person.detailedInfos"
-              class="col-span-1 items-center justify-center w-4 h-4 cota-material rounded-full"
+              class="cota-material col-span-1 h-4 w-4 items-center justify-center rounded-full"
             >
-              <p class="text-cota-primary text-xs">i</p>
+              <p class="text-xs text-cota-primary">i</p>
             </button>
           </div>
         </div>
@@ -51,7 +51,7 @@
 
 <script lang="ts" setup>
 import type { Person } from "@/utils/types/person";
-import { inject } from 'vue';
+import { inject } from "vue";
 
 type OpenDialogFunction = (details: any) => void;
 
@@ -62,9 +62,12 @@ const props = defineProps({
   },
 });
 
-const openDialog = inject<OpenDialogFunction>('openDialogWithPersonId', (details) => {
-  console.log('Undefined openDialogCall with data', details);
-});
+const openDialog = inject<OpenDialogFunction>(
+  "openDialogWithPersonId",
+  (details) => {
+    console.log("Undefined openDialogCall with data", details);
+  },
+);
 
 const handleClick = () => {
   if (props.person.detailedInfos && openDialog) {

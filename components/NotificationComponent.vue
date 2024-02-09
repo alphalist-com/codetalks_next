@@ -9,7 +9,7 @@
   >
     <div
       v-if="show"
-      class="pointer-events-auto fixed bottom-0 left-0 right-0 w-full max-w-sm mx-auto overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5"
+      class="pointer-events-auto fixed bottom-0 left-0 right-0 mx-auto w-full max-w-sm overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5"
     >
       <div class="p-4">
         <div class="flex items-start">
@@ -39,7 +39,11 @@
 </template>
 
 <script setup lang="ts">
-import { CheckCircleIcon, ExclamationCircleIcon, XMarkIcon } from "@heroicons/vue/24/outline";
+import {
+  CheckCircleIcon,
+  ExclamationCircleIcon,
+  XMarkIcon,
+} from "@heroicons/vue/24/outline";
 import { ref, onMounted, watch } from "vue";
 
 const props = defineProps({
@@ -58,9 +62,9 @@ onMounted(() => {
 });
 
 const icon = computed(() =>
-  props.isSuccess ? CheckCircleIcon : ExclamationCircleIcon
+  props.isSuccess ? CheckCircleIcon : ExclamationCircleIcon,
 );
 const iconClass = computed(() =>
-  props.isSuccess ? "text-green-400" : "text-red-400"
+  props.isSuccess ? "text-green-400" : "text-red-400",
 );
 </script>

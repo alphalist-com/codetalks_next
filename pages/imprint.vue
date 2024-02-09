@@ -9,19 +9,34 @@
       24610 Trappenkamp<br />
     </p>
 
-    <h2 class="font-semibold mt-8"><span class="text-cota-primary">Represented by</span> alphalist GmbH</h2>
+    <h2 class="mt-8 font-semibold">
+      <span class="text-cota-primary">Represented by</span> alphalist GmbH
+    </h2>
 
-    <h3 class="font-semibold mt-4">Contact details</h3>
-    <ul class="list-none mb-4">
-      <li>Phone: <NuxtLink class="underline text-cota-primary" href="tel:+491795255475">01795255475</NuxtLink></li>
-      <li>Email: <NuxtLink  class="underline text-cota-primary" href="mailto:cto@alphalist.com"> cto@alphalist.com </NuxtLink></li>
+    <h3 class="mt-4 font-semibold">Contact details</h3>
+    <ul class="mb-4 list-none">
+      <li>
+        Phone:
+        <NuxtLink class="text-cota-primary underline" href="tel:+491795255475"
+          >01795255475</NuxtLink
+        >
+      </li>
+      <li>
+        Email:
+        <NuxtLink
+          class="text-cota-primary underline"
+          href="mailto:cto@alphalist.com"
+        >
+          cto@alphalist.com
+        </NuxtLink>
+      </li>
       <li>Registration number: HRB 25560 KI</li>
       <li>Court location: Hamburg</li>
     </ul>
 
-    <h2 class="text-xl font-bold mb-2 mt-8">Disclaimer</h2>
+    <h2 class="mb-2 mt-8 text-xl font-bold">Disclaimer</h2>
 
-    <h3 class="font-semibold mt-4">Responsibility for contents</h3>
+    <h3 class="mt-4 font-semibold">Responsibility for contents</h3>
     <p class="mb-4">
       The contents of our web pages were created with the greatest care.
       Nevertheless, we cannot guarantee that the content is up-to-date, reliable
@@ -35,7 +50,7 @@
       Act (TMG).
     </p>
 
-    <h3 class="font-semibold mt-8 ">Responsibility for links</h3>
+    <h3 class="mt-8 font-semibold">Responsibility for links</h3>
     <p class="mb-4">
       Responsibility for the content of third-party links (external content)
       lies with the respective website operators. At the time of insertion of
@@ -44,7 +59,7 @@
       remove the corresponding link.
     </p>
 
-    <h3 class="font-semibold mt-8">Copyright</h3>
+    <h3 class="mt-8 font-semibold">Copyright</h3>
     <p>
       Our web pages and their content (texts, photos, graphics, design) are
       subject to German copyright law. Unless otherwise agreed by law, the use,
@@ -58,7 +73,6 @@
   </div>
 </template>
 
-<script>
-</script>
+<script></script>
 
 <style></style>

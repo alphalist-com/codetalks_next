@@ -14,7 +14,7 @@
         <SwiperSlide v-for="(imageInfo, index) in imageInfos" :key="index">
           <div class="relative">
             <img
-              class="rounded-xl w-full aspect-square md:aspect-video object-cover"
+              class="aspect-square w-full rounded-xl object-cover md:aspect-video"
               :src="imageInfo.url"
               :alt="`Image ${index + 1}`"
               :style="{ objectPosition: imageInfo.focusPoint }"
@@ -27,15 +27,12 @@
 </template>
 
 <script setup lang="ts">
-
-
 const props = defineProps({
   imageInfos: {
     type: Array,
-    default: () => []
-  }
+    default: () => [],
+  },
 });
-
 </script>
 
 <style>

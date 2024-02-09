@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-[#1ABA8B]/15 hover:bg-[#1ABA8B]/30 rounded-xl p-5 sm:p-8 cursor-pointer"
+    class="cursor-pointer rounded-xl bg-[#1ABA8B]/15 p-5 hover:bg-[#1ABA8B]/30 sm:p-8"
     :key="talk.id"
     @click="handleClick"
   >
@@ -22,7 +22,7 @@ const openDialog = inject<OpenDialogFunction>(
   "openDialogWithTalkData",
   (details) => {
     console.log("Undefined openDialogCall with data", details);
-  }
+  },
 );
 
 const handleClick = () => {

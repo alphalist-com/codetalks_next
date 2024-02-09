@@ -4,26 +4,30 @@
       <div
         class="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center"
       >
-        <div class="max-w-xl xl:max-w-2xl pr-0 lg:pr-6 px-6 sm:px-12">
+        <div class="max-w-xl px-6 pr-0 sm:px-12 lg:pr-6 xl:max-w-2xl">
           <SectionHeader>
             LET’S GET
             <SectionHeaderHighlightText text="PARTNER" />
             IN CODE
           </SectionHeader>
           <p
-            class="relative mt-6 pr-8 sm:pr-0 leading-8 font-light text-cota-secondary sm:max-w-md lg:max-w-none"
+            class="relative mt-6 pr-8 font-light leading-8 text-cota-secondary sm:max-w-md sm:pr-0 lg:max-w-none"
           >
-          Present your company at one of the leading developer conferences, network with like-minded individuals, and share your experiences with the community. We place great emphasis on quality and personalized support to ensure your appearance is a complete success and you achieve your goals.
+            Present your company at one of the leading developer conferences,
+            network with like-minded individuals, and share your experiences
+            with the community. We place great emphasis on quality and
+            personalized support to ensure your appearance is a complete success
+            and you achieve your goals.
           </p>
           <div class="mt-14">
             <PrimaryBtn link="/partners">Learn more</PrimaryBtn>
           </div>
         </div>
         <div
-          class="flex justify-start lg:flex-shrink-0 lg:-ml-16 lg:order-first lg:mr-0 gap-8 -mt-12 sm:pl-20 lg:mt-0 lg:pl-0 overflow-hidden"
+          class="-mt-12 flex justify-start gap-8 overflow-hidden sm:pl-20 lg:order-first lg:-ml-16 lg:mr-0 lg:mt-0 lg:flex-shrink-0 lg:pl-0"
         >
           <div
-            class="ml-auto w-44 flex-none space-y-8 pt-60 sm:ml-0 sm:pt-80 lg:order-last lg:pt-54 xl:pt-80"
+            class="lg:pt-54 ml-auto w-44 flex-none space-y-8 pt-60 sm:ml-0 sm:pt-80 lg:order-last xl:pt-80"
           >
             <div class="relative">
               <img
@@ -36,9 +40,7 @@
               />
             </div>
           </div>
-          <div
-            class="mr-auto w-44 flex-none space-y-8 sm:mr-0 pt-36 lg:pt-0"
-          >
+          <div class="mr-auto w-44 flex-none space-y-8 pt-36 sm:mr-0 lg:pt-0">
             <div class="relative">
               <img
                 src="/gallery/cota-2.png"

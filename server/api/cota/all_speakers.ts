@@ -4,7 +4,7 @@ export default defineEventHandler(async (event) => {
   const body = await readBody(event);
   const url = `https://codetalks.de/speaker/all-speakers?count=10&exclude_ids=${body.excludeIds}`;
 
-  console.log('exclude speakerIds: ',body.excludeIds);
+  console.log("exclude speakerIds: ", body.excludeIds);
 
   const response = await fetch(
     `https://codetalks.de/speaker/all-speakers?count=10&exclude_ids=[${body.excludeIds}]`,
@@ -21,18 +21,18 @@ export default defineEventHandler(async (event) => {
       referrerPolicy: "unsafe-url",
       body: null,
       method: "GET",
-    }
+    },
   );
 
   let newSpeakers = await response.json();
 
-  console.log('sp', newSpeakers);
+  console.log("sp", newSpeakers);
   let consolidatedNewSpeakers = newSpeakers.map((speaker) => ({
     name: speaker.full_name,
     position: speaker.position,
     company: speaker.company.name,
     image: `https://codetalks.de/${speaker.photo_url}`,
     detailedInfos: speaker.user_id,
-  }));  
+  }));
   return { success: true, newSpeakers: consolidatedNewSpeakers };
 });

@@ -1,33 +1,40 @@
 <template>
   <Dialog
     :open="speakerDialogOpen"
-    class="fixed inset-0 flex items-center justify-center z-40"
+    class="fixed inset-0 z-40 flex items-center justify-center"
   >
     <div
       class="fixed inset-0 bg-black bg-opacity-50"
       @click="$emit('close')"
     ></div>
     <DialogPanel
-      class="max-w-full sm:max-w-2xl md:max-w-3xl lg:max-w-4xl relative sm:mx-auto rounded-2xl text-sm font-semibold text-cota-green shadow-lg backdrop-filter backdrop-blur-md border-2 border-cota-primary bg-cota-background z-50"
+      class="text-cota-green relative z-50 max-w-full rounded-2xl border-2 border-cota-primary bg-cota-background text-sm font-semibold shadow-lg backdrop-blur-md backdrop-filter sm:mx-auto sm:max-w-2xl md:max-w-3xl lg:max-w-4xl"
     >
       <div class="text-white">
         <div
-          class="h-full flex justify-center items-center"
+          class="flex h-full items-center justify-center"
           v-if="fetchingData"
         >
-          <Loading/>
+          <Loading />
         </div>
         <div class="p-3 sm:p-6" v-else>
           <div class="">
             <div class="flex flex-row pb-4">
               <img
                 :src="`https://codetalks.de/${speakerData.photo_url}`"
-                class="h-36 w-36 sm:h-40 sm:w-40 object-cover rounded-lg col-span-1 border-cota-primary border-2"
+                class="col-span-1 h-36 w-36 rounded-lg border-2 border-cota-primary object-cover sm:h-40 sm:w-40"
               />
-              <div class="ml-4 sm:ml-8 flex flex-col py-1 sm:py-4 justify-between">
+              <div
+                class="ml-4 flex flex-col justify-between py-1 sm:ml-8 sm:py-4"
+              >
                 <h3 class="text-md sm:text-lg">{{ speakerData.full_name }}</h3>
-                <h4 > <span class="text-cota-primary font-normal"> {{ speakerData.attendee.position }} </span> @ {{ speakerData.attendee.company.name }}</h4>
-                <div class="flex space-x-4 md:order-2 mt-auto">
+                <h4>
+                  <span class="font-normal text-cota-primary">
+                    {{ speakerData.attendee.position }}
+                  </span>
+                  @ {{ speakerData.attendee.company.name }}
+                </h4>
+                <div class="mt-auto flex space-x-4 md:order-2">
                   <NuxtLink
                     v-if="speakerData?.attendee?.linkedin_profile"
                     :href="speakerData?.attendee?.linkedin_profile"
@@ -99,8 +106,8 @@
                 </div>
               </div>
             </div>
-            <div class="overflow-y-auto overflow-x-hidden max-h-96 rounded-lg">
-              <div class="row-span-2 pt-2 pb-4">
+            <div class="max-h-96 overflow-y-auto overflow-x-hidden rounded-lg">
+              <div class="row-span-2 pb-4 pt-2">
                 <p class="text-sm font-light">
                   {{ speakerData.attendee.biography }}
                 </p>
@@ -108,8 +115,8 @@
               <div class="">
                 <ul class="flex flex-col gap-2 sm:gap-4">
                   <li class="m-1" v-for="talk in speakerData.attendee.talks">
-                    <MobileSpeakerTalkTile v-if="smallScreen" :talk="talk"/>
-                    <NormalSpeakerTalkTile v-else :talk="talk"/>
+                    <MobileSpeakerTalkTile v-if="smallScreen" :talk="talk" />
+                    <NormalSpeakerTalkTile v-else :talk="talk" />
                   </li>
                 </ul>
               </div>
@@ -128,7 +135,7 @@ export interface SpeakerDetails {
   id: String;
 }
 
-const smallScreen: Boolean = computed(() => window.innerWidth < 640)
+const smallScreen: Boolean = computed(() => window.innerWidth < 640);
 
 const props = defineProps({
   speakerDialogOpen: {
@@ -181,7 +188,7 @@ watch(
   },
   {
     immediate: true,
-  }
+  },
 );
 </script>
 

@@ -2,9 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer components {
   .cota-material {
-    @apply border border-cota-primary rounded-md bg-cota-background/70 backdrop-filter backdrop-blur-md
+    @apply rounded-md border border-cota-primary bg-cota-background/70 backdrop-blur-md backdrop-filter;
   }
 }

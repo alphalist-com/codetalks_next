@@ -1,6 +1,8 @@
 <template>
   <div class="p-4 text-cota-secondary">
-    <h1 class="text-lg text-cota-primary" style="-webkit-text-stroke: 1px">Datenschutzinformationen</h1>
+    <h1 class="text-lg text-cota-primary" style="-webkit-text-stroke: 1px">
+      Datenschutzinformationen
+    </h1>
     <div class="text--left">
       <div class="text--left">
         <p>
@@ -839,7 +841,6 @@ body.codetalks-main section.curators-page {
 }
 
 a {
-    color: #1aba8b
+  color: #1aba8b;
 }
-
 </style>

@@ -1,6 +1,8 @@
 <template>
-  <h3 class="font-bold tracking-tight uppercase text-cota-secondary sm:text-4xl text-2xl">
-    <slot/>
+  <h3
+    class="text-2xl font-bold uppercase tracking-tight text-cota-secondary sm:text-4xl"
+  >
+    <slot />
   </h3>
 </template>
 

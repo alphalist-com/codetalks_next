@@ -1,15 +1,16 @@
 <template>
-  
-  <h1 class="outline-text text-5xl font-bold tracking-tight uppercase sm:text-7xl text-transparent"><slot/></h1>
+  <h1
+    class="outline-text text-5xl font-bold uppercase tracking-tight text-transparent sm:text-7xl"
+  >
+    <slot />
+  </h1>
 </template>
 
-<script lang="ts" setup>
-
-</script>
+<script lang="ts" setup></script>
 
 <style>
 .outline-text {
-  -webkit-text-stroke: 1px #1aba8b; 
-  color: transparent; 
+  -webkit-text-stroke: 1px #1aba8b;
+  color: transparent;
 }
 </style>

@@ -5,65 +5,65 @@
       <p>{{ talk.starts_at_time }}</p>
       <p>{{ talk.ends_at_time }}</p>
     </div>
-    <div class="grow flex flex-col">
-      <div class="flex flex-row h-12 gap-2">
+    <div class="flex grow flex-col">
+      <div class="flex h-12 flex-row gap-2">
         <div
-          class="bg-cota-primary text-cota-on-primary h-min rounded-md px-2 py-1 uppercase text-xs shrink-0"
+          class="h-min shrink-0 rounded-md bg-cota-primary px-2 py-1 text-xs uppercase text-cota-on-primary"
         >
           {{ talk.event.name }} <span></span>{{ talk.event.slug }}
         </div>
         <div
-          class="bg-cota-primary text-cota-on-primary h-min rounded-md px-2 py-1 uppercase text-xs shrink-0"
+          class="h-min shrink-0 rounded-md bg-cota-primary px-2 py-1 text-xs uppercase text-cota-on-primary"
         >
           Hall {{ talk.room_id }}
         </div>
       </div>
       <div>
-        <h3 class="text-lg font-semibold line-clamp-1 leading-5">
+        <h3 class="line-clamp-1 text-lg font-semibold leading-5">
           {{ talk.title }}
         </h3>
         <div
           v-for="talk_speaker in talk.speakers"
           :key="talk_speaker.id"
-          class="flex flex-row text-xs justify-start"
+          class="flex flex-row justify-start text-xs"
         >
-          <h4 class="font-light text-cota-primary leading-5 basis-1/2">
+          <h4 class="basis-1/2 font-light leading-5 text-cota-primary">
             {{ talk_speaker.full_name }}
           </h4>
-          <h4 class="ml-6 leading-5 font-thin line-clamp-1 basis-1/2">
+          <h4 class="ml-6 line-clamp-1 basis-1/2 font-thin leading-5">
             {{ talk_speaker.company.name }}
           </h4>
         </div>
       </div>
     </div>
-    <div class="ml-4 basis-1/4 flex-shrink-0 gap-6 grid grid-cols-2">
+    <div class="ml-4 grid flex-shrink-0 basis-1/4 grid-cols-2 gap-6">
       <div class="flex flex-col">
-        <p class="text-cota-primary uppercase text-xs">Lang</p>
+        <p class="text-xs uppercase text-cota-primary">Lang</p>
         <p class="font-thin">
           {{ talk.language == "en" ? "English" : "German" }}
         </p>
       </div>
 
       <div class="flex flex-col">
-        <p class="text-cota-primary uppercase text-xs">level</p>
+        <p class="text-xs uppercase text-cota-primary">level</p>
         <p class="font-thin">{{ talk.level }}</p>
       </div>
 
       <div class="flex flex-col">
-        <p class="text-cota-primary uppercase text-xs">track</p>
-        <p class="font-thin line-clamp-2">
+        <p class="text-xs uppercase text-cota-primary">track</p>
+        <p class="line-clamp-2 font-thin">
           {{ talk.track.label_translations[1].translation }}
         </p>
       </div>
 
       <div class="flex flex-col">
-        <p class="text-cota-primary uppercase text-xs">Tech</p>
+        <p class="text-xs uppercase text-cota-primary">Tech</p>
         <p class="font-thin">
           {{
             talk.programming_languages.reduce(
               (concatinat, currentLanguage) =>
                 `${concatinat}  ${currentLanguage.label_translations[1].translation}`,
-              ""
+              "",
             )
           }}
         </p>

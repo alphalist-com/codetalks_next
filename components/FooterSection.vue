@@ -1,13 +1,13 @@
 <template>
   <footer
-    class="shadow-lg backdrop-filter backdrop-blur-md bg-cota-background z-20"
+    class="z-20 bg-cota-background shadow-lg backdrop-blur-md backdrop-filter"
     aria-labelledby="footer-heading"
   >
     <h2 id="footer-heading" class="sr-only">Footer</h2>
     <div class="mx-auto max-w-7xl px-12 pb-8 pt-8 sm:pt-24 lg:px-16 lg:pt-16">
       <div class="grid grid-cols-5">
         <div
-          class="col-span-5 md:col-span-3 flex justify-start md gap-10 sm:gap-20"
+          class="md col-span-5 flex justify-start gap-10 sm:gap-20 md:col-span-3"
         >
           <div class="shrink-0">
             <h3 class="text-sm font-semibold leading-6 text-white">
@@ -49,7 +49,7 @@
           </div>
         </div>
         <div
-          class="bg-green col-span-5 mt-16 md:mt-0 md:col-span-2 justify-between grid-cols-1"
+          class="bg-green col-span-5 mt-16 grid-cols-1 justify-between md:col-span-2 md:mt-0"
         >
           <div>
             <div class="xl:mt-0" id="newsletter">
@@ -72,7 +72,7 @@
                   autocomplete="email"
                   required
                   :disabled="submittingEmail"
-                  class="w-full min-w-0 appearance-none rounded-md border-0 bg-cota-darkergrey px-3 py-1.5 text-base text-cota-on-secondary shadow-sm placeholder:text-cota-primary focus:shadow-lg focus:shadow-cota-primary transition-shadow duration-300 sm:w-64 sm:text-sm sm:leading-6 xl:w-full"
+                  class="bg-cota-darkergrey w-full min-w-0 appearance-none rounded-md border-0 px-3 py-1.5 text-base text-cota-on-secondary shadow-sm transition-shadow duration-300 placeholder:text-cota-primary focus:shadow-lg focus:shadow-cota-primary sm:w-64 sm:text-sm sm:leading-6 xl:w-full"
                   placeholder="Enter your email"
                   @blur="removeHash"
                 />
@@ -80,14 +80,14 @@
                   <button
                     type="submit"
                     :disabled="submittingEmail"
-                    class="flex w-full items-center justify-start rounded-md bg-primary px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-primary-[100] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cota-primary"
+                    class="bg-primary hover:bg-primary-[100] flex w-full items-center justify-start rounded-md px-3 py-2 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cota-primary"
                   >
                     Subscribe
                   </button>
                 </div>
               </form>
             </div>
-            <div class="flex space-x-6 md:order-2 mt-6">
+            <div class="mt-6 flex space-x-6 md:order-2">
               <NuxtLink
                 v-for="item in navigation.social"
                 :key="item.name"
@@ -102,12 +102,12 @@
         </div>
       </div>
       <div
-        class="mt-8 md:mt-16 border-t border-cota-primary pt-8 sm:mt-20 flex justify-between"
+        class="mt-8 flex justify-between border-t border-cota-primary pt-8 sm:mt-20 md:mt-16"
       >
-        <p class="text-xs leading-5 text-gray-400 mt-0">
+        <p class="mt-0 text-xs leading-5 text-gray-400">
           &copy; 2023 alphalist GmbH. All rights reserved.
         </p>
-        <div class="flex space-x-6 h-5">
+        <div class="flex h-5 space-x-6">
           <NuxtImg src="/alphalist_logo_white.png" />
         </div>
       </div>
@@ -151,7 +151,7 @@ const removeHash = () => {
     history.pushState(
       "",
       document.title,
-      window.location.pathname + window.location.search
+      window.location.pathname + window.location.search,
     );
   }
 };
@@ -160,10 +160,10 @@ const handleSubmit = async () => {
   submittingEmail.value = true;
   await $fetch("/api/newsletter/subscribe", {
     method: "post",
-    body: JSON.stringify(formData)
+    body: JSON.stringify(formData),
   })
     .then((res) => {
-      console.log('succuess',res);
+      console.log("succuess", res);
       emit("submissionResult", {
         success: true,
         message: "Subscription successful!",

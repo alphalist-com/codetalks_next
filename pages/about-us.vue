@@ -8,7 +8,7 @@
       <div class="mt-10 flex items-center justify-center gap-x-6">
         <NuxtLink
           @click="dialogOpen = true"
-          class="rounded-md px-3.5 py-2 text-sm font-semibold text-cota-on-primary bg-cota-primary"
+          class="rounded-md bg-cota-primary px-3.5 py-2 text-sm font-semibold text-cota-on-primary"
           >Watch Recap</NuxtLink
         >
       </div>
@@ -49,7 +49,7 @@
         <SubSectionHeader class="mt-6">This is our team.</SubSectionHeader>
         <PersonTileList :person-array="team"></PersonTileList>
       </div>
-      <div class="text-center mt-28">
+      <div class="mt-28 text-center">
         <SectionHeader
           >OUR <SectionHeaderHighlightText text="Principles"
         /></SectionHeader>
@@ -57,15 +57,15 @@
           >This year we like to say thank you to our beloved partners in
           code.</SubSectionHeader
         >
-        <ul class="flex flex-wrap gap-12 mt-12 mx-auto justify-center">
+        <ul class="mx-auto mt-12 flex flex-wrap justify-center gap-12">
           <li
-            class="rounded-xl w-96 p-8 border border-cota-primary"
+            class="w-96 rounded-xl border border-cota-primary p-8"
             v-for="principle in principles"
             :key="principle.title"
           >
             <div class="h-32">
-              <img class="h-16 object-contain mx-auto" :src="principle.icon" />
-              <h3 class="mt-4 text-3xl text-cota-primary font-thin">
+              <img class="mx-auto h-16 object-contain" :src="principle.icon" />
+              <h3 class="mt-4 text-3xl font-thin text-cota-primary">
                 {{ principle.title }}
               </h3>
             </div>
@@ -75,7 +75,7 @@
           </li>
         </ul>
       </div>
-      <div class="text-center mt-20 pb-10">
+      <div class="mt-20 pb-10 text-center">
         <SectionHeader
           >CODE OF <SectionHeaderHighlightText text="CODUCT"
         /></SectionHeader>
@@ -116,14 +116,14 @@
     <Dialog
       @close="dialogClosed"
       :open="dialogOpen"
-      class="fixed inset-0 flex items-center justify-center z-20"
+      class="fixed inset-0 z-20 flex items-center justify-center"
     >
       <div
         class="fixed inset-0 bg-black bg-opacity-50"
         @click="dialogOpen = false"
       ></div>
       <DialogPanel
-        class="relative mx-auto p-1 rounded-lg text-sm font-semibold text-cota-green shadow-lg backdrop-filter backdrop-blur-md border-2 border-cota-primary bg-cota-background z-30"
+        class="text-cota-green relative z-30 mx-auto rounded-lg border-2 border-cota-primary bg-cota-background p-1 text-sm font-semibold shadow-lg backdrop-blur-md backdrop-filter"
       >
         <iframe
           v-if="dialogOpen"
@@ -177,7 +177,6 @@ const team: Array<Person> = [
     image:
       "https://codetalks.de/storage/images/persons/thumbnails/Philipp_Gentz-6f8dd39ab6ed605242bada98754410ad.jpg",
   },
-
 ];
 
 const pictures = [
@@ -243,7 +242,7 @@ const principles: Principle[] = [
 
 const dialogOpen = ref(false);
 const recapVideo = ref(
-  "https://www.youtube.com/embed/Kx5N5QK3rOE?enablejsapi=1&autoplay=1&mute=1"
+  "https://www.youtube.com/embed/Kx5N5QK3rOE?enablejsapi=1&autoplay=1&mute=1",
 );
 
 const iframeWidth = computed(() => {
@@ -264,7 +263,7 @@ watch(dialogOpen, (newVal) => {
     const message = newVal ? "playVideo" : "pauseVideo";
     iframe.contentWindow?.postMessage(
       `{"event":"command","func":"${message}","args":""}`,
-      "*"
+      "*",
     );
   }
 });

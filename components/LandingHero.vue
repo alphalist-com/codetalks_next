@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="-mt-16 h-screen">
-      <div class="relative isolate overflow-hidden h-full pt-14" id="hero">
+      <div class="relative isolate h-full overflow-hidden pt-14" id="hero">
         <div class="absolute inset-0 -z-10">
           <video
             id="backgroundVideo"
@@ -10,16 +10,16 @@
             muted
             playsinline
             alt="codetalks-loop"
-            class="h-full w-full object-cover brightness-50 bg-gradient-to-t from-black to-transparent"
+            class="h-full w-full bg-gradient-to-t from-black to-transparent object-cover brightness-50"
           >
             <source src="/background_video/cota.webm" type="video/webm" />
             <source src="/background_video/cota.mp4" type="video/mp4" />
           </video>
         </div>
         <div
-          class="content-around flex flex-col items-center justify-center w-full h-full px-6 -mt-6"
+          class="-mt-6 flex h-full w-full flex-col content-around items-center justify-center px-6"
         >
-          <div class="max-w-4xl w-full text-center">
+          <div class="w-full max-w-4xl text-center">
             <!-- <div class="sm:mb-8 sm:flex flex justify-center mb-8">
               <div
                 class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-400 ring-1 ring-white/10 hover:ring-white/20"
@@ -36,15 +36,17 @@
               <HeroHeadline>
                 Germanys Greatest Developer Conference
               </HeroHeadline>
-              <HeroSubHeadline class="lg:mt-11 mt-6">
+              <HeroSubHeadline class="mt-6 lg:mt-11">
                 19. & 20. September 2024 in Hamburg
               </HeroSubHeadline>
 
-              <div class="mt-12 grid grid-cols-1 items-center justify-evenly gap-6">
+              <div
+                class="mt-12 grid grid-cols-1 items-center justify-evenly gap-6"
+              >
                 <PrimaryBtn link="#">GET your tickets</PrimaryBtn>
-                
+
                 <NuxtLink
-                  class="text-sm mt-6 font-semibold text-white"
+                  class="mt-6 text-sm font-semibold text-white"
                   @click="dialogOpen = true"
                   >RECAP MOVIE 2023 <span aria-hidden="true">></span></NuxtLink
                 >
@@ -85,14 +87,14 @@
     <Dialog
       @close="dialogClosed"
       :open="dialogOpen"
-      class="fixed inset-0 flex items-center justify-center z-20"
+      class="fixed inset-0 z-20 flex items-center justify-center"
     >
       <div
         class="fixed inset-0 bg-black bg-opacity-50"
         @click="dialogOpen = false"
       ></div>
       <DialogPanel
-        class="relative mx-auto p-1 rounded-lg text-sm font-semibold text-cota-green shadow-lg backdrop-filter backdrop-blur-md border-2 border-cota-primary bg-cota-background z-30"
+        class="text-cota-green relative z-30 mx-auto rounded-lg border-2 border-cota-primary bg-cota-background p-1 text-sm font-semibold shadow-lg backdrop-blur-md backdrop-filter"
       >
         <iframe
           v-if="dialogOpen"
@@ -117,7 +119,7 @@ import { Dialog, DialogPanel } from "@headlessui/vue";
 const dialogOpen = ref(false);
 const videoRef = ref<HTMLVideoElement | null>(null);
 const recapVideo = ref(
-  "https://www.youtube.com/embed/Kx5N5QK3rOE?enablejsapi=1&autoplay=1&mute=1"
+  "https://www.youtube.com/embed/Kx5N5QK3rOE?enablejsapi=1&autoplay=1&mute=1",
 );
 
 const iframeWidth = computed(() => {
@@ -142,7 +144,7 @@ const dialogClosed = () => {
 
 onMounted(() => {
   videoRef.value = document.getElementById(
-    "backgroundVideo"
+    "backgroundVideo",
   ) as HTMLVideoElement | null;
 });
 
@@ -153,14 +155,13 @@ watch(dialogOpen, (newVal) => {
     const message = newVal ? "playVideo" : "pauseVideo";
     iframe.contentWindow?.postMessage(
       `{"event":"command","func":"${message}","args":""}`,
-      "*"
+      "*",
     );
   }
 });
 </script>
 
 <style scoped>
-
 .gradient-border {
   border-width: 2px;
   border-style: solid;
