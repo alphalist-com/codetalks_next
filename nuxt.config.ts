@@ -11,7 +11,7 @@ export default defineNuxtConfig({
     },
     cota: {
       currentEventId: 9,
-    }
+    },
   },
   pages: true,
   css: ["@/assets/css/tailwind.css"],

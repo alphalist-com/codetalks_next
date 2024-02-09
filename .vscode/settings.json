@@ -4,5 +4,7 @@
         "Coverflow",
         "darkgrey",
         "tailwindcss"
-    ]
+    ],
+    "prettier.configPath": ".prettierrc",
+    "prettier.vueIndentScriptAndStyle": true
 }
