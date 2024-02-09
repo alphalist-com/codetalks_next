@@ -37,7 +37,7 @@
     <GallerySection class="px-12" :image-infos="pictures" />
     <div class="py-12" id="shout-out">
       <div class="text-center">
-        <SectionHeader
+        <SectionHeader element-id="shout-out"
           >Big <SectionHeaderHighlightText text="shout-out"
         /></SectionHeader>
         <SectionSubHeadline class="px-6 sm:px-12"
@@ -47,28 +47,24 @@
       </div>
       <div class="mx-auto mt-12 max-w-7xl px-6 sm:px-12">
         <div
-          :class="[
-            'transition[height] cota-material mt-12 items-center rounded-3xl bg-white/10 px-6 py-12 text-center shadow-[inset_0_0_15px_1px_rgba(0,0,0,1.0)] filter backdrop-blur-md duration-300 ease-in-out sm:px-12',
-            currentPartners ? 'h-96' : 'h-72',
-          ]"
+          class="cota-material mt-12 h-auto items-center rounded-3xl bg-white/10 px-6 py-12 text-center shadow-[inset_0_0_15px_1px_rgba(0,0,0,1.0)] filter backdrop-blur-md duration-300 ease-in-out sm:px-12"
         >
-          <div v-if="!currentPartners">
+          <div v-if="pending || !currentPartners.partners[0]">
             <Loading />
           </div>
           <div v-else>
             <PartnerClassText>{{
-              currentPartners[0].sponsor_category.name_translations[1]
+              currentPartners.partners[0].sponsor_category.name_translations[1]
                 .translation
             }}</PartnerClassText>
-            <div
-              class="grid grid-cols-1 place-items-center gap-x-20 gap-y-16 px-6 py-8 sm:grid-cols-2"
-            >
+
+            <div class="mt-6 flex flex-wrap justify-center gap-x-12 gap-y-6">
               <NuxtLink
                 :href="topPartner.website.url"
-                v-for="topPartner in currentPartners[0].slots"
+                v-for="topPartner in currentPartners.partners[0].slots"
               >
                 <img
-                  class="h-56 object-contain"
+                  class="h-64 w-64 object-contain"
                   :src="`https://codetalks.de${topPartner.company.thumbnail_url}`"
                   :alt="topPartner.company.name"
                 />
@@ -80,23 +76,21 @@
         <div
           class="cota-material mt-12 items-center rounded-3xl bg-white/10 px-6 py-12 text-center shadow-[inset_0_0_15px_1px_rgba(0,0,0,1.0)] filter backdrop-blur-md sm:px-12"
         >
-          <div v-if="!currentPartners">
+          <div v-if="pending || !currentPartners.partners[1]">
             <Loading />
           </div>
           <div v-else>
             <PartnerClassText>{{
-              currentPartners[1].sponsor_category.name_translations[1]
+              currentPartners.partners[1].sponsor_category.name_translations[1]
                 .translation
             }}</PartnerClassText>
-            <div
-              class="grid grid-cols-1 place-items-center gap-y-16 py-12 sm:grid-cols-2 md:grid-cols-3 lg:md:grid-cols-4"
-            >
+            <div class="mt-6 flex flex-wrap justify-center gap-12">
               <NuxtLink
                 :href="topPartner.website.url"
-                v-for="topPartner in currentPartners[1].slots"
+                v-for="topPartner in currentPartners.partners[1].slots"
               >
                 <img
-                  class="h-40 object-contain"
+                  class="h-40 w-40 object-contain"
                   :src="`https://codetalks.de${topPartner.company.thumbnail_url}`"
                   :alt="topPartner.company.name"
                 />
@@ -108,23 +102,22 @@
         <div
           class="cota-material mt-12 items-center rounded-3xl bg-white/10 px-6 py-12 text-center shadow-[inset_0_0_15px_1px_rgba(0,0,0,1.0)] filter backdrop-blur-md sm:px-12"
         >
-          <div v-if="!currentPartners">
+          <div v-if="pending || !currentPartners.partners[2]">
             <Loading />
           </div>
           <div v-else>
             <PartnerClassText>{{
-              currentPartners[2].sponsor_category.name_translations[1]
+              currentPartners.partners[2].sponsor_category.name_translations[1]
                 .translation
             }}</PartnerClassText>
-            <div
-              class="grid grid-cols-1 place-items-center gap-y-16 py-12 sm:grid-cols-2 md:grid-cols-3 lg:md:grid-cols-4"
-            >
+
+            <div class="mt-6 flex flex-wrap justify-center gap-12">
               <NuxtLink
                 :href="topPartner.website.url"
-                v-for="topPartner in currentPartners[2].slots"
+                v-for="topPartner in currentPartners.partners[2].slots"
               >
                 <img
-                  class="h-20 object-contain"
+                  class="h-20 w-36 object-contain"
                   :src="`https://codetalks.de${topPartner.company.thumbnail_url}`"
                   :alt="topPartner.company.name"
                 />
@@ -136,23 +129,22 @@
         <div
           class="cota-material mt-12 items-center rounded-3xl bg-white/10 px-6 py-12 text-center shadow-[inset_0_0_15px_1px_rgba(0,0,0,1.0)] filter backdrop-blur-md sm:px-12"
         >
-          <div v-if="!currentPartners">
+          <div v-if="pending || !currentPartners.partners[3]">
             <Loading />
           </div>
           <div v-else>
             <PartnerClassText>{{
-              currentPartners[3].sponsor_category.name_translations[1]
+              currentPartners.partners[3].sponsor_category.name_translations[1]
                 .translation
             }}</PartnerClassText>
-            <div
-              class="grid grid-cols-1 place-items-center gap-y-16 py-12 sm:grid-cols-2 md:grid-cols-3 lg:md:grid-cols-4"
-            >
+
+            <div class="mt-6 flex flex-wrap justify-center gap-12">
               <NuxtLink
                 :href="topPartner.website.url"
-                v-for="topPartner in currentPartners[3].slots"
+                v-for="topPartner in currentPartners.partners[3].slots"
               >
                 <img
-                  class="h-28 object-contain"
+                  class="h-20 w-36 object-contain"
                   :src="`https://codetalks.de${topPartner.company.thumbnail_url}`"
                   :alt="topPartner.company.name"
                 />
@@ -166,16 +158,12 @@
 </template>
 
 <script setup lang="ts">
-const currentPartners = ref<Array<Object> | null>(null);
-
-onMounted(async () => {
-  const { partners } = await $fetch("/api/cota/current_partners", {
-    method: "get",
-  });
-  if (partners) {
-    currentPartners.value = partners;
-  }
-});
+const {
+  data: currentPartners,
+  error,
+  pending,
+  refresh,
+} = useAsyncData("currentPartners", () => $fetch("/api/cota/current_partners"));
 
 const pictures = [
   {
@@ -218,88 +206,6 @@ const ctas = [
     description:
       "Increase brand awareness and reach your target group and audience in an authentic environment.",
     icon: "📋",
-  },
-];
-
-const headlinerPartner = [
-  {
-    name: "adjoe",
-    logo: "/company_logos/adjoe.png",
-    link: "https://adjoe.io/",
-  },
-  {
-    name: "About You",
-    logo: "/company_logos/about_you.png",
-    link: "https://en.aboutyou.de/",
-  },
-];
-
-const premiumPartner = [
-  {
-    name: "Techniker Krankenkasse",
-    logo: "/company_logos/tk.png",
-    link: "https://www.tk.de/",
-  },
-  {
-    name: "Apple",
-    logo: "/company_logos/Apple_white.png",
-    link: "https://www.apple.com",
-  },
-  {
-    name: "Apple",
-    logo: "/company_logos/Apple_white.png",
-    link: "https://www.apple.com",
-  },
-  {
-    name: "Apple",
-    logo: "/company_logos/Apple_white.png",
-    link: "https://www.apple.com",
-  },
-];
-
-const trailblazersPartner = [
-  {
-    name: "Apple",
-    logo: "/company_logos/Apple_white.png",
-    link: "https://www.apple.com",
-  },
-  {
-    name: "Apple",
-    logo: "/company_logos/Apple_white.png",
-    link: "https://www.apple.com",
-  },
-  {
-    name: "Apple",
-    logo: "/company_logos/Apple_white.png",
-    link: "https://www.apple.com",
-  },
-  {
-    name: "Apple",
-    logo: "/company_logos/Apple_white.png",
-    link: "https://www.apple.com",
-  },
-];
-
-const feelgoodPartner = [
-  {
-    name: "Apple",
-    logo: "/company_logos/Apple_white.png",
-    link: "https://www.apple.com",
-  },
-  {
-    name: "Apple",
-    logo: "/company_logos/Apple_white.png",
-    link: "https://www.apple.com",
-  },
-  {
-    name: "Apple",
-    logo: "/company_logos/Apple_white.png",
-    link: "https://www.apple.com",
-  },
-  {
-    name: "Apple",
-    logo: "/company_logos/Apple_white.png",
-    link: "https://www.apple.com",
   },
 ];
 </script>
