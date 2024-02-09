@@ -102,10 +102,8 @@ const handleSubscriptionResult = (result: SubscriptionResult) => {
 
 <style>
 ::-webkit-scrollbar {
-  margin-left: 4px;
   z-index: 60;
-  margin-left: -4px;
-  width: 4px;
+  width: 6px;
   background-color: #020811;
 }
 
@@ -113,7 +111,6 @@ const handleSubscriptionResult = (result: SubscriptionResult) => {
   background-color: #020811;
   border-radius: 4px;
   border: 1px solid #1aba8b;
-  background-clip: padding-box;
 }
 
 ::-webkit-scrollbar-thumb:hover {

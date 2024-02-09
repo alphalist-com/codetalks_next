@@ -107,7 +107,7 @@
               </div>
               <div class="">
                 <ul class="flex flex-col gap-2 sm:gap-4">
-                  <li v-for="talk in speakerData.attendee.talks">
+                  <li class="m-1" v-for="talk in speakerData.attendee.talks">
                     <MobileSpeakerTalkTile v-if="smallScreen" :talk="talk"/>
                     <NormalSpeakerTalkTile v-else :talk="talk"/>
                   </li>
