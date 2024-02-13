@@ -147,13 +147,11 @@ import type { Person } from "~/utils/types/person";
 const team: Array<Person> = [
   {
     name: "Tobi",
-    image:
-      "https://codetalks.de/storage/images/persons/thumbnails/Ivan_Notaroš-7dae29ae2a9e396ddc8a8038bab1c8d1.png",
+    image: "/about_us_page/tobi.jpeg",
   },
   {
     name: "Joni",
-    image:
-      "https://codetalks.de/storage/images/persons/thumbnails/Philipp_Gentz-6f8dd39ab6ed605242bada98754410ad.jpg",
+    image: "/about_us_page/joni.jpg",
   },
   {
     name: "Regina",
@@ -161,13 +159,11 @@ const team: Array<Person> = [
   },
   {
     name: "Valentina",
-    image:
-      "https://codetalks.de/storage/images/persons/thumbnails/Philipp_Gentz-6f8dd39ab6ed605242bada98754410ad.jpg",
+    image: "/about_us_page/valentina.jpg",
   },
   {
     name: "Chaya",
-    image:
-      "https://codetalks.de/storage/images/persons/thumbnails/Ivan_Notaroš-7dae29ae2a9e396ddc8a8038bab1c8d1.png",
+    image: "/about_us_page/chaya.jpeg",
   },
   {
     name: "Marten",
