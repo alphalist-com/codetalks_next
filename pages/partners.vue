@@ -19,7 +19,7 @@
     </HeroSection>
     <CtaSection class="mt-12" :items="ctas" />
     <div class="mx-auto mt-12 max-w-6xl text-center">
-      <SectionHeader class="px-12"
+      <SectionHeader :center-align="true" class="px-12"
         >WHAT <SectionHeaderHighlightText text="PARTNERSHIP" /> MEANS TO
         US</SectionHeader
       >
