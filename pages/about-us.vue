@@ -159,7 +159,7 @@ const team: Array<Person> = [
   },
   {
     name: "Valentina",
-    image: "/about_us_page/valentina.jpg",
+    image: "/about_us_page/valentina.jpeg",
   },
   {
     name: "Chaya",
