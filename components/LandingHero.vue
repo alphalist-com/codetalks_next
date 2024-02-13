@@ -43,7 +43,11 @@
               <div
                 class="mt-12 grid grid-cols-1 items-center justify-evenly gap-6"
               >
-                <PrimaryBtn link="#">GET your tickets</PrimaryBtn>
+                <NuxtLink
+                  @click="showTicketShop"
+                  class="justify-self-center rounded-md bg-cota-primary px-3.5 py-2 text-sm font-semibold uppercase text-cota-on-primary"
+                  >Get your ticket</NuxtLink
+                >
 
                 <NuxtLink
                   class="mt-6 text-sm font-semibold text-white"
@@ -121,6 +125,12 @@ const videoRef = ref<HTMLVideoElement | null>(null);
 const recapVideo = ref(
   "https://www.youtube.com/embed/Kx5N5QK3rOE?enablejsapi=1&autoplay=1&mute=1",
 );
+
+type showTicketShopFunction = (details: any) => void;
+
+const showTicketShop = inject<showTicketShopFunction>("showTicketShop", () => {
+  console.log("Undefined showTicketShopCall to show TicketShop");
+});
 
 const iframeWidth = computed(() => {
   return Math.min(window.innerWidth * 0.9, 560);

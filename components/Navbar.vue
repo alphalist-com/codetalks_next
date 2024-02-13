@@ -77,7 +77,12 @@
               >
             </div>
             <div class="-ml-3 py-6">
-              <OutlineBtn link="#">Get your tickets</OutlineBtn>
+              <NuxtLink
+                @click="getTicketsClicked"
+                class="cota-material px-3.5 py-2 text-xs font-semibold uppercase text-cota-primary"
+              >
+                get tickets
+              </NuxtLink>
             </div>
           </div>
         </div>
@@ -89,6 +94,16 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from "vue";
 import { Bars3Icon, XMarkIcon } from "@heroicons/vue/24/outline";
+
+type showTicketShopFunction = () => void;
+
+const showTicketShop = inject<showTicketShopFunction>("showTicketShop", () => {
+  console.log("Undefined showTicketShopCall to show TicketShop");
+});
+
+const getTicketsClicked = () => {
+  showTicketShop();
+};
 
 const isAtTop = ref(true);
 

@@ -22,6 +22,10 @@
       :talk-dialog-open="showTalkDialog"
       :talk-data="talkData"
     />
+    <TicketShopDialog
+      :hidden="!showTicketShopDialog"
+      @close="ticketShopHidden"
+    />
     <NotificationComponent
       :show="showNotification"
       :message="notificationMessage"
@@ -56,8 +60,9 @@ import { ref, provide } from "vue";
 
 const speakerId = ref("");
 const talkData = ref<Object | null>(null);
-const showSpeakerDialog = ref(false);
-const showTalkDialog = ref(false);
+const showSpeakerDialog = ref<Boolean>(false);
+const showTalkDialog = ref<Boolean>(false);
+const showTicketShopDialog = ref<Boolean>(false);
 
 const speakerDialogClosed = () => {
   showSpeakerDialog.value = false;
@@ -65,6 +70,10 @@ const speakerDialogClosed = () => {
 
 const talkDialogClosed = () => {
   showTalkDialog.value = false;
+};
+
+const ticketShopHidden = () => {
+  showTicketShopDialog.value = false;
 };
 
 const openDialogWithPersonId = async (id: string) => {
@@ -81,7 +90,13 @@ const openDialogWithTalkData = async (talk: Object) => {
   showTalkDialog.value = true;
 };
 
+const showTicketShop = async () => {
+  console.log("showTicketShop");
+  showTicketShopDialog.value = true;
+};
+
 provide("openDialogWithPersonId", openDialogWithPersonId);
+provide("showTicketShop", showTicketShop);
 provide("openDialogWithTalkData", openDialogWithTalkData);
 
 type SubscriptionResult = {
