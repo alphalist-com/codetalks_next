@@ -46,6 +46,7 @@
 </template>
 
 <script setup lang="ts">
+
 import type { Person } from "~/utils/types/person";
 
 const { data: speakers } = await useAsyncData<Person[]>("speakers", () =>
@@ -69,6 +70,15 @@ const loadMoreSpeakers = async () => {
   }
   fetchingData.value = false;
 };
+
+  useSeoMeta({
+    title: "Speakers | Talk Tech at the code.talks tech conference | Hamburg | September 19-20 2024",
+    description: "Apply to speak at code.talks 2024. Share your tech insights and solutions with leading developers and CTOs in a collaborative environment",
+    ogTitle: "Speakers | Talk Tech at the code.talks tech conference | Hamburg | September 19-20 2024",
+    ogDescription: "Apply to speak at code.talks 2024 and share your tech insights with leading developers and CTOs.",
+    ogImage: "/landing_page/slider_1.jpeg",
+    //keywords:"Tech keynote speaker submission, Developer conference speaker application, Developer conference speaking slot, Tech thought leadership opportunity, Call for speakers tech conference, call for papers tech conference",
+  });
 </script>
 
 <style scoped></style>
