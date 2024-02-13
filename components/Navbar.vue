@@ -34,9 +34,12 @@
           >
         </div>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-          <OutlineBtn :thin-version="true" link="#"
-            >Get your tickets</OutlineBtn
+          <NuxtLink
+            @click="getTicketsClicked"
+            class="cota-material px-3.5 py-2 text-xs font-semibold uppercase text-cota-primary"
           >
+            get your tickets
+          </NuxtLink>
         </div>
       </div>
     </nav>
