@@ -142,11 +142,11 @@
 
 <script setup lang="ts">
 useSeoMeta({
-    title: "Curators |  code.talks tech conference",
-    description: "Meet the curators who are helping shape this event into the community-led, dev-centric programme it is known for.",
+    title: "Curators | code.talks tech conference",
+    description: "Meet the curators who shape this event into the community-led, dev-centric event we all know and love",
     //keywords: "Sponsorship opportunities tech event,Tech event sponsorship, tech recruiting event",
-    ogTitle: "Become a Curator |  code.talks tech conference",
-    ogDescription: "Meet the curators who are helping shape this event into the community-led, dev-centric programme it is known for.",
+    ogTitle: "Curators | code.talks tech conference",
+    ogDescription: "Meet the curators who shape this event into the community-led, dev-centric event we all know and love",
     ogImage: "/landing_page/slider_6.jpeg",
   });
 </script>
