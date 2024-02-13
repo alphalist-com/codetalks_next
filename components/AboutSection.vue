@@ -12,14 +12,13 @@
           <NormalTextBlock>
             code.talks offers a varied program with more than 100 talks from 14
             subject areas. More than 130 national and international speakers are
-            waiting for you at the two-day conference in a relaxed cinema flair
-            at the CinemaxX Dammtor in Hamburg. Let the talks and panel
-            discussions, centring on the latest innovations and global trends in
-            the tech scene, inspire you and enjoy the opportunity to exchange
-            ideas with partners, sponsors, and other developers in our Expo
-            Area. The after conference party on the first day of the event is
-            another highlight that will let you celebrate wildly or let the day
-            end in a relaxed way just as you prefer.
+            waiting for you at the two-day conference in a relaxed flair at the
+            CCH in Hamburg. Let the talks and panel discussions, centring on the
+            latest innovations and global trends in the tech scene, inspire you
+            and enjoy the opportunity to exchange ideas with partners and other
+            developers in our Expo Area. The after conference party on the first
+            day of the event is another highlight that will let you celebrate
+            wildly or let the day end in a relaxed way just as you prefer.
           </NormalTextBlock>
 
           <div class="mt-14">
