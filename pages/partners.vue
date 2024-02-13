@@ -170,25 +170,25 @@ const {
 
 const pictures = [
   {
-    url: "/partner_page/slider_1.jpeg",
+    url: "/partner_page/gallery_1.jpg",
     focusPoint: "50% 30%",
   },
   {
-    url: "/partner_page/slider_2.jpeg",
+    url: "/partner_page/gallery_2.jpg",
     focusPoint: "80% 20%",
   },
-  { url: "/partner_page/slider_3.jpeg", focusPoint: "20% 80%" },
-  { url: "/partner_page/slider_4.jpeg", focusPoint: "50% 30%" },
-  { url: "/partner_page/slider_5.jpeg", focusPoint: "50% 50%" },
-  { url: "/partner_page/slider_6.jpeg", focusPoint: "50% 50%" },
-  { url: "/partner_page/slider_7.jpeg", focusPoint: "50% 50%" },
-  { url: "/partner_page/slider_8.jpeg", focusPoint: "50% 50%" },
-  { url: "/partner_page/slider_9.jpeg", focusPoint: "50% 50%" },
-  { url: "/partner_page/slider_10.jpeg", focusPoint: "50% 50%" },
-  { url: "/partner_page/slider_11.jpeg", focusPoint: "50% 50%" },
-  { url: "/partner_page/slider_12.jpeg", focusPoint: "50% 50%" },
-  { url: "/partner_page/slider_13.jpeg", focusPoint: "50% 50%" },
-  { url: "/partner_page/slider_14.jpeg", focusPoint: "50% 50%" },
+  { url: "/partner_page/gallery_3.jpg", focusPoint: "20% 80%" },
+  { url: "/partner_page/gallery_4.jpg", focusPoint: "50% 30%" },
+  { url: "/partner_page/gallery_5.jpg", focusPoint: "50% 50%" },
+  { url: "/partner_page/gallery_6.jpg", focusPoint: "50% 50%" },
+  { url: "/partner_page/gallery_7.jpg", focusPoint: "50% 50%" },
+  { url: "/partner_page/gallery_8.jpg", focusPoint: "50% 50%" },
+  { url: "/partner_page/gallery_9.jpg", focusPoint: "50% 50%" },
+  { url: "/partner_page/gallery_10.jpg", focusPoint: "50% 50%" },
+  { url: "/partner_page/gallery_11.jpg", focusPoint: "50% 50%" },
+  { url: "/partner_page/gallery_12.jpg", focusPoint: "50% 50%" },
+  { url: "/partner_page/gallery_13.jpg", focusPoint: "50% 50%" },
+  { url: "/partner_page/gallery_14.jpg", focusPoint: "50% 50%" },
 ];
 
 const ctas = [
