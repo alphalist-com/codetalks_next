@@ -104,7 +104,7 @@
       <hr class="mt-8 border-cota-primary" />
       <div class="flex justify-between px-2 pt-8 sm:mt-20 md:mt-16">
         <p class="mr-2 text-xs leading-5 text-gray-400">
-          &copy; 2023 alphalist GmbH. All rights reserved.
+          &copy; 2024 alphalist GmbH. All rights reserved.
         </p>
         <div class="flex h-5 space-x-6">
           <NuxtImg class="object-contain" src="/alphalist_logo_white.png" />
