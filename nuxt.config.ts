@@ -51,4 +51,12 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  schemaOrg: {
+    identity: {
+      type: 'Organization',
+      name: 'code.talks',
+      url: 'https://code.talks.com',
+      logo: 'https://codetalks.com/cota_logo.png',
+    }
+  }
 });

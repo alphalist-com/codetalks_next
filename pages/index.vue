@@ -91,6 +91,33 @@ const ctas = [
     ogTitle: "code.talks Tech Conference| Network & Learn in Hamburg September 19-20 2024",
     ogDescription: "Join the leading tech event for developers and CTOs in the DACH region. Experience unparalleled networking and learning opportunities",
     ogImage: "/landing_page/slider_1.jpeg",
-    //keywords: "Developer conference, Networking for software developers, ,Developer conference 2024, Tech event for developers, Software development conference, Developer networking event, Leading tech conference",
   });
+
+  useSchemaOrg([
+
+
+    defineEvent({
+      name: 'code.talks 2024',
+      eventStatus: 'EventScheduled',
+      eventAttendanceMode: 'OfflineEventAttendanceMode',
+      startDate: '"2024-09-19T08:00',
+      endDate: '"2024-09-20T23:00',
+      location: [
+        definePlace({
+          name: 'CCH - Congress Center Hamburg',
+          address: {
+            streetAddress: 'Congresspl. 1',
+            addressLocality: 'Hamburg',
+            postalCode: '20355',
+            addressCountry: 'DE',
+          }
+        })],
+      organizer: {
+        name: 'code.talks',
+        url: 'https://codetalks.com',
+      },
+      description: 'Join other developers and CTOs at the leading tech event in the DACH region. code.talks Tech Conference is a two-day event in Hamburg that brings together the brightest minds in technology to network, learn, and innovate together. Organized by code.talks.de and alphalist, its more than a developer conference; its a community.',
+
+    })
+  ]);
 </script>
