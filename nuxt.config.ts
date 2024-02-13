@@ -58,5 +58,8 @@ export default defineNuxtConfig({
       url: 'https://codetalks.de',
       logo: 'https://codetalks.com/cota_logo.png',
     }
+  },
+  sitemap: {
+    exclude: ['imprint', 'privacy', 'tc', '404', '500', '500.html', '404.html', 'imprint.html', 'privacy.html', 'tc.html'],
   }
 });
