@@ -767,7 +767,11 @@
   </div>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+  defineRouteRules({
+    robots: false
+})
+</script>
 
 <style scoped>
 h2 {

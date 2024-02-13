@@ -73,6 +73,9 @@
   </div>
 </template>
 
-<script></script>
-
+<script setup>
+  defineRouteRules({
+    robots: false
+  })
+</script>
 <style></style>
