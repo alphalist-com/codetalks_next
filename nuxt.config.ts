@@ -36,7 +36,7 @@ export default defineNuxtConfig({
     ],
     "@nuxt/image",
     "nuxt-gtag",
-    "@nuxtjs/seo",
+    '@nuxtjs/seo',
   ],
   headlessui: {
     prefix: "Headless",
