@@ -34,10 +34,8 @@
       </div>
 
       <div class="mt-12 flex items-center justify-center gap-x-6">
-        <NuxtLink
-          href="https://www.youtube.com/@code.talksbyalphalist"
-          class="rounded-md bg-cota-primary px-3.5 py-2 text-sm font-semibold text-cota-on-primary"
-          >Visit our Youtube channel</NuxtLink
+        <PrimaryBtn link="https://www.youtube.com/@code.talksbyalphalist"
+          >Visit our Youtube channel</PrimaryBtn
         >
       </div>
     </div>

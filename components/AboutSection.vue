@@ -33,7 +33,7 @@
           >
             <div class="relative">
               <img
-                src="/gallery/cota-1.png"
+                src="/landing_page/about_us_collage_1.jpg"
                 alt=""
                 class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
               />
@@ -47,7 +47,7 @@
           >
             <div class="relative">
               <img
-                src="/gallery/cota-2.png"
+                src="/landing_page/about_us_collage_2.jpg"
                 alt=""
                 class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
               />
@@ -57,7 +57,7 @@
             </div>
             <div class="relative">
               <img
-                src="/gallery/cota-3.png"
+                src="/landing_page/about_us_collage_3.jpg"
                 alt=""
                 class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
               />
@@ -69,7 +69,7 @@
           <div class="w-44 flex-none space-y-8 pt-32 sm:pt-16">
             <div class="relative">
               <img
-                src="/gallery/cota-4.png"
+                src="/landing_page/about_us_collage_4.jpg"
                 alt=""
                 class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
               />
@@ -79,7 +79,7 @@
             </div>
             <div class="relative">
               <img
-                src="/gallery/cota-5.png"
+                src="/landing_page/about_us_collage_5.jpg"
                 alt=""
                 class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
               />
