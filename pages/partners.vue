@@ -215,7 +215,7 @@ const ctas = [
     title: "Partner with Us |  code.talks tech conference",
     description: "Reach devs and CTOs in the DACH region at code.talks. Whether you want to connect with tech leaders,  market to decision makers in technology or you just showcase products to developers - code.talks is the place to go for DACH tech market exposure",
     keywords: "Sponsorship opportunities tech event,Tech event sponsorship, tech recruiting event",
-    ogTitle: "Partner With US |  code.talks tech conference",
+    ogTitle: "Partnership Opportunities |  code.talks tech conference",
     ogDescription: "Reach devs and CTOs in one place at the premiere tech conference of the DACH region. ",
     ogImage: "/partner_page/slider_1.jpeg",
   });
