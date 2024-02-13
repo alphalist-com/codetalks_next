@@ -82,11 +82,11 @@ const ctas = [
 ];
 
   useSeoMeta({
-    title: "code.talks Tech Conference 2024 | Network & Learn in Hamburg",
+    title: "code.talks Tech Conference 2024 | Hamburg | September 19-20 2024",
     description: "Join other developers and CTOs at the leading tech event which is a fixture in the DACH tech scene. Network, learn, and have fun at this tech event. It is more than a developer conference, it is a community.",
-    ogTitle: "code.talks Tech Conference 2024 | Network & Learn in Hamburg September 19-20 2024",
-    ogDescription: "Join other developers and CTOs at the leading tech event which is a fixture in the DACH tech scene. Network, learn, and have fun at this tech event. It is more than a developer conference, it is a community.",
-    ogImage: "/cota_logo.png",
+    ogTitle: "code.talks Tech Conference| Network & Learn in Hamburg September 19-20 2024",
+    ogDescription: "Join the leading tech event for developers and CTOs in the DACH region. Experience unparalleled networking and learning opportunities",
+    ogImage: "/landing_page/slider_1.jpeg",
   });
 </script>
 <script type="application/ld+json">
