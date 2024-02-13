@@ -41,6 +41,7 @@ useSeoMeta({
   ogTitle: "code.talks Tech Conference 2024 | Network & Learn in Hamburg September 19-20 2024",
   ogDescription: "Join other developers and CTOs at the leading tech event which is a fixture in the DACH tech scene. Network, learn, and have fun at this tech event. It is more than a developer conference, it is a community.",
   ogImage: "/cota_logo.png",
+  ogSiteName: 'code.talks',
 });
 
 useHead({
