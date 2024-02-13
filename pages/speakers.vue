@@ -75,6 +75,7 @@ const loadMoreSpeakers = async () => {
     title: "Speakers | Talk Tech at the code.talks tech conference | Hamburg | September 19-20 2024",
     ogType: 'website',
     ogUrl: 'https://codetalks.com',
+    twitterSite: '@codetalkshh',
     ogSiteName: 'code.talks',
     description: "Apply to speak at code.talks 2024. Share your tech insights and solutions with leading developers and CTOs in a collaborative environment",
     ogTitle: "Speakers | Talk Tech at the code.talks tech conference | Hamburg | September 19-20 2024",
