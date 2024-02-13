@@ -82,66 +82,11 @@ const ctas = [
 ];
 
   useSeoMeta({
-    title: "code.talks Tech Conference 2024 | Hamburg | September 19-20 2024",
-    description: "Join other developers and CTOs at the leading tech event which is a fixture in the DACH tech scene. Network, learn, and have fun at this tech event. It is more than a developer conference, it is a community.",
-    ogTitle: "code.talks Tech Conference| Network & Learn in Hamburg September 19-20 2024",
-    ogDescription: "Join the leading tech event for developers and CTOs in the DACH region. Experience unparalleled networking and learning opportunities",
-    ogImage: "/landing_page/slider_1.jpeg",
-    //keywords: "Developer conference, Networking for software developers, ,Developer conference 2024, Tech event for developers, Software development conference, Developer networking event, Leading tech conference",
+    title: 'code.talks Tech Conference 2024 | Hamburg | September 19-20 2024',
+    description: 'Join other developers and CTOs at the leading tech event which is a fixture in the DACH tech scene. Network, learn, and have fun at this tech event. It is more than a developer conference, it is a community.',
+    ogTitle: 'code.talks Tech Conference| Network & Learn in Hamburg September 19-20 2024',
+    ogDescription: 'Join the leading tech event for developers and CTOs in the DACH region. Experience unparalleled networking and learning opportunities',
+    ogImage: '/landing_page/slider_1.jpeg',
+    twitterCard: 'summary_large_image',
   });
-</script>"<script type=""application/ld+json"">"{
-  "@context":"http://schema.org",
-  "@type":"Event",
-  "name":"code.talks Tech Conference 2024",
-  "startDate":"2024-09-19T09:00",
-  "endDate":"2024-09-20T18:00",
-  "eventStatus":"http://schema.org/EventScheduled",
-  "eventAttendanceMode":"http://schema.org/OfflineEventAttendanceMode",
-  "location":{
-     "@type":"Place",
-     "name":"CCH - Congress Center Hamburg",
-     "address":{
-        "@type":"PostalAddress",
-        "streetAddress":"Congresspl. 1",
-        "addressLocality":"Hamburg",
-        "postalCode":"20355",
-        "addressCountry":"DE"
-     }
-  },
-  "organizer":[
-     {
-        "@type":"Organization",
-        "name":"code.talks",
-        "url":"https://www.codetalks.com"
-     },
-     {
-        "@type":"Organization",
-        "name":"alphalist",
-        "url":"https://www.alphalist.com"
-     }
-  ],
-  "description":"Join other developers and CTOs at the leading tech event in the DACH region. code.talks Tech Conference is a two-day event in Hamburg that brings together the brightest minds in technology to network, learn, and innovate together. Organized by code.talks.de and alphalist, it's more than a developer conference; it's a community.",
-  "url":"https://www.codetalks.de",
-  "image":"https://codetalks.com/landing_page/slider_1.jpeg",
-  "audience":{
-     "@type":"Audience",
-     "audienceType":"Developers, CTOs, Tech Enthusiasts"
-  },
-  "performer":[
-     {
-        "@type":"Person",
-        "name":"Melissa Perri",
-        "url":"https://www.melissaperri.com"
-     },
-     {
-        "@type":"Person",
-        "name":"John Romero",
-        "url":"https://www.romerogames.ie/john"
-     },
-     {
-        "@type":"Person",
-        "name":"Melanie Rieback",
-        "url":"https://en.wikipedia.org/wiki/Melanie_Rieback"
-     }
-  ]
-}"</script>"
+</script>
