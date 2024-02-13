@@ -55,7 +55,7 @@ export default defineNuxtConfig({
     identity: {
       type: 'Organization',
       name: 'code.talks',
-      url: 'https://code.talks.com',
+      url: 'https://codetalks.de',
       logo: 'https://codetalks.com/cota_logo.png',
     }
   }
