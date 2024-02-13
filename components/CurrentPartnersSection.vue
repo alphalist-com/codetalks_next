@@ -6,8 +6,7 @@
         <SectionHeaderHighlightText text="PARTNERS" />
       </SectionHeader>
       <SectionSubHeadline class="mt-4 px-20 sm:mx-16">
-        Each of our partners gets a unique stage! Anything less would not be
-        fitting
+        Thank you to our beloved partners in code
       </SectionSubHeadline>
     </div>
     <ul
