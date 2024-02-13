@@ -44,7 +44,7 @@
       <SectionHeader :center-align="true"
         >OUR <SectionHeaderHighlightText text="TEAM"
       /></SectionHeader>
-      <SubSectionHeader class="mt-6">This is our team.</SubSectionHeader>
+      <!-- <SubSectionHeader class="mt-6">This is our team.</SubSectionHeader> -->
       <PersonTileList :person-array="team"></PersonTileList>
     </div>
     <div class="mt-28 px-6 text-center">
@@ -157,8 +157,7 @@ const team: Array<Person> = [
   },
   {
     name: "Regina",
-    image:
-      "https://codetalks.de/storage/images/persons/thumbnails/Ivan_Notaroš-7dae29ae2a9e396ddc8a8038bab1c8d1.png",
+    image: "/about_us_page/regina.jpg",
   },
   {
     name: "Valentina",
@@ -172,8 +171,7 @@ const team: Array<Person> = [
   },
   {
     name: "Marten",
-    image:
-      "https://codetalks.de/storage/images/persons/thumbnails/Philipp_Gentz-6f8dd39ab6ed605242bada98754410ad.jpg",
+    image: "/about_us_page/marten.jpg",
   },
 ];
 
