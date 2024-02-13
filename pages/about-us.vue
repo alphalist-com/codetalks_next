@@ -2,7 +2,7 @@
   <div class="bg-cota-background">
     <HeroSection>
       <template v-slot:background>
-        <HeroBgImage image-url="/about_us_page/hero.jpeg"></HeroBgImage>
+        <HeroBgImage image-url="/about_us_page/hero.jpg"></HeroBgImage>
       </template>
       <HeroHeadline> ABOUT US </HeroHeadline>
       <div class="mt-10 flex items-center justify-center gap-x-6">
@@ -176,19 +176,26 @@ const team: Array<Person> = [
 ];
 
 const pictures = [
-  {
-    url: "/gallery/cota-1.png",
-    focusPoint: "50% 30%",
-    description: "Image 1 Description",
-  },
-  {
-    url: "/gallery/cota-2.png",
-    focusPoint: "80% 20%",
-    description: "Image 2 Description",
-  },
-  { url: "/gallery/cota-3.png", focusPoint: "20% 80%" },
-  { url: "/gallery/cota-4.png", focusPoint: "50% 30%" },
-  { url: "/gallery/cota-5.png", focusPoint: "50% 45%" },
+  { url: "/about_us_page/gallery_01.jpg", focusPoint: "50% 50%" },
+  { url: "/about_us_page/gallery_02.jpg", focusPoint: "50% 50%" },
+  { url: "/about_us_page/gallery_03.jpg", focusPoint: "50% 50%" },
+  { url: "/about_us_page/gallery_04.jpg", focusPoint: "50% 50%" },
+  { url: "/about_us_page/gallery_05.jpg", focusPoint: "50% 50%" },
+  { url: "/about_us_page/gallery_06.jpg", focusPoint: "50% 50%" },
+  { url: "/about_us_page/gallery_07.jpg", focusPoint: "50% 50%" },
+  { url: "/about_us_page/gallery_08.jpg", focusPoint: "50% 50%" },
+  { url: "/about_us_page/gallery_09.jpg", focusPoint: "50% 50%" },
+  { url: "/about_us_page/gallery_10.jpg", focusPoint: "50% 50%" },
+  { url: "/about_us_page/gallery_11.jpg", focusPoint: "50% 50%" },
+  { url: "/about_us_page/gallery_12.jpg", focusPoint: "50% 50%" },
+  { url: "/about_us_page/gallery_13.jpg", focusPoint: "50% 50%" },
+  { url: "/about_us_page/gallery_14.jpg", focusPoint: "50% 50%" },
+  { url: "/about_us_page/gallery_15.jpg", focusPoint: "50% 50%" },
+  { url: "/about_us_page/gallery_16.jpg", focusPoint: "50% 50%" },
+  { url: "/about_us_page/gallery_17.jpg", focusPoint: "50% 50%" },
+  { url: "/about_us_page/gallery_18.jpg", focusPoint: "50% 50%" },
+  { url: "/about_us_page/gallery_19.jpg", focusPoint: "50% 50%" },
+  { url: "/about_us_page/gallery_20.jpg", focusPoint: "50% 50%" },
 ];
 
 type Principle = {
