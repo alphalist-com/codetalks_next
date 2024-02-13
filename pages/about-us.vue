@@ -51,9 +51,9 @@
       <SectionHeader :center-align="true"
         >OUR <SectionHeaderHighlightText text="Principles"
       /></SectionHeader>
-      <SubSectionHeader class="mt-6"
+      <!-- <SubSectionHeader class="mt-6"
         >This year we like to say thank you to our beloved partners in
-        code.</SubSectionHeader
+        code.</SubSectionHeader -->
       >
       <ul class="mx-auto mt-12 flex flex-wrap justify-center gap-12">
         <li
