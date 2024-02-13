@@ -84,7 +84,7 @@ const ctas = [
   useSeoMeta({
     title: 'code.talks Tech Conference 2024 | Hamburg | September 19-20 2024',
     ogType: 'website',
-    ogUrl: 'https://www.codetalks.com',
+    ogUrl: 'https://codetalks.com',
     ogSiteName: 'code.talks',
     description: 'Join other developers and CTOs at the leading tech event which is a fixture in the DACH tech scene. Network, learn, and have fun at this tech event. It is more than a developer conference, it is a community.',
     ogTitle: 'code.talks Tech Conference| Network & Learn in Hamburg September 19-20 2024',
