@@ -57,8 +57,7 @@
                 Subscribe to our newsletter
               </h3>
               <p class="mt-2 text-sm leading-6 text-gray-300">
-                The latest news, articles, and resources, sent to your inbox
-                weekly.
+                Be up to date an receive the latest news about code.talks.
               </p>
               <form
                 class="mt-6 sm:flex sm:max-w-md"
