@@ -73,7 +73,7 @@ const ctas = [
     cta: "See more",
   },
   {
-    name: "CODE",
+    name: "PARTY",
     description:
       "Don't miss out on the legendary after conference party on the first day of the event and try out the latest tech gadgets or play some never-forgotten game classics.",
     icon: "💻",
