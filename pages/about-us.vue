@@ -8,7 +8,7 @@
       <div class="mt-10 flex items-center justify-center gap-x-6">
         <NuxtLink
           @click="dialogOpen = true"
-          class="rounded-md bg-cota-primary px-3.5 py-2 text-sm font-semibold text-cota-on-primary"
+          class="rounded-md bg-cota-primary px-3.5 py-2 text-sm font-semibold uppercase text-cota-on-primary"
           >Watch Recap</NuxtLink
         >
       </div>
