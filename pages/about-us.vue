@@ -270,7 +270,7 @@ useSeoMeta({
     description: "code.talks is the premiere tech conference in the DACH region which brings together developers and CTOs annually for learning, networking and fun. Experience a conference where ethics, inclusivity, and social impact take center stage in Hamburg ",
     ogTitle: "About code.talks | Championing Diversity, Sustainability, and Tech Innovation",
     ogDescription: "code.talks is the premiere tech conference in the DACH region which brings together developers and CTOs annually for learning, networking and fun. Experience a conference where ethics, inclusivity, and social impact take center stage in Hamburg",
-    ogImage: "/landing_page/slider_1.jpeg",
+    ogImage: "/partner_page/slider_14.jpeg",
     //keywords: "code.talks conference history, Hamburg tech conference story, code.talks team",
   });
 </script>
