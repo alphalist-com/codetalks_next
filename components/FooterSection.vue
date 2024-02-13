@@ -7,7 +7,7 @@
     <div class="mx-auto max-w-7xl px-12 pb-8 pt-8 sm:pt-24 lg:px-16 lg:pt-16">
       <div class="grid grid-cols-5 px-2">
         <div
-          class="col-span-5 flex justify-between gap-x-8 sm:gap-20 md:col-span-3"
+          class="col-span-5 flex justify-between gap-x-8 sm:justify-start sm:gap-20 md:col-span-3"
         >
           <div class="shrink-0">
             <h3 class="text-sm font-semibold leading-6 text-white">
