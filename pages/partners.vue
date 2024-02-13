@@ -11,7 +11,10 @@
         community.
       </HeroSubHeadline>
       <div class="mt-10 flex items-center justify-center gap-x-6">
-        <PrimaryBtn link="#">BECOME A PARTNER</PrimaryBtn>
+        <PrimaryBtn
+          link="https://airtable.com/app5zJT3rof6XVh3u/pagsqf59XbfPofkRI/form"
+          >BECOME A PARTNER</PrimaryBtn
+        >
       </div>
     </HeroSection>
     <CtaSection class="mt-12" :items="ctas" />
