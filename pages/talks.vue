@@ -127,16 +127,16 @@ const videos: Video[] = [
 ];
 useSeoMeta({
     title: "Talks | code.talks Tech Conference  | Hamburg | September 19-20 2024",
-    description: "Explore the lineup of speakers and sessions at code.talks 2024, featuring the brightest minds in tech. Dive into our archives for past years' highlights and innovations",
+    description: "Explore the lineup of speakers and sessions at code.talks 2024, featuring the brightest minds in tech. Dive into our archives for past years' highlights and ideas",
     ogType: 'website',
     ogUrl: 'https://codetalks.com/talks',
     ogSiteName: 'code.talks',
     ogTitle: "code.talks Tech Conference| Network & Learn in Hamburg September 19-20 2024",
-    ogDescription: "Explore the lineup of speakers and sessions at code.talks 2024, featuring the brightest minds in tech. Dive into our archives for past years' highlights and innovations",
+    ogDescription: "Explore the lineup of speakers and sessions at code.talks 2024, featuring the brightest minds in tech. Dive into our archives for past years' highlights and ideas",
     ogImage: "/talks_page/hero.jpeg",
     twitterCard: 'summary_large_image',
     twitterTitle:'Talks | code.talks Tech Conference', 
-    twitterDescription: 'Explore the lineup of speakers and sessions at code.talks 2024, featuring the brightest minds in tech. Dive into our archives for past years highlights and innovations',
+    twitterDescription: 'Explore the lineup of speakers and sessions at code.talks 2024, featuring the brightest minds in tech. Dive into our archives for past years highlights and ideas',
     keywords: "tech conference talks, Tech event speaker lineup, Developer conference sessions,code.talks speakers, technology conference agenda",
   });
 </script>

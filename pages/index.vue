@@ -122,6 +122,7 @@ useSeoMeta({
             streetAddress: 'Congresspl. 1',
             addressLocality: 'Hamburg',
             postalCode: '20355',
+            addressRegion: 'HH',
             addressCountry: 'DE',
           }
         })],
