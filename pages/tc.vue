@@ -95,9 +95,6 @@
 </template>
 
 <script lang="ts" setup>
-    defineRouteRules({
-      robots: false
-  })
 </script>
 
 <style></style>
