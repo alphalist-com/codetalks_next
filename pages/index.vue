@@ -95,8 +95,6 @@ useSeoMeta({
     ogUrl: 'https://codetalks.com',
     ogSiteName: 'code.talks',
     twitterSite: '@codetalkshh',
-    ogTitle: 'code.talks Tech Conference| Network & Learn in Hamburg September 19-20 2024',
-    ogDescription: 'Join the leading tech event for developers and CTOs in the DACH region. Experience unparalleled networking and learning opportunities',
     twitterCard: 'summary_large_image',
     twitterTitle:'code.talks Tech Conference 2024 | Hamburg | September 19-20 2024', 
     twitterDescription: 'Join the leading tech event for developers and CTOs in the DACH region. Experience unparalleled networking and learning opportunities',
