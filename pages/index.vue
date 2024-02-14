@@ -85,8 +85,7 @@ const ctas = [
   },
 ];
 
-  useSeoMeta({
-
+useSeoMeta({
     title: "code.talks Tech Conference 2024 | Hamburg | September 19-20 2024",
     description: "Join other developers and CTOs at the leading tech event which is a fixture in the DACH tech scene. Network, learn, and have fun at this tech event. It is more than a developer conference, it is a community.",
     ogTitle: "code.talks Tech Conference| Network & Learn in Hamburg September 19-20 2024",
@@ -106,6 +105,7 @@ const ctas = [
       type: "video/mp4",
       width: "1280",
       height: "720",
+      }
   });
 
   useSchemaOrg([
@@ -115,8 +115,8 @@ const ctas = [
       name: 'code.talks 2024',
       eventStatus: 'EventScheduled',
       eventAttendanceMode: 'OfflineEventAttendanceMode',
-      startDate: '"2024-09-19T08:00',
-      endDate: '"2024-09-20T23:00',
+      startDate: '2024-09-19T08:00',
+      endDate: '2024-09-20T23:00',
       location: [
         definePlace({
           name: 'CCH - Congress Center Hamburg',
