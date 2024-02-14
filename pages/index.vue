@@ -86,11 +86,26 @@ const ctas = [
 ];
 
   useSeoMeta({
+
     title: "code.talks Tech Conference 2024 | Hamburg | September 19-20 2024",
     description: "Join other developers and CTOs at the leading tech event which is a fixture in the DACH tech scene. Network, learn, and have fun at this tech event. It is more than a developer conference, it is a community.",
     ogTitle: "code.talks Tech Conference| Network & Learn in Hamburg September 19-20 2024",
     ogDescription: "Join the leading tech event for developers and CTOs in the DACH region. Experience unparalleled networking and learning opportunities",
-    ogImage: "/landing_page/slider_1.jpeg",
+    ogImage: "https://codetalks.com/landing_page/slider_1.jpeg",
+    ogType: 'website',
+    ogUrl: 'https://codetalks.com',
+    ogSiteName: 'code.talks',
+    twitterSite: '@codetalkshh',
+    ogTitle: 'code.talks Tech Conference| Network & Learn in Hamburg September 19-20 2024',
+    ogDescription: 'Join the leading tech event for developers and CTOs in the DACH region. Experience unparalleled networking and learning opportunities',
+    twitterCard: 'summary_large_image',
+    twitterTitle:'code.talks Tech Conference 2024 | Hamburg | September 19-20 2024', 
+    twitterDescription: 'Join the leading tech event for developers and CTOs in the DACH region. Experience unparalleled networking and learning opportunities',
+    ogVideo: {
+      url: "https://www.youtube.com/watch?v=Kx5N5QK3rOE",
+      type: "video/mp4",
+      width: "1280",
+      height: "720",
   });
 
   useSchemaOrg([
