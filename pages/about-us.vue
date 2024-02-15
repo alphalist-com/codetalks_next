@@ -283,6 +283,15 @@ useSeoMeta({
     twitterDescription: 'code.talks is the premiere tech conference in the DACH region which brings together developers and CTOs annually for learning, networking and fun.',
 
   });
+
+  useSchemaOrg([
+
+
+    defineWebPage({
+    '@type': 'AboutPage',
+  })
+    
+  ]);
 </script>
 
 <style scoped></style>
