@@ -36,11 +36,21 @@
 </template>
 <script setup lang="ts">
 useSeoMeta({
-  title: "code.talks conference",
-  description: "Home page of the code.talks Hamburg developer conference.",
-  ogTitle: "code.talks conference",
-  ogDescription: "Home page of the code.talks Hamburg developer conference.",
+  title: "code.talks Tech Conference 2024 | Network & Learn in Hamburg",
+  description: "Join other developers and CTOs at the leading tech event which is a fixture in the DACH tech scene. Network, learn, and have fun at this tech event. It is more than a developer conference, it is a community.",
+  ogTitle: "code.talks Tech Conference 2024 | Network & Learn in Hamburg September 19-20 2024",
+  ogDescription: "Join other developers and CTOs at the leading tech event which is a fixture in the DACH tech scene. Network, learn, and have fun at this tech event. It is more than a developer conference, it is a community.",
   ogImage: "/cota_logo.png",
+  ogSiteName: 'code.talks',
+  twitterSite: '@codetalkshh',
+  twitterTitle: 'code.talks Tech Conference 2024 | Network & Learn in Hamburg September 19-20 2024',  
+  ogType: 'website',
+  ogVideo: {
+    url: "https://www.youtube.com/watch?v=Kx5N5QK3rOE",
+    type: "video/mp4",
+    width: "1280",
+    height: "720",
+  },
 });
 
 useHead({

@@ -1,5 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  site: {
+    url: 'https://codetalks.com',
+    name: 'code.talks',
+    description: 'Join other developers and CTOs at the leading tech event in the DACH tech scene. Network, learn, and have fun at this tech event. It is more than a developer conference, it is a community!',
+    defaultLocale: 'en', 
+  },
   devtools: { enabled: true },
   runtimeConfig: {
     app: {
@@ -30,6 +36,7 @@ export default defineNuxtConfig({
     ],
     "@nuxt/image",
     "nuxt-gtag",
+    '@nuxtjs/seo',
   ],
   headlessui: {
     prefix: "Headless",
@@ -44,4 +51,15 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  schemaOrg: {
+    identity: {
+      type: 'Organization',
+      name: 'code.talks',
+      url: 'https://codetalks.de',
+      logo: 'https://codetalks.com/cota_logo.png',
+    }
+  },
+  sitemap: {
+    exclude: ['imprint', 'privacy', 'tc', '404', '500', '500.html', '404.html', 'imprint.html', 'privacy.html', 'tc.html'],
+  }
 });
