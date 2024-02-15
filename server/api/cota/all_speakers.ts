@@ -31,7 +31,7 @@ export default defineEventHandler(async (event) => {
     name: speaker.full_name,
     position: speaker.position,
     company: speaker.company.name,
-    image: `https://codetalks.de/${speaker.photo_url}`,
+    image: `https://codetalks.de/${speaker.thumbnail_url}`,
     detailedInfos: speaker.user_id,
   }));
   return { success: true, newSpeakers: consolidatedNewSpeakers };
