@@ -130,19 +130,19 @@ const handleSubscriptionResult = (result: SubscriptionResult) => {
 </script>
 
 <style>
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   z-index: 60;
-  width: 6px;
+  width: 2px;
   background-color: #020811;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: #020811;
-  border-radius: 4px;
+  border-radius: 1px;
   border: 1px solid #1aba8b;
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background: #1aba8b;
-}
+} */
 </style>

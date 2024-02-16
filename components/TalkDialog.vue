@@ -83,10 +83,12 @@
             {{ talkData.abstract }}
           </p>
           <div
-            class="flex justify-center py-4"
+            class="flex justify-center gap-4 py-4"
             v-if="talkData.video_link || talkData.slides_url"
           >
-            <PrimaryBtn v-if="talkData.video_link" :link="talkData.video_link"
+            <PrimaryBtn
+              v-if="talkData.video_link && talkData.video_link_approved"
+              :link="talkData.video_link"
               >Watch Talk</PrimaryBtn
             >
             <OutlineBtn
