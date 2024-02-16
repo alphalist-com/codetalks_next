@@ -101,7 +101,7 @@
         </div>
       </div>
       <hr class="mt-8 border-cota-primary" />
-      <div class="flex justify-between px-2 pt-8 sm:mt-20 md:mt-16">
+      <div class="flex justify-between px-2 py-6">
         <p class="mr-2 text-xs leading-5 text-gray-400">
           &copy; 2024 alphalist GmbH. All rights reserved.
         </p>
