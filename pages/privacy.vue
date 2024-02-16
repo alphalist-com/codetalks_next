@@ -1,8 +1,6 @@
 <template>
   <div class="p-4 text-cota-secondary">
-    <h1 class="text-lg text-cota-primary" style="-webkit-text-stroke: 1px">
-      Datenschutzinformationen
-    </h1>
+    <HeroHeadline class="break-words"> Datenschutzinformationen </HeroHeadline>
     <div class="text--left">
       <div class="text--left">
         <p>
@@ -767,9 +765,7 @@
   </div>
 </template>
 
-<script lang="ts" setup>
-
-</script>
+<script lang="ts" setup></script>
 
 <style scoped>
 h2 {
