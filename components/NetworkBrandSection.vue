@@ -9,39 +9,39 @@
         class="mx-auto mt-10 flex flex-wrap items-center justify-center gap-x-2 gap-y-10 sm:gap-x-16"
       >
         <img
-          class="max-h-10 flex-initial object-contain brightness-100 grayscale filter sm:max-h-12"
-          src="/company_logos/IBM.png"
-          alt="IBM Logo"
-          width="158"
-          height="48"
+          class="max-h-12 w-44 flex-initial object-contain brightness-100 grayscale filter sm:max-h-12"
+          src="/company_logos/1Komma5.png"
+          alt="1komma5 Logo"
         />
         <img
-          class="max-h-10 flex-initial object-contain brightness-100 grayscale filter sm:max-h-12"
+          class="h-8 max-h-10 w-40 flex-initial object-contain brightness-100 grayscale filter sm:max-h-12"
+          src="/company_logos/ecosia.png"
+          alt="ecosia Logo"
+        />
+        <img
+          class="max-h-10 w-40 flex-initial object-contain brightness-100 grayscale filter sm:max-h-12"
           src="/company_logos/Google.png"
           alt="Google Logo"
-          width="158"
-          height="48"
         />
         <img
-          class="max-h-10 flex-initial object-contain brightness-100 grayscale filter sm:max-h-12"
-          src="/company_logos/Github.png"
-          alt="Github Logo"
-          width="158"
-          height="48"
+          class="max-h-10 w-40 flex-initial object-contain brightness-100 grayscale filter sm:max-h-12"
+          src="/company_logos/Meta.png"
+          alt="Meta Logo"
         />
         <img
-          class="max-h-10 flex-initial object-contain brightness-100 grayscale filter sm:max-h-12"
-          src="/company_logos/Mozilla.png"
-          alt="Mozilla Logo"
-          width="158"
-          height="48"
+          class="max-h-10 w-40 flex-initial object-contain brightness-100 grayscale filter sm:max-h-12"
+          src="/company_logos/Siemens.png"
+          alt="Siemens logo"
         />
         <img
-          class="max-h-10 flex-initial object-contain brightness-100 grayscale filter sm:max-h-12"
-          src="/company_logos/Telekom.png"
-          alt="Telekom logo"
-          width="158"
-          height="48"
+          class="max-h-10 w-40 flex-initial object-contain brightness-100 grayscale filter sm:max-h-12"
+          src="/company_logos/Innogames.png"
+          alt="Innogames logo"
+        />
+        <img
+          class="h-8 max-h-10 w-40 flex-initial object-contain brightness-100 grayscale filter sm:max-h-12"
+          src="/company_logos/wix.png"
+          alt="wix logo"
         />
       </div>
     </div>

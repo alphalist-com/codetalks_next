@@ -30,4 +30,9 @@ onMounted(() => {
 });
 </script>
 
-<style></style>
+<style>
+.viovendi-widget {
+  background-color: #8c0000;
+  color: #8c0000;
+}
+</style>
