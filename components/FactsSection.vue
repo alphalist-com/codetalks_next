@@ -12,7 +12,9 @@
           <dd class="order-first text-7xl text-cota-primary">
             {{ stat.value }}
           </dd>
-          <SectionHeader :center-align="true">{{ stat.name }}</SectionHeader>
+          <SectionHeader class="pt-2" :center-align="true">{{
+            stat.name
+          }}</SectionHeader>
         </div>
       </dl>
     </div>
