@@ -34,7 +34,7 @@
             </div> -->
             <div class="text-center">
               <HeroHeadline>
-                Germanys Greatest Developer Conference
+                Germany's Greatest Developer Conference
               </HeroHeadline>
               <HeroSubHeadline class="mt-6 lg:mt-11">
                 19. & 20. September 2024 in Hamburg
