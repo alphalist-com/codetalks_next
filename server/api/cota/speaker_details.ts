@@ -6,7 +6,7 @@ export default defineEventHandler(async (event) => {
   console.log("Loading details for speakerId: ", body.speakerId);
 
   const response = await fetch(
-    `https://${config.oldBackendDomain}/user/${body.speakerId}?event=all&type=speaker`,
+    `https://app.codetalks.com/user/${body.speakerId}?event=all&type=speaker`,
     {
       headers: {
         accept: "application/json, text/plain, */*",
