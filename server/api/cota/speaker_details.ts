@@ -6,7 +6,7 @@ export default defineEventHandler(async (event) => {
   console.log("Loading details for speakerId: ", body.speakerId);
 
   const response = await fetch(
-    `https://codetalks.de/user/${body.speakerId}?event=all&type=speaker`,
+    `https://${config.oldBackendDomain}/user/${body.speakerId}?event=all&type=speaker`,
     {
       headers: {
         accept: "application/json, text/plain, */*",
@@ -19,7 +19,7 @@ export default defineEventHandler(async (event) => {
         "x-xsrf-token":
           "eyJpdiI6IkxwTnlQWDVsdlJzZnRTVTRCaTFmbnc9PSIsInZhbHVlIjoick9wb2J4NlF1eG9vN1wvandhNkwwNlhXdERFcDFBVDh6cnlSOWRlVXNydGt5SVp0Vk1DdWNuVUp4aG9PcDdCUFNBME1rZUpUWDdLOGk0QkEzUmh0ZTlXVjYwendYNFJPVlJkcXBYOFVrZkxXZWp1ZXRlc0xNdmdQXC9YMjBXeW5ORCIsIm1hYyI6IjYwMzcyM2VhYTUxYzgyZWE4ZWRiYThmODk0MjJiZWQzZGE1YmZlZDM4ZDEwNzgwZTk0MzUxMmIzMWUxOWViODgifQ==",
       },
-      referrer: "https://codetalks.de/speakers",
+      referrer: `https://${config.oldBackendDomain}/speakers`,
       referrerPolicy: "unsafe-url",
       body: null,
       method: "GET",

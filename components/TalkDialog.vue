@@ -93,7 +93,7 @@
             >
             <OutlineBtn
               v-if="talkData.slides_url"
-              :link="`https://codetalks.de${talkData.slides_url}`"
+              :link="`https://app.codetalks.com${talkData.slides_url}`"
               >Download Slides</OutlineBtn
             >
           </div>
@@ -107,7 +107,7 @@
               >
                 <div class="flex flex-row">
                   <img
-                    :src="`https://codetalks.de/${speaker.photo_url}`"
+                    :src="`https://cota.fra1.cdn.digitaloceanspaces.com/${speaker.photo_url}`"
                     class="col-span-1 my-2 ml-2 h-24 w-24 rounded-lg border-2 border-cota-primary object-cover sm:h-36 sm:w-36"
                   />
                   <div

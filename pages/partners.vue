@@ -68,7 +68,7 @@
               >
                 <img
                   class="h-64 w-64 object-contain"
-                  :src="`https://codetalks.de${topPartner.company.thumbnail_url}`"
+                  :src="`https://app.codetalks.com${topPartner.company.thumbnail_url}`"
                   :alt="topPartner.company.name"
                 />
               </NuxtLink>
@@ -94,7 +94,7 @@
               >
                 <img
                   class="h-40 w-40 object-contain"
-                  :src="`https://codetalks.de${topPartner.company.thumbnail_url}`"
+                  :src="`https://app.codetalks.com${topPartner.company.thumbnail_url}`"
                   :alt="topPartner.company.name"
                 />
               </NuxtLink>
@@ -121,7 +121,7 @@
               >
                 <img
                   class="h-20 w-36 object-contain"
-                  :src="`https://codetalks.de${topPartner.company.thumbnail_url}`"
+                  :src="`https://app.codetalks.com${topPartner.company.thumbnail_url}`"
                   :alt="topPartner.company.name"
                 />
               </NuxtLink>
@@ -148,7 +148,7 @@
               >
                 <img
                   class="h-20 w-36 object-contain"
-                  :src="`https://codetalks.de${topPartner.company.thumbnail_url}`"
+                  :src="`https://app.codetalks.com${topPartner.company.thumbnail_url}`"
                   :alt="topPartner.company.name"
                 />
               </NuxtLink>
@@ -211,14 +211,16 @@ const ctas = [
     icon: "📋",
   },
 ];
-  useSeoMeta({
-    title: "Partner with Us |  code.talks tech conference",
-    description: "Reach devs and CTOs in the DACH region at code.talks. Whether you want to connect with tech leaders,  market to decision makers in technology or you just showcase products to developers - code.talks is the place to go for DACH tech market exposure",
-    //keywords: "Sponsorship opportunities tech event,Tech event sponsorship, tech recruiting event",
-    ogTitle: "Partnership Opportunities |  code.talks tech conference",
-    ogDescription: "Reach devs and CTOs in one place at the premiere tech conference of the DACH region. ",
-    ogImage: "/partner_page/slider_1.jpeg",
-  });
+useSeoMeta({
+  title: "Partner with Us |  code.talks tech conference",
+  description:
+    "Reach devs and CTOs in the DACH region at code.talks. Whether you want to connect with tech leaders,  market to decision makers in technology or you just showcase products to developers - code.talks is the place to go for DACH tech market exposure",
+  //keywords: "Sponsorship opportunities tech event,Tech event sponsorship, tech recruiting event",
+  ogTitle: "Partnership Opportunities |  code.talks tech conference",
+  ogDescription:
+    "Reach devs and CTOs in one place at the premiere tech conference of the DACH region. ",
+  ogImage: "/partner_page/slider_1.jpeg",
+});
 </script>
 
 <style scoped></style>

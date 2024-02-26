@@ -2,7 +2,7 @@ export default defineEventHandler(async (event) => {
   const config = useRuntimeConfig();
 
   const response = await fetch(
-    `https://codetalks.de/sponsor-category/for-event?event=${config.cota.currentEventId}`,
+    `https://app.codetalks.com/sponsor-category/for-event?event=${config.cota.currentEventId}`,
     {
       headers: {
         accept: "application/json, text/plain, */*",
@@ -12,7 +12,7 @@ export default defineEventHandler(async (event) => {
         "sec-fetch-site": "same-origin",
         "x-requested-with": "XMLHttpRequest",
       },
-      referrer: "https://codetalks.de/partners",
+      referrer: "https://app.codetalks.com/partners",
       referrerPolicy: "unsafe-url",
       body: null,
       method: "GET",

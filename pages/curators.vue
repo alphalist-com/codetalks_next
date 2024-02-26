@@ -4,7 +4,7 @@
       <div class="relative isolate h-full overflow-hidden pt-14" id="hero">
         <div class="absolute inset-0 -z-10">
           <img
-            src="https://codetalks.de/img/sections/hero/headerImage.jpg"
+            src="https://app.codetalks.com/img/sections/hero/headerImage.jpg"
             alt=""
             class="h-full w-full bg-gradient-to-t from-black to-transparent object-cover brightness-50"
           />
@@ -142,20 +142,23 @@
 
 <script setup lang="ts">
 useSeoMeta({
-    title: "Curators | code.talks tech conference",
-    ogType: 'website',
-    ogUrl: 'https://codetalks.com/curators',
-    ogSiteName: 'code.talks',
-    description: "Meet the curators who shape this event into the community-led, dev-centric event we all know and love",
-    keywords: "Sponsorship opportunities tech event,Tech event sponsorship, tech recruiting event",
-    ogTitle: "Curators | code.talks tech conference",
-    ogDescription: "Meet the curators who shape this event into the community-led, dev-centric event we all know and love",
-    ogImage: "/landing_page/slider_6.jpeg",
-    twitterCard: 'summary_large_image',
-    twitterTitle:'Curators | code.talks tech conference', 
-    twitterDescription: 'Meet the curators who shape this event into the community-led, dev-centric event we all know and love',
-
-  });
+  title: "Curators | code.talks tech conference",
+  ogType: "website",
+  ogUrl: "https://codetalks.com/curators",
+  ogSiteName: "code.talks",
+  description:
+    "Meet the curators who shape this event into the community-led, dev-centric event we all know and love",
+  keywords:
+    "Sponsorship opportunities tech event,Tech event sponsorship, tech recruiting event",
+  ogTitle: "Curators | code.talks tech conference",
+  ogDescription:
+    "Meet the curators who shape this event into the community-led, dev-centric event we all know and love",
+  ogImage: "/landing_page/slider_6.jpeg",
+  twitterCard: "summary_large_image",
+  twitterTitle: "Curators | code.talks tech conference",
+  twitterDescription:
+    "Meet the curators who shape this event into the community-led, dev-centric event we all know and love",
+});
 </script>
 
 <style scoped></style>

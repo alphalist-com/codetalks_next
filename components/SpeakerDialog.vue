@@ -18,7 +18,7 @@
           <div class="">
             <div class="flex flex-row pb-4">
               <img
-                :src="`https://codetalks.de/${speakerData.thumbnail_url}`"
+                :src="`https://cota.fra1.cdn.digitaloceanspaces.com/${speakerData.thumbnail_url}`"
                 class="col-span-1 h-36 w-36 rounded-lg border-2 border-cota-primary object-cover sm:h-40 sm:w-40"
               />
               <div

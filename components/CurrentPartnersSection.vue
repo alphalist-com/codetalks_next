@@ -27,7 +27,7 @@
           <NuxtLink :href="partner.website">
             <img
               class="h-full w-full object-contain"
-              :src="`https://codetalks.de${partner.logoUrl}`"
+              :src="`https://${config.oldBackendDomain}${partner.logoUrl}`"
               :alt="partner.name"
             />
           </NuxtLink>
@@ -43,6 +43,8 @@
 </template>
 
 <script setup lang="ts">
+const config = useRuntimeConfig();
+
 interface BasicPartnerInfos {
   name: string;
   website: string;

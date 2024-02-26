@@ -7,10 +7,10 @@ export default defineNuxtConfig({
       "Join other developers and CTOs at the leading tech event in the DACH tech scene. Network, learn, and have fun at this tech event. It is more than a developer conference, it is a community!",
     defaultLocale: "en",
   },
-  devtools: { enabled: true },
   runtimeConfig: {
     app: {
       env: process.env.NUXT_APP_ENV || "development",
+      oldBackendDomain: process.env.NUXT_OLD_BACKEND_DOMAIN || "codetalks.de",
     },
     mailchimp: {
       apiKey: "",
@@ -56,7 +56,7 @@ export default defineNuxtConfig({
     identity: {
       type: "Organization",
       name: "code.talks",
-      url: "https://codetalks.de",
+      url: "https://codetalks.com",
       logo: "https://codetalks.com/cota_logo.png",
     },
   },

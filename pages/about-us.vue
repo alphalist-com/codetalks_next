@@ -202,37 +202,37 @@ type Principle = {
 
 const principles: Principle[] = [
   {
-    icon: "https://codetalks.de/img/icons/codetalks-main/mission.svg",
+    icon: "https://app.codetalks.com/img/icons/codetalks-main/mission.svg",
     title: "MISSION",
     description:
       "We want to broaden our horizon together and move beyond our regular programming cosmos. Anyone can find just what they were looking for at code.talks. The conference is built on diverse and captivating subjects connected to web development. We support pioneers and visionaries who want to share their ideas to inspire other people. We want to use our passion for coding to bring IT enthusiasts together in a relaxed atmosphere where they can spend two memorable days filled with inspiration, extraordinary presentations, and, of course, fun.",
   },
   {
-    icon: "https://codetalks.de/img/icons/codetalks-main/welcome.svg",
+    icon: "https://app.codetalks.com/img/icons/codetalks-main/welcome.svg",
     title: "WELCOME AS YOU ARE",
     description:
       "Anyone is welcome at code.talks just as they are. Respectful cooperation is a matter of course for us. It is the basis on which all participants can share their ideas in a relaxed atmosphere. We welcome national and international speakers and promote cultural exchange. The digital world itself has no limits. No one should be discriminated against or harassed at code.talks due to their origin, religion, gender, sexual orientation, or appearance. Learn more about this in our code of conduct.",
   },
   {
-    icon: "https://codetalks.de/img/icons/codetalks-main/corporation.svg",
+    icon: "https://app.codetalks.com/img/icons/codetalks-main/corporation.svg",
     title: "YOUTH DEVELOPMENT",
     description:
       "We can make great progress by sharing our knowledge. Therefore we offer tickets with a large discount for students, pupils, and trainees. Due to our cooperation with universities, professors have the possibility to grant free tickets to students with a focus on IT, who would be unable to participate in spite of that discount. Since ticket prices are far below cost price, the tickets are co-financed by partners.",
   },
   {
-    icon: "https://codetalks.de/img/icons/codetalks-main/community.svg",
+    icon: "https://app.codetalks.com/img/icons/codetalks-main/community.svg",
     title: "COMMUNITY",
     description:
       "This is for the community. code.talks is known for its relaxed atmosphere, which is an essential element for us. We are proud to run a conference that is covering its expenses by income and expenditure. From the very beginning, we have been focusing on the community and the passion of developers rather than profit-oriented goals.",
   },
   {
-    icon: "https://codetalks.de/img/icons/codetalks-main/non-profit.svg",
+    icon: "https://app.codetalks.com/img/icons/codetalks-main/non-profit.svg",
     title: "NON-PROFIT SUPPORT",
     description:
       "Financial support of non-profit initiatives is important to us. Our principles are dear to us, leading us to support organizations and events that share them. Depending on the funds available to us, we make donations to other non-profit initiatives and associations that promote young talent and diversity in the IT sector.",
   },
   {
-    icon: "https://codetalks.de/img/icons/codetalks-main/greener.svg",
+    icon: "https://app.codetalks.com/img/icons/codetalks-main/greener.svg",
     title: "GO GREENER",
     description:
       "We are aware that sustainability is an important process in the organization of events. We believe that every step in the right direction of ecological responsibility makes a difference. So we try to keep waste production as low as possible and we strive for sustainable use of print media. Our tickets are always digital, and our schedule can be downloaded into your private calendar. We work together with regional caterers and their products, too.",
@@ -267,27 +267,26 @@ watch(dialogOpen, (newVal) => {
   }
 });
 useSeoMeta({
-    title: 'About code.talks | Our Story, Mission and Values',
-    description: 'code.talks is the premiere tech conference in the DACH region which brings together developers and CTOs annually for learning, networking and fun. Experience a conference where ethics, inclusivity, and social impact take centre stage in Hamburg',
-    ogTitle: 'About code.talks | Our Story, Mission and Values',
-    ogDescription: 'code.talks is the premiere tech conference in the DACH region which brings together developers and CTOs annually for learning, networking and fun. Experience a conference where ethics, inclusivity, and social impact take centre stage in Hamburg',
-    ogImage:'/partner_page/slider_14.jpeg',
-    ogSiteName: 'code.talks',
-    ogUrl:'https://codetalks.de/about-us',
-    twitterCard: 'summary_large_image',
-    twitterTitle:'About code.talks | Our Story, Mission and Values', 
-    twitterDescription: 'code.talks is the premiere tech conference in the DACH region which brings together developers and CTOs annually for learning, networking and fun.',
+  title: "About code.talks | Our Story, Mission and Values",
+  description:
+    "code.talks is the premiere tech conference in the DACH region which brings together developers and CTOs annually for learning, networking and fun. Experience a conference where ethics, inclusivity, and social impact take centre stage in Hamburg",
+  ogTitle: "About code.talks | Our Story, Mission and Values",
+  ogDescription:
+    "code.talks is the premiere tech conference in the DACH region which brings together developers and CTOs annually for learning, networking and fun. Experience a conference where ethics, inclusivity, and social impact take centre stage in Hamburg",
+  ogImage: "/partner_page/slider_14.jpeg",
+  ogSiteName: "code.talks",
+  ogUrl: "https://app.codetalks.com/about-us",
+  twitterCard: "summary_large_image",
+  twitterTitle: "About code.talks | Our Story, Mission and Values",
+  twitterDescription:
+    "code.talks is the premiere tech conference in the DACH region which brings together developers and CTOs annually for learning, networking and fun.",
+});
 
-  });
-
-  useSchemaOrg([
-
-
-    defineWebPage({
-    '@type': 'AboutPage',
-  })
-    
-  ]);
+useSchemaOrg([
+  defineWebPage({
+    "@type": "AboutPage",
+  }),
+]);
 </script>
 
 <style scoped></style>
