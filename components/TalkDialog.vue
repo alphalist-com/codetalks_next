@@ -91,9 +91,7 @@
               :link="talkData.video_link"
               >Watch Talk</PrimaryBtn
             >
-            <OutlineBtn
-              v-if="talkData.slides_url"
-              :link="`https://app.codetalks.com${talkData.slides_url}`"
+            <OutlineBtn v-if="talkData.slides_url" :link="talkData.slides_url"
               >Download Slides</OutlineBtn
             >
           </div>
