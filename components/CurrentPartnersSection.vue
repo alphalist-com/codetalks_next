@@ -27,7 +27,7 @@
           <NuxtLink :href="partner.website">
             <img
               class="h-full w-full object-contain"
-              :src="`https://${config.oldBackendDomain}${partner.logoUrl}`"
+              :src="${partner.logoUrl}"
               :alt="partner.name"
             />
           </NuxtLink>
