@@ -68,7 +68,7 @@
               >
                 <img
                   class="h-64 w-64 object-contain"
-                  :src="`https://app.codetalks.com${topPartner.company.thumbnail_url}`"
+                  :src="topPartner.company.thumbnail_url"
                   :alt="topPartner.company.name"
                 />
               </NuxtLink>
@@ -94,7 +94,7 @@
               >
                 <img
                   class="h-40 w-40 object-contain"
-                  :src="`https://app.codetalks.com${topPartner.company.thumbnail_url}`"
+                  :src="topPartner.company.thumbnail_url"
                   :alt="topPartner.company.name"
                 />
               </NuxtLink>
@@ -121,7 +121,7 @@
               >
                 <img
                   class="h-20 w-36 object-contain"
-                  :src="`https://app.codetalks.com${topPartner.company.thumbnail_url}`"
+                  :src="topPartner.company.thumbnail_url"
                   :alt="topPartner.company.name"
                 />
               </NuxtLink>
@@ -148,7 +148,7 @@
               >
                 <img
                   class="h-20 w-36 object-contain"
-                  :src="`https://app.codetalks.com${topPartner.company.thumbnail_url}`"
+                  :src="topPartner.company.thumbnail_url"
                   :alt="topPartner.company.name"
                 />
               </NuxtLink>

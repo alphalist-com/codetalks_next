@@ -6,7 +6,7 @@
       >
         <div class="max-w-xl px-6 pr-0 sm:px-12 lg:pr-6 xl:max-w-2xl">
           <SectionHeader>
-            LET’S GET
+            LET’S
             <SectionHeaderHighlightText text="PARTNER" />
             IN CODE
           </SectionHeader>
