@@ -2,14 +2,12 @@
   <div>
     <div
       :class="[
-        'relative flex h-52 w-36 flex-col items-center sm:h-60 sm:w-40',
+        'cota-material relative flex h-52 w-36 flex-col items-center overflow-hidden rounded-lg shadow-none shadow-cota-primary transition-all hover:scale-105 hover:border-2 hover:shadow-lg sm:h-60 sm:w-40 ',
         person.detailedInfos ? 'cursor-pointer' : '',
       ]"
       @click="handleClick"
     >
-      <div
-        class="cota-material relative h-full w-full overflow-hidden rounded-lg"
-      >
+      <div class="relative h-full w-full">
         <img
           class="h-full w-full object-cover"
           :src="props.person.image"
