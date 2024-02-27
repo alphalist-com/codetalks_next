@@ -8,7 +8,20 @@
         :pagination="{
           clickable: true,
         }"
-        :modules="[SwiperPagination, SwiperNavigation, SwiperEffectCoverflow]"
+        :navigation="{
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        }"
+        :autoplay="{
+          delay: 5000,
+          disableOnInteraction: false,
+        }"
+        :modules="[
+          SwiperPagination,
+          SwiperNavigation,
+          SwiperEffectCoverflow,
+          SwiperAutoplay,
+        ]"
         class="mySwiper"
       >
         <SwiperSlide v-for="(imageInfo, index) in imageInfos" :key="index">
@@ -21,6 +34,9 @@
             />
           </div>
         </SwiperSlide>
+
+        <div class="swiper-button-prev invisible h-full pl-8 md:visible"></div>
+        <div class="swiper-button-next invisible h-full pr-8 md:visible"></div>
       </Swiper>
     </div>
   </section>
@@ -36,6 +52,11 @@ const props = defineProps({
 </script>
 
 <style>
+.swiper-button-next,
+.swiper-button-prev {
+  color: #1aba8b;
+}
+
 .swiper-pagination-bullet {
   background-color: aliceblue;
 }
