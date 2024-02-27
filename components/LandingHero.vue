@@ -45,12 +45,12 @@
               >
                 <NuxtLink
                   @click="showTicketShop"
-                  class="justify-self-center rounded-md bg-cota-primary px-3.5 py-2 text-sm font-semibold uppercase text-cota-on-primary"
+                  class="cursor-pointer justify-self-center rounded-md bg-cota-primary px-3.5 py-2 text-sm font-semibold uppercase text-cota-on-primary"
                   >Get your ticket</NuxtLink
                 >
 
                 <NuxtLink
-                  class="mt-6 text-sm font-semibold text-white"
+                  class="mt-6 cursor-pointer text-sm font-semibold text-white"
                   @click="dialogOpen = true"
                   >RECAP MOVIE 2023 <span aria-hidden="true">></span></NuxtLink
                 >
