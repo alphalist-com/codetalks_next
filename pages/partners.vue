@@ -61,7 +61,7 @@
                 .translation
             }}</PartnerClassText>
 
-            <div class="gap-y- mt-6 flex flex-wrap justify-center gap-x-12">
+            <div class="mt-6 flex flex-wrap justify-center gap-x-12 gap-y-2">
               <NuxtLink
                 :href="topPartner.website.url"
                 v-for="topPartner in currentPartners.partners[0].slots"
