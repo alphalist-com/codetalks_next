@@ -67,7 +67,7 @@
                 v-for="topPartner in currentPartners.partners[0].slots"
               >
                 <img
-                  class="h-64 w-64 object-contain"
+                  class="h-48 w-72 object-contain"
                   :src="topPartner.company.thumbnail_url"
                   :alt="topPartner.company.name"
                 />
@@ -93,7 +93,7 @@
                 v-for="topPartner in currentPartners.partners[1].slots"
               >
                 <img
-                  class="h-40 w-40 object-contain"
+                  class="h-32 w-60 object-contain"
                   :src="topPartner.company.thumbnail_url"
                   :alt="topPartner.company.name"
                 />
@@ -120,7 +120,7 @@
                 v-for="topPartner in currentPartners.partners[2].slots"
               >
                 <img
-                  class="h-20 w-36 object-contain"
+                  class="h-20 w-44 object-contain"
                   :src="topPartner.company.thumbnail_url"
                   :alt="topPartner.company.name"
                 />
@@ -147,7 +147,7 @@
                 v-for="topPartner in currentPartners.partners[3].slots"
               >
                 <img
-                  class="h-20 w-36 object-contain"
+                  class="h-20 w-44 object-contain"
                   :src="topPartner.company.thumbnail_url"
                   :alt="topPartner.company.name"
                 />
