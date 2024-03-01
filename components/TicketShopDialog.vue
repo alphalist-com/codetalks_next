@@ -1,9 +1,9 @@
 <template>
   <div>
-    <div class="fixed inset-0 z-40 flex items-center justify-center p-4">
+    <div class="fixed inset-0 z-40 flex items-center justify-center px-6 py-10">
       <div class="fixed inset-0 bg-black/50" @click="$emit('close')"></div>
       <div
-        class="text-cota-green relative z-50 max-w-full overflow-hidden rounded-xl border-2 border-cota-primary bg-cota-background text-sm font-semibold shadow-lg backdrop-blur-md backdrop-filter sm:mx-auto sm:max-w-2xl md:max-w-3xl lg:max-w-4xl"
+        class="text-cota-green relative z-50 max-h-full max-w-full overflow-x-auto overflow-y-auto rounded-xl border-2 border-cota-primary bg-cota-background text-sm font-semibold shadow-lg backdrop-blur-md backdrop-filter sm:mx-auto sm:max-w-2xl md:max-w-3xl lg:max-w-4xl"
       >
         <div
           class="viovendi-widget viovendi-booking-widget"
