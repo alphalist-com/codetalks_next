@@ -6,7 +6,7 @@
         biggest tech companies in Germany and around the world.</SectionHeader
       >
       <div
-        class="mx-auto mt-10 flex flex-wrap items-center justify-center gap-x-2 gap-y-10 sm:gap-x-16"
+        class="mx-auto mt-10 flex flex-wrap items-center justify-center gap-x-4 gap-y-10 sm:gap-x-16"
       >
         <img
           class="max-h-12 w-44 flex-initial object-contain brightness-100 grayscale filter sm:max-h-12"
