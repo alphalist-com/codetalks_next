@@ -1,8 +1,10 @@
 export default defineEventHandler(async (event) => {
-  // redirect all management paths to app.
-  // OldApi and ressource calls need go to app.codetalks.com
-  //
-
+  if (event.node.req.originalUrl == "/call-for-papers") {
+    return await sendRedirect(
+      event,
+      "https://app.codetalks.com/call-for-papers",
+    );
+  }
   const deDomain = "codetalks.de";
   const enDomain = "codetalks.com";
   if (event.node.req.headers.host?.endsWith(deDomain)) {
