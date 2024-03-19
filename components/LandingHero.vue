@@ -20,18 +20,19 @@
           class="-mt-6 flex h-full w-full flex-col content-around items-center justify-center px-6"
         >
           <div class="w-full max-w-4xl text-center">
-            <!-- <div class="sm:mb-8 sm:flex flex justify-center mb-8">
+            <div class="mb-8 flex justify-center sm:mb-8 sm:flex">
               <div
                 class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-400 ring-1 ring-white/10 hover:ring-white/20"
               >
                 Become a
                 <NuxtLink
-                  href="/partners"
+                  href="https://app.codetalks.com/call-for-papers"
                   class="font-semibold text-white"
-                  ><span class="absolute inset-0" aria-hidden="true" />Partner <span aria-hidden="true">&rarr;</span></NuxtLink
+                  ><span class="absolute inset-0" aria-hidden="true" />Speaker
+                  <span aria-hidden="true">&rarr;</span></NuxtLink
                 >
               </div>
-            </div> -->
+            </div>
             <div class="text-center">
               <HeroHeadline>
                 Germany's Greatest Developer Conference
